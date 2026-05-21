@@ -90,11 +90,15 @@ export default getRequestConfig(async ({ locale }) => {
   const errorPage = (
     await import(`./messages/${resolvedLocale}/errorPage.json`)
   ).default;
+  const Footer = (
+    await import(`./messages/${resolvedLocale}/Footer.json`)
+  ).default;
   return {
     locale: resolvedLocale,
     messages: {
       ...common,
       homepage,
+      Footer,
       Recognition,
       errorPage,
       Membership,
