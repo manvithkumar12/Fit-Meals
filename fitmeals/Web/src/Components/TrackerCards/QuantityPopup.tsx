@@ -72,7 +72,7 @@ const QuantityPopup: React.FC<QuantityPopupProps> = ({ foodData, onClose }) => {
   };
 
   return (
-    <div className="fixed inset-0 bg-black/50 flex items-center justify-center z-50">
+    <div className="fixed inset-0 bg-black/50 flex items-center justify-center z-[150]">
       <div className="bg-white p-6 rounded-lg w-full max-w-sm m-4 text-gray-800 shadow-xl">
         <div className="flex justify-between items-center mb-4">
           <h2 className="text-xl font-bold truncate pr-4">
