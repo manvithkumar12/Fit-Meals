@@ -14,14 +14,12 @@ export const deleteFromAws = async (fileUrl: string) => {
     });
 
     if (!res.ok) {
-      toast.error("Failed to delete file");
       return false;
     }
 
     return true;
   } catch (error) {
     console.error(error);
-    toast.error("Delete failed");
     return false;
   }
 };
