@@ -13,7 +13,7 @@ const page = async ({
     namespace: "MyOrders",
   });
   return (
-    <div className="w-full h-max flex justify-center">
+    <div className="w-full min-h-100 md:min-h-150 h-max flex justify-center">
       <div className="w-[80%] pt-10 h-50">
         <h1 className="text-3xl font-semibold">{t("title")}</h1>
         <PastOrders />
