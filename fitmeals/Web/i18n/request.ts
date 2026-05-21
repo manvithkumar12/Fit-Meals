@@ -93,10 +93,14 @@ export default getRequestConfig(async ({ locale }) => {
   const Footer = (
     await import(`./messages/${resolvedLocale}/Footer.json`)
   ).default;
+  const Subscription = (
+    await import(`./messages/${resolvedLocale}/Subscription.json`)
+  ).default;
   return {
     locale: resolvedLocale,
     messages: {
       ...common,
+      Subscription,
       homepage,
       Footer,
       Recognition,
