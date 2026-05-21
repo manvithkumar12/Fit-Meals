@@ -7,12 +7,12 @@ import "@/app/[locale]/(public)/page.css";
 
 interface FeedbackProps {
   data:
-    | {
-        message: string;
-        id: number;
-        user: { profileUrl: string | null; name: string };
-      }[]
-    | [];
+  | {
+    message: string;
+    id: number;
+    user: { profileUrl: string | null; name: string };
+  }[]
+  | [];
 }
 
 const FeedBack = ({ data }: FeedbackProps) => {
@@ -29,7 +29,7 @@ const FeedBack = ({ data }: FeedbackProps) => {
           {data?.map((item) => (
             <div
               key={item.id}
-              className="feedback-card w-80 h-40 md:w-115 md:h-50 border border-black/30 md:border-gray-200 hidebar shadow-md p-2 overflow-y-scroll  lg:h-50 lg:w-150 bg-[#efede5] rounded-2xl flex flex-col pl-5 pr-5"
+              className="feedback-card w-80 h-max md:w-115 md:h-40 border border-black/30 md:border-gray-200 hidebar shadow-md p-2 overflow-y-scroll  lg:h-40 lg:w-150 bg-[#efede5] rounded-2xl flex flex-col pl-5 pr-5"
             >
               <h4 className="text-xs md:text-[16px] mt-4">{item.message}</h4>
               <div className="flex  items-center align-middle">
