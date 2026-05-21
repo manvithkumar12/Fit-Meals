@@ -75,5 +75,39 @@
     "question": "Ihre Frage",
     "qplaceholder": "Geben Sie hier Ihre Frage ein …",
     "submit": "Anfrage senden"
+  },
+  "featuresModal": {
+    "headerTitle": "Premium-Funktionen entdecken",
+    "headerSubtitle": "Entdecken Sie, was FitMeals zum ultivativen Fitness-Begleiter macht.",
+    "smartRecommendations": {
+      "title": "Intelligente Empfehlungen",
+      "description": "Erhalten Sie KI-gestützte Mahlzeiten- und Ernährungsvorschläge, die auf Ihre Fitnessziele, Ernährungspräferenzen und Ihren Lebensstil zugeschnitten sind.",
+      "tag1": "KI-gestützt",
+      "tag2": "Personalisiert"
+    },
+    "macroTracking": {
+      "title": "Makro-Tracking",
+      "description": "Überwachen Sie Kalorien, Proteine, Kohlenhydrate und Fette mit detaillierten Einblicken, um Ihre Ernährungsziele zu erreichen.",
+      "tag1": "Ernährung",
+      "tag2": "Analysen"
+    },
+    "dietPlan": {
+      "title": "Ernährungsplan",
+      "description": "Erstellen Sie personalisierte Ernährungspläne und strukturierte Zeitpläne für Gewichtsverlust, Muskelaufbau oder ein gesundes Leben.",
+      "tag1": "Mahlzeitenplanung",
+      "tag2": "Ziele"
+    },
+    "foodRecognition": {
+      "title": "Essens-Erkennung",
+      "description": "Laden Sie Bilder von Lebensmitteln hoch, um Gerichte sofort zu identifizieren und Kalorienschätzungen, Zutaten sowie Nährwertinformationen anzuzeigen.",
+      "tag1": "KI-Sehen",
+      "tag2": "Ernährung"
+    },
+    "chatBot": {
+      "title": "Chatbot",
+      "description": "Erhalten Sie mit Ihrem intelligenten Gesundheitsassistenten sofortige Antworten auf Fragen zu Fitness, Ernährung und Wohlbefinden.",
+      "tag1": "KI-Assistent",
+      "tag2": "24/7 Support"
+    }
   }
 }
