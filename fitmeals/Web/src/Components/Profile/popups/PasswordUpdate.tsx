@@ -94,7 +94,7 @@ export default function PasswordUpdate({ setPopUp }: Readonly<PasswordUpdateProp
   };
 
   return (
-    <div className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-slate-900/40 backdrop-blur-sm font-sans">
+    <div className="fixed inset-0 z-[150] flex items-center justify-center p-4 bg-slate-900/40 backdrop-blur-sm font-sans">
       <motion.div
         initial={{ opacity: 0, scale: 0.95, y: 10 }}
         animate={
