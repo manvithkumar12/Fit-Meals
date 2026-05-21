@@ -6,40 +6,62 @@ import FeatureCard from "./featureCard/FeatureCard";
 import { AnimatePresence, motion } from "framer-motion";
 import { X } from "lucide-react";
 
-const mockFeatures = [
-  {
-    title: "Smart Recommendations",
-    description: "Personalized meal recommendations based on your fitness goals, dietary preferences, and health data.",
-    imgUrl: "/ml_rec.png",
-    navUrl: "/health/fit-tracker",
-    tags: ["AI Powered", "Popular"],
-  },
-  {
-    title: "Macro Tracking",
-    description: "Log your daily meals and instantly calculate proteins, fats, carbs, and calories to stay on track.",
-    imgUrl: "",
-    navUrl: "/tracker",
-    tags: ["Nutrition", "Tracking"],
-  },
-  {
-    title: "Progress Analytics",
-    description: "Visualize your weight loss or muscle gain journey with beautiful, easy-to-read charts and insights.",
-    imgUrl: "",
-    navUrl: "/analytics",
-    tags: ["Data", "New"],
-  },
-  {
-    title: "Custom Cookbooks",
-    description: "Create and share your own healthy recipes, or discover curated cookbooks from fitness experts.",
-    imgUrl: "",
-    navUrl: "/cookbook",
-    tags: ["Community"],
-  },
-];
-
 const Features = () => {
   const t = useTranslations("homepage");
   const [popup, setPopUp] = useState(false);
+
+  const mockFeatures = [
+    {
+      title: t("featuresModal.smartRecommendations.title"),
+      description: t("featuresModal.smartRecommendations.description"),
+      imgUrl: "/ml_rec.png",
+      navUrl: "/health/fit-tracker",
+      tags: [
+        t("featuresModal.smartRecommendations.tag1"),
+        t("featuresModal.smartRecommendations.tag2")
+      ],
+    },
+    {
+      title: t("featuresModal.macroTracking.title"),
+      description: t("featuresModal.macroTracking.description"),
+      imgUrl: "/Tracker.png",
+      navUrl: "/health/fit-tracker",
+      tags: [
+        t("featuresModal.macroTracking.tag1"),
+        t("featuresModal.macroTracking.tag2")
+      ],
+    },
+    {
+      title: t("featuresModal.dietPlan.title"),
+      description: t("featuresModal.dietPlan.description"),
+      imgUrl: "/dietplan.png",
+      navUrl: "/health/diet/daily-plan",
+      tags: [
+        t("featuresModal.dietPlan.tag1"),
+        t("featuresModal.dietPlan.tag2")
+      ],
+    },
+    {
+      title: t("featuresModal.foodRecognition.title"),
+      description: t("featuresModal.foodRecognition.description"),
+      imgUrl: "/Recognition.png",
+      navUrl: "/health/food-details",
+      tags: [
+        t("featuresModal.foodRecognition.tag1"),
+        t("featuresModal.foodRecognition.tag2")
+      ],
+    },
+    {
+      title: t("featuresModal.chatBot.title"),
+      description: t("featuresModal.chatBot.description"),
+      imgUrl: "/ChatBot.jpeg",
+      navUrl: "/",
+      tags: [
+        t("featuresModal.chatBot.tag1"),
+        t("featuresModal.chatBot.tag2")
+      ],
+    },
+  ];
 
   // Prevent scrolling when modal is open
   useEffect(() => {
@@ -85,8 +107,12 @@ const Features = () => {
               {/* Header */}
               <div className="flex items-center justify-between p-6 border-b border-neutral-800 bg-neutral-900/50">
                 <div>
-                  <h2 className="text-2xl font-bold text-white tracking-tight">Explore Premium Features</h2>
-                  <p className="text-neutral-400 text-sm mt-1">Discover what makes FitMeals the ultimate fitness companion.</p>
+                  <h2 className="text-2xl font-bold text-white tracking-tight">
+                    {t("featuresModal.headerTitle")}
+                  </h2>
+                  <p className="text-neutral-400 text-sm mt-1">
+                    {t("featuresModal.headerSubtitle")}
+                  </p>
                 </div>
                 <button
                   onClick={() => setPopUp(false)}
