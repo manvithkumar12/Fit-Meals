@@ -23,13 +23,44 @@ import {
     ArrowRight
 } from "lucide-react";
 import { useTranslations } from "next-intl";
+import { usePathname } from "next/navigation";
 
 export default function Footer() {
+    const pathname = usePathname();
     const [email, setEmail] = useState("");
     const user = useUser();
     const role = user?.role;
     const isVerified = user?.isVerified;
     const t = useTranslations("Footer");
+
+    // Helper to get path without locale prefix (e.g. /en/login -> /login)
+    const getCleanPath = (path: string) => {
+        if (!path) return "";
+        const segments = path.split("/");
+        if (segments[1] && segments[1].length === 2) {
+            return "/" + segments.slice(2).join("/");
+        }
+        return path;
+    };
+
+    const cleanPath = getCleanPath(pathname || "");
+
+    // Hide footer on dashboard, verification, profile, and management form URLs
+    const hideFooterPaths = [
+        "/dashboard",
+        "/verification",
+        "/PartnerVerification",
+        "/earnings",
+        "/FoodItems",
+        "/form/",
+        "/profile"
+    ];
+
+    const shouldHideFooter = hideFooterPaths.some(path => cleanPath.startsWith(path));
+
+    if (shouldHideFooter) {
+        return null;
+    }
 
     const handleSubscribe = (e: React.FormEvent) => {
         e.preventDefault();
