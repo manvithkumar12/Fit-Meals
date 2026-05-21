@@ -1,9 +1,10 @@
 import { getUser } from "@/lib/CurrentUser";
 import ChatBotWrapper from "@/src/Components/ChatBot/ChatBotWrapper";
+import ConditionalFooter from "@/src/Components/ConditionalFooter/ConditionalFooter";
 import DeliveryNav from "@/src/Components/Navbar/DeliveryNav";
 import Navbar from "@/src/Components/Navbar/Navbar";
 import RestaurantNav from "@/src/Components/Navbar/RestaurantNav";
-import Footer from "@/src/Components/Footer/Footer";
+
 
 import { unstable_noStore as noStore } from "next/cache";
 
@@ -21,7 +22,7 @@ export default async function PublicLayout({
       <>
         <Navbar user={user} />
         {children}
-        <Footer />
+        <ConditionalFooter />
         <ChatBotWrapper />
       </>
     );
@@ -32,7 +33,7 @@ export default async function PublicLayout({
       <>
         <RestaurantNav user={user} />
         {children}
-        <Footer />
+        <ConditionalFooter />
         <ChatBotWrapper />
       </>
     );
@@ -43,7 +44,7 @@ export default async function PublicLayout({
       <>
         <DeliveryNav user={user} />
         {children}
-        <Footer />
+        <ConditionalFooter />
         <ChatBotWrapper />
       </>
     );
