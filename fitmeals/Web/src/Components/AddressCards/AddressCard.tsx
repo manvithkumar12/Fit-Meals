@@ -11,6 +11,7 @@ import { useUser } from "@/src/context/UserContext";
 import { useAddress } from "@/src/query/useAddress";
 import { useQueryClient } from "@tanstack/react-query";
 import AddressCardLoading from "./loading/AddressCardLoading";
+import ErrorComponent from "../errorComponent/ErrorComponent";
 
 
 const AddressCard = () => {
@@ -58,41 +59,47 @@ const AddressCard = () => {
 
   return (
     <div className="mt-10 space-y-4 flex flex-col w-full items-center justify-center">
-      {addresses?.map((addr: any) => (
-        <div
-          key={addr.id}
-          className="bg-white rounded-xl w-[90%] md:w-[70%] max-w-220 p-4 shadow-sm border"
-        >
-          <div className="flex justify-between items-center">
-            <div className="flex items-center gap-2 font-medium">
-              {iconByType(addr.name)}
-              {t(addr.name)}s
-            </div>
-          </div>
-
-          <p className="text-sm text-gray-600 mt-2">{addr.address}</p>
-
-          <div className="flex justify-end gap-4 mt-3">
-            <div className="rounded-md w-7 flex">
-              <PopUpButton no_bg={true} icon>
-                <AddressSection
-                  userId={user?.id!}
-                  address={addr.address}
-                  type="edit"
-                  id={addr.id}
-                />
-              </PopUpButton>
-            </div>
-
-            <button
-              className="text-red-500 hover:text-red-700"
-              onClick={() => handleDelete(addr.id)}
-            >
-              <Trash2 size={18} />
-            </button>
-          </div>
+      {addresses.length === 0 ? (
+        <div className="h-90 w-90 md:w-110 md:h-110 max-w-220">
+          <ErrorComponent label="no address found" whiteBg={true} />
         </div>
-      ))}
+      ) : (
+        addresses?.map((addr: any) => (
+          <div
+            key={addr.id}
+            className="bg-white rounded-xl w-[90%] md:w-[70%] max-w-220 p-4 shadow-sm border"
+          >
+            <div className="flex justify-between items-center">
+              <div className="flex items-center gap-2 font-medium">
+                {iconByType(addr.name)}
+                {t(addr.name)}s
+              </div>
+            </div>
+
+            <p className="text-sm text-gray-600 mt-2">{addr.address}</p>
+
+            <div className="flex justify-end gap-4 mt-3">
+              <div className="rounded-md w-7 flex">
+                <PopUpButton no_bg={true} icon>
+                  <AddressSection
+                    userId={user?.id!}
+                    address={addr.address}
+                    type="edit"
+                    id={addr.id}
+                  />
+                </PopUpButton>
+              </div>
+
+              <button
+                className="text-red-500 hover:text-red-700"
+                onClick={() => handleDelete(addr.id)}
+              >
+                <Trash2 size={18} />
+              </button>
+            </div>
+          </div>
+        ))
+      )}
 
       <div
         className={`border-2 border-dashed rounded-xl p-4 max-w-220 text-center w-[90%] md:w-[70%] ${
