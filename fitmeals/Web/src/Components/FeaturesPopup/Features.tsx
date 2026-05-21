@@ -10,7 +10,7 @@ const mockFeatures = [
   {
     title: "Smart Recommendations",
     description: "Personalized meal recommendations based on your fitness goals, dietary preferences, and health data.",
-    imgUrl: "/ml_rec.png", 
+    imgUrl: "/ml_rec.png",
     navUrl: "/health/fit-tracker",
     tags: ["AI Powered", "Popular"],
   },
@@ -64,7 +64,7 @@ const Features = () => {
 
       <AnimatePresence>
         {popup && (
-          <div className="fixed inset-0 z-50 flex items-center justify-center p-4 sm:p-6">
+          <div className="fixed inset-0 z-[150] flex items-center justify-center p-4 sm:p-6 pt-20">
             {/* Backdrop */}
             <motion.div
               initial={{ opacity: 0 }}
