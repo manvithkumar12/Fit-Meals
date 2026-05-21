@@ -9,15 +9,11 @@ type AuthUser = {
 
 type AuthHandler = (
   req: NextRequest,
-  user: AuthUser,
-  ctx?: { params: Promise<Record<string, string>> }
+  user: AuthUser
 ) => Promise<NextResponse>;
 
 export const isLoggedIn = (handler: AuthHandler) => {
-  return async (
-    req: NextRequest,
-    ctx?: { params: Promise<Record<string, string>> }
-  ) => {
+  return async (req: NextRequest) => {
     const token = req.cookies.get("UserToken")?.value;
 
     if (!token) {
@@ -34,11 +30,11 @@ export const isLoggedIn = (handler: AuthHandler) => {
         status: AuthUser["status"];
       };
 
-      return handler(
-        req,
-        { id: decoded.id, role: decoded.role, status: decoded.status },
-        ctx  // ✅ forwarded cleanly
-      );
+      return handler(req, {
+        id: decoded.id,
+        role: decoded.role,
+        status: decoded.status,
+      });
     } catch {
       return NextResponse.json(
         { message: "Invalid or expired token", state: "Unauthorized" },
