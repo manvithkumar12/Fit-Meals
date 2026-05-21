@@ -4,6 +4,7 @@ import React, { useState } from "react";
 import Image from "next/image";
 import Link from "@/src/Components/LocalizedLink";
 import { toast } from "react-toastify";
+import { useUser } from "@/src/context/UserContext";
 import {
     Facebook,
     Instagram,
@@ -24,6 +25,9 @@ import {
 
 export default function Footer() {
     const [email, setEmail] = useState("");
+    const user = useUser();
+    const role = user?.role;
+    const isVerified = user?.isVerified;
 
     const handleSubscribe = (e: React.FormEvent) => {
         e.preventDefault();
@@ -34,6 +38,72 @@ export default function Footer() {
         toast.success("Thank you for subscribing to FitMeals!");
         setEmail("");
     };
+
+    // Default Links (Guest or CUSTOMER)
+    let quickLinks = [
+        { label: "Home", path: "/" },
+        { label: "About Us", path: "/about" },
+        { label: "Services", path: "/services/order/1" },
+        { label: "Health Plans", path: "/health/diet/daily-plan" },
+        { label: "Contact Us", path: "/contact/query" },
+        { label: "FAQ", path: "/contact/query" }
+    ];
+
+    let secondColumnTitle = "Services";
+    let secondColumnLinks = [
+        { label: "Meal Delivery", path: "/services/order/1" },
+        { label: "Personalized Diet Plans", path: "/health/diet/daily-plan" },
+        { label: "Weight Loss Programs", path: "/health/diet/daily-plan" },
+        { label: "Fitness Nutrition", path: "/health/fit-tracker" },
+        { label: "Corporate Meals", path: "/services/order/1" },
+        { label: "Healthy Catering", path: "/services/reservation/1" }
+    ];
+
+    // Conditional Links based on roles
+    if (role === "OWNER") {
+        quickLinks = [
+            { label: "Home", path: "/" },
+            { label: "About Us", path: "/learnMore" },
+            { label: "Contact Us", path: "/contact/query" }
+        ];
+        if (isVerified === "PENDING") {
+            quickLinks.push({ label: "Verification Status", path: "/verification" });
+        }
+        
+        secondColumnTitle = "Management";
+        if (isVerified === "VERIFIED") {
+            secondColumnLinks = [
+                { label: "Dashboard", path: "/dashboard/restaurantOwner" },
+                { label: "Earnings", path: "/earnings" },
+                { label: "Food Items", path: "/FoodItems" },
+                { label: "Reservation", path: "/form/restaurant/reservation" },
+                { label: "Profile", path: "/profile" }
+            ];
+        } else {
+            secondColumnLinks = [];
+        }
+    } else if (role === "DELIVERY") {
+        quickLinks = [
+            { label: "Home", path: "/" },
+            { label: "About Us", path: "/learnMore" }
+        ];
+        if (isVerified === "PENDING") {
+            quickLinks.push({ label: "Verify Partner", path: "/PartnerVerification" });
+        }
+        
+        secondColumnTitle = "Management";
+        if (isVerified === "VERIFIED") {
+            secondColumnLinks = [
+                { label: "Dashboard", path: "/dashboard/deliveryPartner" }
+            ];
+        } else {
+            secondColumnLinks = [];
+        }
+    }
+
+    const hasSecondColumn = secondColumnLinks.length > 0;
+    const brandSpan = hasSecondColumn ? "lg:col-span-4" : "lg:col-span-5";
+    const contactSpan = hasSecondColumn ? "lg:col-span-4" : "lg:col-span-5";
 
     return (
         <div className="w-full bg-[#F5FAF7] pt-24 pb-8 px-4 sm:px-6 lg:px-8 xl:px-12 relative overflow-hidden font-manrope border-t border-gray-200">
@@ -82,7 +152,7 @@ export default function Footer() {
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-12 gap-8 lg:gap-12 mb-16">
                     
                     {/* Column 1 – Brand */}
-                    <div className="lg:col-span-4 flex flex-col items-start">
+                    <div className={`${brandSpan} flex flex-col items-start`}>
                         <div className="flex items-center gap-2 mb-6">
                             <Image
                                 src="/Fitmeals-logo.png"
@@ -126,13 +196,7 @@ export default function Footer() {
                             Quick Links
                         </h3>
                         <ul className="space-y-4">
-                            {[
-                                { label: "Home", path: "/" },
-                                { label: "About Us", path: "/about" },
-                                { label: "Services", path: "/services/order/1" },
-                                { label: "Health Plans", path: "/health/diet/daily-plan" },
-                                { label: "Contact Us", path: "/contact/query" }
-                            ].map((link) => (
+                            {quickLinks.map((link) => (
                                 <li key={link.label}>
                                     <Link
                                         href={link.path}
@@ -142,45 +206,32 @@ export default function Footer() {
                                     </Link>
                                 </li>
                             ))}
-                            <li>
-                                <Link
-                                    href="/contact/query"
-                                    className="text-gray-600 hover:text-emerald-600 text-sm font-semibold transition-colors duration-200"
-                                >
-                                    FAQ
-                                </Link>
-                            </li>
                         </ul>
                     </div>
 
-                    {/* Column 3 – Services */}
-                    <div className="lg:col-span-2">
-                        <h3 className="text-sm font-extrabold text-[#0D3B31] uppercase tracking-wider mb-6">
-                            Services
-                        </h3>
-                        <ul className="space-y-4">
-                            {[
-                                { label: "Meal Delivery", path: "/services/order/1" },
-                                { label: "Personalized Diet Plans", path: "/health/diet/daily-plan" },
-                                { label: "Weight Loss Programs", path: "/health/diet/daily-plan" },
-                                { label: "Fitness Nutrition", path: "/health/fit-tracker" },
-                                { label: "Corporate Meals", path: "/services/order/1" },
-                                { label: "Healthy Catering", path: "/services/reservation/1" }
-                            ].map((service) => (
-                                <li key={service.label}>
-                                    <Link
-                                        href={service.path}
-                                        className="text-gray-600 hover:text-emerald-600 text-sm font-semibold transition-colors duration-200"
-                                    >
-                                        {service.label}
-                                    </Link>
-                                </li>
-                            ))}
-                        </ul>
-                    </div>
+                    {/* Column 3 – Services / Management */}
+                    {hasSecondColumn && (
+                        <div className="lg:col-span-2">
+                            <h3 className="text-sm font-extrabold text-[#0D3B31] uppercase tracking-wider mb-6">
+                                {secondColumnTitle}
+                            </h3>
+                            <ul className="space-y-4">
+                                {secondColumnLinks.map((service) => (
+                                    <li key={service.label}>
+                                        <Link
+                                            href={service.path}
+                                            className="text-gray-600 hover:text-emerald-600 text-sm font-semibold transition-colors duration-200"
+                                        >
+                                            {service.label}
+                                        </Link>
+                                    </li>
+                                ))}
+                            </ul>
+                        </div>
+                    )}
 
                     {/* Column 4 – Contact Information */}
-                    <div className="lg:col-span-4 bg-[#fcfbf7] rounded-3xl p-6 sm:p-8 border border-slate-100 shadow-[0_15px_40px_rgba(0,0,0,0.01)]">
+                    <div className={`${contactSpan} bg-[#fcfbf7] rounded-3xl p-6 sm:p-8 border border-slate-100 shadow-[0_15px_40px_rgba(0,0,0,0.01)]`}>
                         <h3 className="text-sm font-extrabold text-[#0D3B31] uppercase tracking-wider mb-6">
                             Contact Info
                         </h3>
