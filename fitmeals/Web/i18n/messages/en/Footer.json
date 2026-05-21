@@ -1,0 +1,78 @@
+{
+  "cta": {
+    "badge": "Start Eating Healthy",
+    "title": "Ready to eat healthier?",
+    "desc": "Fresh meals crafted by nutrition experts and delivered right to your doorstep. Start your wellness journey today.",
+    "order": "Order Now",
+    "browse": "Browse Menu"
+  },
+  "brand": {
+    "desc": "Nutritious meals made fresh daily to help you live healthier, save precious time, and feel your absolute best."
+  },
+  "columns": {
+    "quickLinks": "Quick Links",
+    "services": "Services",
+    "management": "Management",
+    "contactInfo": "Contact Info"
+  },
+  "links": {
+    "home": "Home",
+    "aboutUs": "About Us",
+    "services": "Services",
+    "healthPlans": "Health Plans",
+    "contactUs": "Contact Us",
+    "faq": "FAQ",
+    "verificationStatus": "Verification Status",
+    "verifyPartner": "Verify Partner"
+  },
+  "servicesList": {
+    "mealDelivery": "Meal Delivery",
+    "dietPlans": "Personalized Diet Plans",
+    "weightLoss": "Weight Loss Programs",
+    "fitness": "Fitness Nutrition",
+    "corporate": "Corporate Meals",
+    "catering": "Healthy Catering"
+  },
+  "managementList": {
+    "dashboard": "Dashboard",
+    "earnings": "Earnings",
+    "items": "Food Items",
+    "reservation": "Reservation",
+    "profile": "Profile"
+  },
+  "contact": {
+    "support": "24/7 Premium Support Available"
+  },
+  "newsletter": {
+    "title": "Stay Updated",
+    "desc": "Subscribe to our newsletter for healthy recipes, nutrition tips, and exclusive discount offers.",
+    "placeholder": "Enter your email address",
+    "button": "Subscribe",
+    "success": "Thank you for subscribing to FitMeals!",
+    "error": "Please enter a valid email address."
+  },
+  "trust": {
+    "ingredients": {
+      "title": "Healthy Ingredients",
+      "desc": "100% organic & farm-fresh sourcing"
+    },
+    "nutritionists": {
+      "title": "Expert Nutritionists",
+      "desc": "Diets approved by certified experts"
+    },
+    "delivery": {
+      "title": "Fast Delivery",
+      "desc": "Direct to your doorstep daily"
+    },
+    "payments": {
+      "title": "Secure Payments",
+      "desc": "Safe & fully encrypted checkouts"
+    }
+  },
+  "bottom": {
+    "privacy": "Privacy Policy",
+    "terms": "Terms of Service",
+    "cookies": "Cookie Policy",
+    "rights": "© 2026 FitMeals. All rights reserved."
+  }
+}
