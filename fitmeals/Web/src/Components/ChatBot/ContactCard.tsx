@@ -7,6 +7,7 @@ import { useTranslations } from "next-intl";
 import { ChevronRight } from "lucide-react";
 import { useUser } from "@/src/context/UserContext";
 import { toast } from "react-toastify";
+import { sendFeedback } from "@/app/api/actions/feedbacks/sendFeedBack";
 
 const ContactCard = () => {
   const [popup, setPopUp] = useState(false);
@@ -63,11 +64,18 @@ const ContactCard = () => {
               val={[user?.username || "", user?.email || ""]}
               TxtAreaPlaceHolder="Enter Your Feedback here..."
               setPopUp={setPopUp}
-              onSubmit={() => {
-                toast.success(
-                  "Thank you for contacting us. We'll get back to you shortly.",
-                );
-                setPopUp(false);
+              onSubmit={async (inputs, textArea) => {
+                if (!user?.id) {
+                  toast.error("Please login to submit feedback.");
+                  return;
+                }
+                const success = await sendFeedback(textArea, user.id);
+                if (success) {
+                  toast.success("Thank you for your feedback!");
+                  setPopUp(false);
+                } else {
+                  toast.error("Failed to submit feedback. Please try again.");
+                }
               }}
             />
           )}
