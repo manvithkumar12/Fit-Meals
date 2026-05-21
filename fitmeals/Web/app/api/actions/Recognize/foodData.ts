@@ -1,0 +1,98 @@
+export const nutritionData = {
+  "Apple Pie": {
+    calories: 237,
+    protein: 2.4,
+    carbs: 34,
+    fat: 11,
+  },
+  "Caesar Salad": {
+    calories: 190,
+    protein: 7,
+    carbs: 8,
+    fat: 15,
+  },
+  Cheesecake: {
+    calories: 321,
+    protein: 5.5,
+    carbs: 25,
+    fat: 23,
+  },
+  "Fried Rice": {
+    calories: 163,
+    protein: 4,
+    carbs: 28,
+    fat: 4,
+  },
+  Hamburger: {
+    calories: 295,
+    protein: 17,
+    carbs: 30,
+    fat: 12,
+  },
+  "Hot Dog": {
+    calories: 290,
+    protein: 11,
+    carbs: 22,
+    fat: 18,
+  },
+  "Ice Cream": {
+    calories: 207,
+    protein: 3.5,
+    carbs: 24,
+    fat: 11,
+  },
+  Nachos: {
+    calories: 346,
+    protein: 7,
+    carbs: 45,
+    fat: 16,
+  },
+  Omelette: {
+    calories: 154,
+    protein: 11,
+    carbs: 2,
+    fat: 11,
+  },
+  Pancakes: {
+    calories: 227,
+    protein: 6,
+    carbs: 28,
+    fat: 10,
+  },
+  Pizza: {
+    calories: 266,
+    protein: 11,
+    carbs: 33,
+    fat: 10,
+  },
+  Ramen: {
+    calories: 188,
+    protein: 6,
+    carbs: 27,
+    fat: 6,
+  },
+  "Spaghetti Bolognese": {
+    calories: 158,
+    protein: 8,
+    carbs: 20,
+    fat: 5,
+  },
+  Steak: {
+    calories: 271,
+    protein: 25,
+    carbs: 0,
+    fat: 19,
+  },
+  Sushi: {
+    calories: 130,
+    protein: 6,
+    carbs: 28,
+    fat: 0.5,
+  },
+  Waffles: {
+    calories: 291,
+    protein: 8,
+    carbs: 33,
+    fat: 14,
+  },
+} as const;

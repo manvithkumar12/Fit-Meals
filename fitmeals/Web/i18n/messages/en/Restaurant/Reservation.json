@@ -1,0 +1,13 @@
+{
+  "title": "Hotel Reservation Registration",
+  "slotTimes": "Slot Times",
+  "timingsInfo": "Restaurants timings are from",
+  "uploadMenuTitle": "Upload Menu",
+  "uploadMenuBtn": "Upload Menu",
+  "uploadPhotosTitle": "Upload Restaurant Photos",
+  "uploadPhotosBtn": "Upload Photos",
+  "submitBtn": "Submit",
+  "errorUpload": "Unable to upload images",
+  "errorFileSize": "{fileName} exceeds 300KB",
+  "to": "to"
+}

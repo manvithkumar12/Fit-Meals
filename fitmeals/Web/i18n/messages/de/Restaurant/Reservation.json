@@ -1,0 +1,13 @@
+{
+  "title": "Hotelreservierungs-Registrierung",
+  "slotTimes": "Zeitfenster",
+  "timingsInfo": "Die Öffnungszeiten des Restaurants sind von",
+  "uploadMenuTitle": "Speisekarte hochladen",
+  "uploadMenuBtn": "Speisekarte hochladen",
+  "uploadPhotosTitle": "Restaurantfotos hochladen",
+  "uploadPhotosBtn": "Fotos hochladen",
+  "submitBtn": "Einreichen",
+  "errorUpload": "Bilder können nicht hochgeladen werden",
+  "errorFileSize": "{fileName} überschreitet 300KB",
+  "to": "bis"
+}

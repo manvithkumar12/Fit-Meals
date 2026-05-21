@@ -1,0 +1,43 @@
+{
+  "Restaurant": {
+    "ongoing": "Ongoing Orders",
+    "PendingDelivery": "New Delivery",
+    "OrdersInPreparation": "Orders in Preparation",
+    "PendingPremiumOrders": "Pending Premium Orders",
+    "NewOrders": "New Orders",
+    "OrderNo": "Order No",
+    "Type": "Type",
+    "REST": "Close Restaurant",
+    "OPEN": "Open Restaurant",
+    "Quantity": "Quantity",
+    "OrderTime": "Order Time",
+    "Amount": "Amount",
+    "Action": "Action",
+    "sCooking": "Start Cooking",
+    "sPacking": "Start Packing",
+    "AssignPartner": "Assign Partner",
+    "PartnerName": "Partner Name",
+    "PartnerNumber": "Partner Number",
+    "completed": "Completed",
+    "progress": "Progress",
+    "Cancelled": "Cancelled",
+    "InProgress": "In Progress",
+    "PreparedOrders": "Prepared Orders",
+    "DeliveryStatus": "Delivery Status",
+    "AvailableDeliveryPartners": "Available Delivery Partners",
+    "Partner": "Partner",
+    "DeliveredOrders": "Delivered Orders",
+    "Ratings": "Ratings",
+    "Assign": "Assign",
+    "completeOrders": "Completed Orders"
+  },
+  "TodayOrders": {
+    "OrderID": "Order ID",
+    "Items": "Items",
+    "Rider_Name": "Rider Name",
+    "Rider_Contact": "Rider Contact",
+    "Amount": "Amount",
+    "DeliveredTime": "Delivered Time",
+    "Status": "Status"
+  }
+}

@@ -1,0 +1,44 @@
+{
+  "header": {
+    "title": "Flexible plan, clear prices",
+    "subtitle": "Select a subscription tailored to your daily needs",
+    "startbtn": "Start"
+  },
+  "starter": {
+    "title": "Starter",
+    "info": "Ideal for individual orders and beginners",
+    "monthprice": "€16.13",
+    "yearprice": "€200",
+    "monthly": "Monthly",
+    "yearly": "Yearly",
+    "plusbtn": "Start",
+    "include": "Includes:",
+    "feature1": "1 dish per month from Fit-Meals",
+    "feature2": "Free delivery for orders above €15",
+    "feature3": "Basic recipes included"
+  },
+  "plus": {
+    "title": "Plus",
+    "info": "Ideal for families and large orders",
+    "monthprice": "€29.13",
+    "yearprice": "€299",
+    "plusbtn": "Start",
+    "include": "Includes:",
+    "feature1": "3 free dishes per month from Fit-Meals",
+    "feature2": "Advanced profiles",
+    "feature3": "Fast support",
+    "feature4": "Exclusive offers"
+  },
+  "premium": {
+    "title": "Premium",
+    "info": "Ideal for families and large orders",
+    "monthprice": "€49.13",
+    "yearprice": "€499",
+    "plusbtn": "Start",
+    "include": "Includes:",
+    "feature1": "5 free dishes per month from Fit-Meals",
+    "feature2": "Personal advice",
+    "feature3": "Flexible delivery",
+    "feature4": "Team & Family profiles"
+  }
+}

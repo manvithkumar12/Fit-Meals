@@ -1,0 +1,18 @@
+export const FoodBenefits = [
+  "HIGH PROTEIN",
+  "LOW CALORIE",
+  "LOW CARB",
+  "HIGH FIBER",
+  "GOOD FAT",
+  "HEART HEALTHY",
+  "DIABETIC FRIENDLY",
+  "WEIGHT LOSS",
+  "MUSCLE GAIN",
+  "IMMUNITY BOOST",
+  "VITAMIN RICH",
+  "MINERAL RICH",
+  "GLUTEN FREE",
+  "VEGAN",
+  "KETO FRIENDLY",
+  "Other",
+];

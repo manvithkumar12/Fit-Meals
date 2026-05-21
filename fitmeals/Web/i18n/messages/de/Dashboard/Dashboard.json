@@ -1,0 +1,38 @@
+{
+  "Restaurant": {
+    "ongoing": "Laufende Bestellungen",
+    "PendingDelivery": "Ausstehende Lieferung",
+    "OrdersInPreparation": "Bestellungen in Zubereitung",
+    "PendingPremiumOrders": "Ausstehende Premium-Bestellungen",
+    "NewOrders": "Neue Bestellungen",
+    "OrderNo": "Best.-Nr.",
+    "Type": "Typ",
+    "OPEN": "Restaurant öffnen",
+    "Quantity": "Menge",
+    "REST": "Restaurant schließen",
+    "OrderTime": "Bestellzeit",
+    "Amount": "Betrag",
+    "Action": "Aktion",
+    "sCooking": "Kochen starten",
+    "sPacking": "Verpacken starten",
+    "AssignPartner": "Partner zuweisen",
+    "PartnerName": "Partnername",
+    "PartnerNumber": "Partnernummer",
+    "completed": "Fertig",
+    "progress": "Läuft",
+    "Cancelled": "Storniert",
+    "InProgress": "In Arbeit",
+    "PreparedOrders": "Vorbereitete Bestellungen",
+    "completeOrders": "Abgeschlossene Bestellungen",
+    "DeliveryStatus": "Lieferstatus"
+  },
+  "TodayOrders": {
+    "OrderID": "Bestellnummer",
+    "Items": "Artikel",
+    "Rider_Name": "Name des Fahrers",
+    "Rider_Contact": "Kontakt des Fahrers",
+    "Amount": "Betrag",
+    "DeliveredTime": "Lieferzeit",
+    "Status": "Status"
+  }
+}

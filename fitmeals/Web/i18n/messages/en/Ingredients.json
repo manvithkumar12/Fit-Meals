@@ -1,0 +1,22 @@
+{
+  "Description": "Description",
+  "nutriousCard": {
+    "title": "Nutritional information",
+    "per_serving": "per serving",
+    "per_100g": "per 100g",
+    "Energy_kJ": "Energy (kJ)",
+    "Energy_kcal": "Energy (kcal)",
+    "Fat": "Fat",
+    "Carbohydrates": "Carbohydrates",
+    "Protein": "Protein",
+    "Salt": "Salt",
+    "Nutrient": "Nutrient",
+    "Amount": "Amount"
+  },
+  "Ingredients": {
+    "title": "Ingredients",
+    "Serving_size": "Serving size",
+    "Preparation": "Preparation",
+    "Description": "Description"
+  }
+}

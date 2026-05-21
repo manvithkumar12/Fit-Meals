@@ -1,0 +1,45 @@
+{
+  "hero": {
+    "title1": "Frisch. Gesund.",
+    "title2": "Direkt zu Ihnen.",
+    "btn1": "Mehr erfahren",
+    "btn2": "Jetzt bestellen"
+  },
+  "details": {
+    "title1": "1. Gerichte auswählen",
+    "title2": "2. Ihre Meal-Box erhalten",
+    "title3": "3. Essen und genießen",
+    "info1": "Fleisch-, vegetarische und ausgewogene Menüs – jede Woche neu zusammengestellt für Abwechslung und Genuss.",
+    "info2": "Frische Zutaten werden jede Woche in bester Qualität und in passenden Mengen direkt zu Ihnen nach Hause geliefert – deutschlandweit.",
+    "info3": "Innerhalb von 30 Minuten erhalten Sie eine köstliche, gesunde Mahlzeit – perfekt zubereitet und sofort genussbereit.",
+    "btn": "Rückruf anfordern",
+    "description": "Unsere frischen Gerichte überzeugen durch hohe Qualität, ausgezeichneten Geschmack und schnelle Lieferung. Eine große Auswahl, stets frische Zutaten und ein reibungsloser Bestellprozess sorgen für ein rundum angenehmes Erlebnis. Ideal für alle, die Wert auf gesunde Ernährung legen, sich satt fühlen möchten und dabei nicht auf Geschmack verzichten wollen. Ein zuverlässiger Service, der gesunde Ernährung einfach macht."
+  },
+  "team": {
+    "title": "Die Menschen hinter gesunder Ernährung",
+    "subtitle": "Unser Team",
+    "heading1": "Lernen Sie unser engagiertes Team kennen,",
+    "heading2": "das frische, ausgewogene Mahlzeiten",
+    "heading3": "mit Leidenschaft und Sorgfalt für Sie zubereitet und liefert.",
+    "btn": "Kontakt"
+  },
+  "persons": {
+    "person1": "Alex Winter",
+    "role1": "FitMeals-Manager",
+    "person2": "Taylor Berg",
+    "role2": "Küchenleiter",
+    "person3": "Jamie Kraus",
+    "role3": "Kundenservice-Manager",
+    "person4": "Casey Lorenz",
+    "role4": "Produkt-Manager",
+    "person5": "Robin Stein",
+    "role5": "Marketing-Manager",
+    "person6": "Morgan Adler",
+    "role6": "Logistik-Manager"
+  },
+  "discover": {
+    "title": "Gesund essen. Klar leben.",
+    "subtitle": "Entdecken Sie frische, ausgewogene Gerichte für Ihren Alltag. Unser Team steht für Qualität, Nachhaltigkeit und unkomplizierte Lieferung – für bewusste Ernährung, die zu Ihnen passt.",
+    "btn": "Entdecken"
+  }
+}

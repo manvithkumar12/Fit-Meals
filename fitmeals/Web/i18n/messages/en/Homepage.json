@@ -1,0 +1,79 @@
+{
+  "hero": {
+    "title1": "Eat healthy",
+    "title2": "Be healthy",
+    "buttonText": "View New Features"
+  },
+  "section": {
+    "order": "order",
+    "cookbook": "Cook Book",
+    "dinein": "Dine in",
+    "orderintro": "Fast. Fresh. Reliable.",
+    "cookbookintro": "Fresh. Healthy. Homemade.",
+    "dineintro": "Relax. Dine. Enjoy.",
+    "orderbtn": "Order Now",
+    "cookbtn": "View Cookbook",
+    "dinebtn": "Book Table"
+  },
+  "orderfeatures": {
+    "order1": "Fresh ingredients",
+    "order2": "Fast delivery",
+    "order3": "Balanced recipes",
+    "info1": "Prepared with high-quality, fresh ingredients for optimal taste and nutritional value",
+    "info2": "Order online and receive fresh meals quickly and reliably at your doorstep",
+    "info3": "Each dish is thoughtfully coordinated to ensure optimal nutrition, flavor, and satisfaction"
+  },
+  "cbookfeatures": {
+    "cbook1": "Healthy recipes",
+    "cbook2": "Easy to cook",
+    "cbook3": "Expert guidance",
+    "info1": "Nutritious recipes designed to support a balanced and healthy lifestyle",
+    "info2": "Step-by-step instructions that make cooking simple for everyone",
+    "info3": "Created by nutrition experts and chefs for reliable results every time"
+  },
+  "dinefeatures": {
+    "dine1": "Comfortable ambience",
+    "dine2": "Freshly served",
+    "dine3": "Quality service",
+    "info1": "Enjoy a relaxing and welcoming dining environment designed for comfort",
+    "info2": "Meals are prepared fresh and served hot directly at your table",
+    "info3": "Friendly staff and attentive service ensure a pleasant dining experience"
+  },
+  "updates": {
+    "title": "Receive Updates",
+    "subtitle": "Choose fresh, balanced dishes for your everyday life. Order online, have it delivered conveniently – easy, fast and healthy",
+    "submitbtn": "submit",
+    "loginfirst": "Please Login First",
+    "submitting": "Submitting..."
+  },
+  "feedback": {
+    "title": "Trust, that counts",
+    "subtitle": "Experiences of our users"
+  },
+  "faq": {
+    "title": "Frequently Asked Questions",
+    "subtitle": "All essential information regarding ordering, delivery, and harvesting. For further questions, please contact us.",
+    "q1": "How do I order?",
+    "s1": "Choose your dish, add it to the shopping cart, and place the order online. You will receive an order confirmation alert",
+    "q2": "When will it be delivered?",
+    "s2": "Standard orders are delivered within 30 minutes. Plus and Premium members receive priority delivery within 15 minutes.",
+    "q3": "Are the food fresh?",
+    "s3": "We always strive to deliver fresh food prepared with high-quality ingredients. In the rare case of spoilage or leakage, we are happy to provide a refund.",
+    "q4": "Are there Non-vegan options?",
+    "s4": "Most of our meals are vegan. A small selection of non‑vegan options is also available, and all of them are prepared with the same focus on health and quality.",
+    "q5": "Non-vegan options?",
+    "s5": "We focus mainly on vegan meals because they offer natural, balanced nutrition using organic ingredients. Our goal is to promote overall fitness and well-being rather than high-protein-heavy diets."
+  },
+  "contact": {
+    "title": "Have questions? We’re happy to help",
+    "subtitle": "contact us"
+  },
+  "Qform": {
+    "firstname": "FIRST NAME",
+    "lastname": "LAST NAME",
+    "email": "Email",
+    "question": "YOUR QUESTION",
+    "qplaceholder": "Type your question here …",
+    "submit": "Submit request"
+  }
+}

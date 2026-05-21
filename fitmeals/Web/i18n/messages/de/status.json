@@ -1,0 +1,34 @@
+{
+  "navbar": {
+    "home": "Startseite",
+    "status": "Status",
+    "order": "Bestellung",
+    "description": "Ihre Bestellung ist unterwegs"
+  },
+  "progress": {
+    "in": "In",
+    "cooking": "Wird zubereitet",
+    "packing": "Wird verpackt",
+    "outForDelivery": "Unterwegs zur Lieferung",
+    "orderDelivered": "Bestellung geliefert"
+  },
+  "time": {
+    "Arriving_in": "Ankunft in",
+    "minutes": "Minuten"
+  },
+  "deliveryAgent": {
+    "name": "Name",
+    "contact": "Kontakt",
+    "Orders_Delivered": "Gelieferte Bestellungen",
+    "title": "Details zum Lieferfahrer"
+  },
+  "detailsCard": {
+    "title": "Bestelldetails",
+    "deliveryAddress": "Lieferadresse:",
+    "modeOfPayment": "Zahlungsart",
+    "cashOnDelivery": "Barzahlung bei Lieferung",
+    "payOnlineInstead": "Online bezahlen",
+    "dishes": "Gerichte",
+    "contactSupport": "Support kontaktieren"
+  }
+}

@@ -1,0 +1,37 @@
+{
+  "header": {
+    "about": "Über",
+    "discover": "Entdecken Sie die Geschichte hinter FitMeals, einer Plattform, die an der Schnittstelle von Webentwicklung, KI und Gesundheit entwickelt wurde."
+  },
+  "creator": {
+    "name": "Manvith",
+    "role": "Gründer & Hauptentwickler"
+  },
+  "vision": {
+    "title": "Die Vision",
+    "desc1": "FitMeals ist mehr als nur eine E-Commerce-Plattform. Es handelt sich um ein umfassendes Ökosystem zur Gesundheitsverfolgung, dessen Schwerpunkt auf der Integration von <strong>Künstlicher Intelligenz</strong> und <strong>Maschinellem Lernen</strong> in die tägliche Ernährung und das Lebensstilmanagement liegt.",
+    "desc2": "Ich habe diese Plattform von Grund auf neu aufgebaut, vor allem, um mein Verständnis für fortgeschrittene Webentwicklung, moderne Systemarchitektur und die praktische Anwendung von KI zur Verbesserung der persönlichen Gesundheit zu vertiefen."
+  },
+  "builtByOne": {
+    "title": "Von einer Person entwickelt",
+    "desc": "Ich habe dieses gesamte Projekt komplett alleine aufgebaut. Obwohl ich viel Mühe darauf verwendet habe, es fehlerfrei und ausgefeilt zu gestalten, gibt es immer Raum für Verbesserungen! Wenn Sie auf Probleme stoßen oder Vorschläge für Verbesserungen haben, zögern Sie bitte nicht, mich direkt zu kontaktieren."
+  },
+  "contact": {
+    "email": "Schreib mir",
+    "whatsapp": "WhatsApp"
+  },
+  "features": {
+    "ai": {
+      "title": "KI-gestützte Gesundheit",
+      "desc": "Nutzung von maschinellem Lernen für intelligentes Ernährungs-Tracking, Lebensmittelerkennung und personalisierte Gesundheitsempfehlungen."
+    },
+    "ecommerce": {
+      "title": "Moderner E-Commerce",
+      "desc": "Ein nahtloses, vollständig responsives Einkaufserlebnis, das mit modernsten Webtechnologien und sicheren Zahlungsintegrationen entwickelt wurde."
+    },
+    "learning": {
+      "title": "Kontinuierliches Lernen",
+      "desc": "Diese Plattform dient als lebendiges Labor zum Testen neuer Architekturmuster, fortgeschrittenen Zustandsmanagements und modernem UI/UX-Design."
+    }
+  }
+}

@@ -1,0 +1,49 @@
+{
+  "header": {
+    "title": "Neue Mahlzeit zu Ihrem Restaurant hinzufügen",
+    "subtitle": "Bitte geben Sie genaue Details zur hinzuzufügenden Mahlzeit an."
+  },
+  "MealDetails": {
+    "Title": "Mahlzeitenname",
+    "placeholder_title": "Artikelname eingeben",
+    "Price": "Preis",
+    "placeholder_price": "Preis eingeben"
+  },
+  "form_section": {
+    "Type": "Typ",
+    "placeholder_type": "Essensart auswählen",
+    "Weight": "Gewicht (ca.)",
+    "placeholder_weight": "z. B. 200 g",
+    "Cooking_Time": "Kochzeit (ca.)",
+    "placeholder_cooking_time": "Auswählen (Minuten)",
+    "Food Benefits (max 2)": "Vorteile des Essens (max. 2)",
+    "placeholder_food_benefits": "z. B. Gesund, Protein",
+    "Description (max 4)": "Beschreibung (max. 4)",
+    "placeholder_description": "Essensbeschreibung eingeben",
+    "Ingredients": "Zutaten zur Zubereitung des",
+    "placeholder_ingredients": "Zutaten eingeben",
+    "AI_btn": "Mit KI hinzufügen",
+    "add_ingredient": "Zutat hinzufügen",
+    "Vegetarian": "vegetarisch",
+    "Non-Vegetarian": "nicht-vegetarisch",
+    "Vegan": "vegan",
+    "Category": "Kategorie"
+  },
+  "Nutritions": {
+    "title": "Nährwerte",
+    "subtitle": "Verwenden Sie KI, um den Nährwert basierend auf Titel und Zutaten zu schätzen",
+    "Per_Serving": "Pro Portion",
+    "Protein": "Protein",
+    "Carbohydrates": "Kohlenhydrate",
+    "Calories": "Kalorien",
+    "kcal": "kcal",
+    "Fats": "Fette",
+    "Per_100g": "Pro 100 g",
+    "edit": "Bearbeiten",
+    "Add_with_AI": "Mit KI hinzufügen"
+  },
+  "Guidelines_section": {
+    "guideline_1": "Ich bestätige, dass die angegebenen Informationen korrekt sind und den EU-Lebensmittelvorschriften entsprechen.",
+    "guideline_2": "Das Restaurant ist für die Richtigkeit der Zutaten, Allergene und Nährwerte verantwortlich. FitMeals haftet nicht für falsche Angaben."
+  }
+}

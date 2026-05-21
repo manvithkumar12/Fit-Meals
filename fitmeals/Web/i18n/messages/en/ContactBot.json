@@ -1,0 +1,19 @@
+{
+  "welcome": "Hi there! 👋 Welcome to FitMeals. Please select a category below to view related questions.",
+  "back": "⬅️ Back to Categories",
+  "satisfied": "Are you satisfied with this answer?",
+  "yes": "✅ Yes",
+  "no": "❌ No",
+  "user_yes": "Yes",
+  "user_no": "No",
+  "great": "Great! Let me know if you need anything else.",
+  "sorry": "I'm sorry to hear that. You can submit a support ticket below.",
+  "submit_ticket": "🎫 Submit Support Ticket",
+  "received": "We received your query. We will get back to you soon through email or your contact number.",
+  "title": "FitBot Support",
+  "subtitle": "We usually reply in minutes",
+  "today": "Today",
+  "placeholder": "Type your query...",
+  "login_error": "You need to be logged in to submit a support ticket.",
+  "submit_error": "Failed to submit query"
+}

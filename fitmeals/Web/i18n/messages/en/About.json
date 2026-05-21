@@ -1,0 +1,45 @@
+{
+  "hero": {
+    "title1": "Fresh. Healthy.",
+    "title2": "Directly to you.",
+    "btn1": "Learn more",
+    "btn2": "Order now"
+  },
+  "details": {
+    "title1": "1. Choose your dishes",
+    "title2": "2. Get your meal box",
+    "title3": "3. Eat and enjoy your meal",
+    "info1": "Whether it's a menu with meat & vegetables recipes, vegetarian, family-friendly, balance or for the thermal mix: every week you have many new, varied recipes to choose from.",
+    "info2": "Fresh ingredients delivered to your home every week in top quality and in suitable quantities – Germany-wide.",
+    "info3": "Within 30 minutes, you’ll receive a delicious, healthy meal—perfectly prepared and ready to enjoy.",
+    "btn": "Request a call back",
+    "description": "Our fresh dishes impress with high quality, excellent taste, and fast delivery. A wide variety of options, always-fresh ingredients, and a smooth ordering process make every experience enjoyable. Perfect for those who value healthy eating, want to feel satisfied, and never want to sacrifice flavor. A reliable service that makes healthy living easy."
+  },
+  "team": {
+    "title": "People behind healthy eating",
+    "subtitle": "our team",
+    "heading1": "Meet our dedicated team ",
+    "heading2": " who prepare and deliver fresh, ",
+    "heading3": " balanced meals for you with passion and care.",
+    "btn": "Contact"
+  },
+  "persons": {
+    "person1": "Alex Winter",
+    "role1": "FitMeals Manager",
+    "person2": "Taylor Berg",
+    "role2": "Kitchen Manager",
+    "person3": "Jamie Kraus",
+    "role3": "Customer Support Manager",
+    "person4": "Casey Lorenz",
+    "role4": "Product Manager",
+    "person5": "Robin Stein",
+    "role5": "Marketing Manager",
+    "person6": "Morgan Adler",
+    "role6": "Logistics Manager"
+  },
+  "discover": {
+    "title": "Eat healthy.Live clear.",
+    "subtitle": "Discover fresh, balanced dishes for your everyday life.Our team is committed to quality, sustainability and  uncomplicated delivery  – for conscious nutrition that suits you.",
+    "btn": "Discover"
+  }
+}

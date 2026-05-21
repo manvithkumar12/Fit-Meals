@@ -1,0 +1,55 @@
+{
+  "navbar": {
+    "title": "Erstellen Sie Ihr Restaurantprofil",
+    "subtitle": "Treten Sie FitMeals bei und erreichen Sie mehr Kunden",
+    "submit": "Absenden"
+  },
+  "upload_section": {
+    "upload_title": "Fotos hochladen",
+    "upload_subtitle": "Ziehen & ablegen oder zum Hochladen durchsuchen",
+    "upload_note": "Verwenden Sie .jpg oder .png, bis zu 4 Bilder erlaubt"
+  },
+  "form_section": {
+    "restaurant_name": "Restaurantname",
+    "cuisine_type": "Küchenart",
+    "address": "Adresse",
+    "contact_number": "Kontaktnummer",
+    "opening_time": "Öffnungszeit",
+    "closing_time": "Schließzeit",
+    "price_for_two": "Preis für 2",
+    "pin_code": "Postleitzahl",
+    "location": "Standort",
+    "g_maps": "Kartenlink",
+    "facilities": "Ausstattung",
+    "description": "Beschreibung",
+    "phoneNumber": "Telefonnummer",
+    "streetNumber": "Straßenname",
+    "houseNo": "Hausnummer",
+    "area": "Gebiet",
+    "city": "Stadt",
+    "totalCapacity": "Gesamtkapazität",
+    "addbtn": "Standort hinzufügen",
+    "alert": "Stellen Sie sicher, dass Sie sich am genauen Standort des Hotels befinden, um eine genaue Position hinzuzufügen",
+    "latitude": "Breitengrad",
+    "longitude": "Längengrad"
+  },
+  "notice": {
+    "title": "Mit dem Absenden dieses Formulars stimmen Sie zu, dass Ihre Daten sicher gespeichert und nur für Plattformoperationen verwendet werden."
+  },
+  "placeholders": {
+    "restaurant_name": "z.B. Luigi's Trattoria",
+    "address": "z.B. Hauptstraße 1, 10115 Berlin",
+    "pin_code": "z.B. 10115",
+    "facilities": "z.B. Kostenloses WLAN, Parkplatz...",
+    "description": "z.B. Ein gemütliches Restaurant...",
+    "g_maps": "z.B. https://maps.google.com/...",
+    "phoneNumber": "z.B. +49 123 456 789",
+    "streetNumber": "z.B. Hauptstraße",
+    "houseNo": "z.B. 12B",
+    "area": "z.B. Innenstadt",
+    "city": "z.B. Berlin",
+    "totalCapacity": "z.B. 50",
+    "longitude": "z.B. 13.4050",
+    "latitude": "z.B. 52.5200"
+  }
+}

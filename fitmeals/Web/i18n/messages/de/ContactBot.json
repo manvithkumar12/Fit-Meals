@@ -1,0 +1,19 @@
+{
+  "welcome": "Hallo! 👋 Willkommen bei FitMeals. Bitte wählen Sie unten eine Kategorie aus, um verwandte Fragen anzuzeigen.",
+  "back": "⬅️ Zurück zu den Kategorien",
+  "satisfied": "Sind Sie mit dieser Antwort zufrieden?",
+  "yes": "✅ Ja",
+  "no": "❌ Nein",
+  "user_yes": "Ja",
+  "user_no": "Nein",
+  "great": "Großartig! Lassen Sie es mich wissen, falls Sie noch etwas brauchen.",
+  "sorry": "Das tut mir leid. Sie können unten ein Support-Ticket einreichen.",
+  "submit_ticket": "🎫 Support-Ticket einreichen",
+  "received": "Wir haben Ihre Anfrage erhalten. Wir werden uns in Kürze per E-Mail oder über Ihre Kontaktnummer bei Ihnen melden.",
+  "title": "FitBot Support",
+  "subtitle": "Wir antworten normalerweise in wenigen Minuten",
+  "today": "Heute",
+  "placeholder": "Ihre Anfrage eingeben...",
+  "login_error": "Sie müssen angemeldet sein, um ein Support-Ticket einzureichen.",
+  "submit_error": "Fehler beim Einreichen der Anfrage"
+}

@@ -1,0 +1,12 @@
+{
+  "orders": "Bestellungen",
+  "reservations": "Reservierungen",
+  "title": "Vergangene und laufende Bestellungen",
+  "error_loading_orders": "Fehler beim Laden der Bestellungen",
+  "no_orders": "Noch keine Bestellungen",
+  "search_restaurants": "Restaurants suchen",
+  "prev": "Zurück",
+  "next": "Weiter",
+  "error_loading_reservations": "Fehler beim Laden der Reservierungen",
+  "no_reservations": "Noch keine Reservierungen"
+}

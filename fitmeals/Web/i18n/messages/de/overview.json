@@ -1,0 +1,29 @@
+{
+  "title": "ABONNEMENT-ÜBERSICHT",
+  "days": "Verbleibende Tage",
+  "orders": "Bestellungen aufgegeben",
+  "Amount_saved": "Gesparter Betrag",
+  "cancelSubscription": "Abonnement kündigen",
+  "changeSubscription": "Abonnement ändern",
+  "Membership": {
+    "Membership_Details": "Mitgliedschaftsdetails",
+    "Plan_Type": "Plantyp",
+    "Renewal_Date": "Verlängerungsdatum",
+    "Monthly_Cost": "Monatliche Kosten",
+    "Status": "Status",
+    "Active": "Aktiv"
+  },
+  "offers": {
+    "Exclusive_Offers": "Exklusive Angebote",
+    "20%_Discount": "20 % Rabatt",
+    "On_all_products": "Auf alle Produkte",
+    "Early_Access": "Früher Zugang",
+    "New_product_launches": "Neue Produkteinführungen",
+    "Priority_Support": "Priorisierter Support",
+    "Faster_customer_service": "Schnellerer Kundenservice"
+  },
+  "enterOtpMessage": "Bitte geben Sie das Einmalpasswort (OTP) ein, das an Ihre registrierte E-Mail-Adresse gesendet wurde",
+  "btn": "Abonnement ändern",
+  "alert": "Wenn Sie fortfahren, wird Ihr Abonnement gekündigt. Gemäß den Geschäftsbedingungen erfolgt keine Rückerstattung",
+  "changeTitle": "Abonnement von "
+}

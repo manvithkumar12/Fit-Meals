@@ -1,0 +1,24 @@
+{
+    "title": "Zahlungsinformationen",
+    "description": "Speichern Sie Ihre Kredit- oder Debitkarte sicher für schnelle und einfache Zahlungen",
+    "sub-title": "Ihre Karten",
+    "add-new-card": "Neue Karte hinzufügen",
+    "card-limit": "Sie können bis zu 3 Karten hinzufügen",
+    "Add-Card": {
+        "Add_New_Card": "Neue Karte hinzufügen",
+        "Card_Holder_Name": "Name des Karteninhabers",
+        "placeholder_name": "Geben Sie den Namen auf der Karte ein..",
+        "Card_Number": "Kartennummer",
+        "Expiry_Date": "Ablaufdatum",
+        "condition": "Ich stimme zu, dass meine Kartendaten von unserem Zahlungspartner gemäß der Datenschutzrichtlinie sicher und verschlüsselt gespeichert werden. Karte speichern",
+        "btn_save": "Karte speichern"
+    },
+    "edit-card": {
+        "edit_card": "Karte bearbeiten",
+        "Card_Holder_Name": "Name des Karteninhabers",
+        "placeholder_name": "Geben Sie den Namen auf der Karte ein..",
+        "Expiry_Date": "Ablaufdatum",
+        "condition": "Ich stimme zu, dass meine Kartendaten von unserem Zahlungspartner gemäß der Datenschutzrichtlinie sicher und verschlüsselt gespeichert werden. Änderungen speichern",
+        "btn_change": "Änderungen speichern"
+    }
+}

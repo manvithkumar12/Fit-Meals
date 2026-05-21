@@ -1,0 +1,127 @@
+{
+  "cookbook": {
+    "title": "FitMeals Rezepte",
+    "description": "Entdecke unsere FitMeals-Rezeptsammlung mit beliebten Klassikern sowie spannenden Aromen aus aller Welt. Jedes Gericht ist sorgfältig zusammengestellt und lässt sich mühelos in nur 5 einfachen Schritten zubereiten – perfekt für einen gesunden Alltag.",
+    "search_placeholder": "Nach Rezepten suchen",
+    "next": "Nächste",
+    "prev": "Vorherige",
+    "no_recipes": "Keine Rezepte gefunden",
+    "failed_fetch": "Fehler beim Laden der Daten",
+    "try_again": "Erneut versuchen"
+  },
+  "chatbot": {
+    "greeting": "Hallo! Ich bin MealBot. Hilfe?"
+  },
+  "orders": {
+    "search_placeholder": "Nach Restaurants suchen",
+    "city_search_placeholder": "Nach Gebiet oder Stadt suchen",
+    "next": "Nächste",
+    "prev": "Vorherige",
+    "near_you": "Restaurants in der Nähe",
+    "in_city": "Restaurants in",
+    "no_restaurants": "Keine Restaurants gefunden",
+    "failed_fetch": "Fehler beim Laden der Daten",
+    "try_again": "Erneut versuchen"
+  },
+  "reservation": {
+    "search_placeholder": "Nach Restaurants oder Städten suchen",
+    "title": "FitMeals Reservierungen",
+    "description": "Reserviere deinen Tisch bei FitMeals und genieße ein sorgfältig zusammengestelltes kulinarisches Erlebnis mit gesunden, aromatischen Gerichten aus frischen Zutaten. Unsere Mahlzeiten werden mit Sorgfalt zubereitet und in einer einladenden Atmosphäre serviert – perfekt für entspanntes Essen und besondere Anlässe.",
+    "Cuisine_Type": "Küchenart",
+    "Location": "Standort",
+    "open": "Jetzt geöffnet",
+    "Tabletitle": "Einen Tisch reservieren",
+    "next": "Nächste",
+    "prev": "Vorherige",
+    "opens_till": "Geöffnet bis",
+    "select_date": "Datum auswählen",
+    "select_time": "Uhrzeit auswählen",
+    "No_Timings_Available": "Keine Zeiten verfügbar",
+    "select_guest": "Gäste auswählen",
+    "book_now": "Jetzt reservieren",
+    "processing": "Bearbeitung...",
+    "opens_at": "Öffnet um",
+    "closed": "Geschlossen",
+    "Book_Table": "Tisch reservieren",
+    "Call": "Anrufen",
+    "offers": "Angebote",
+    "Direction": "Route",
+    "Timings": "Öffnungszeiten",
+    "Facilities": "Ausstattung",
+    "view_on_map": "Auf Karte anzeigen",
+    "Dineout": "Vor Ort essen",
+    "Menu": "Menü",
+    "Photos": "Fotos",
+    "no_restaurants": "Keine Restaurants gefunden",
+    "failed_fetch": "Fehler beim Laden der Daten",
+    "try_again": "Erneut versuchen",
+    "page": "Seite"
+  },
+  "Rating": {
+    "Good": "Gut für die Gesundheit",
+    "Average": "In Maßen geeignet",
+    "Not_healthy": "Nicht gesund"
+  },
+  "RestaurantCard": {
+    "view_maps": "Auf Karte ansehen",
+    "review": "Rezensionen",
+    "for_two": "für zwei Personen",
+    "Cuisine": "Küchenart",
+    "open_now": "Jetzt geöffnet",
+    "closes_at": "Schließt um",
+    "closed": "Geschlossen",
+    "opens_at": "Öffnet um",
+    "book_now": "Jetzt Buchen",
+    "view_menu": "Speisekarte"
+  },
+  "filters": {
+    "Filters": "Filter",
+    "Types": "Typen",
+    "Dietary": "Ernährung",
+    "Category": "Kategorie",
+    "Price_Range": "Preisspanne",
+    "Ratings": "Bewertungen",
+    "veg": "Vegetarisch",
+    "nonVeg": "Nicht-Vegetarisch",
+    "vegan": "Vegan",
+
+    "starters": "Vorspeisen",
+    "mainCourse": "Hauptgericht",
+    "biryani": "Biryani",
+    "riceAndNoodles": "Reis & Nudeln",
+    "desserts": "Desserts",
+    "beverages": "Getränke",
+
+    "under100": "Unter ₹100",
+    "100to200": "₹100 – ₹200",
+    "200to400": "₹200 – ₹400",
+    "above400": "Über ₹400",
+
+    "1Star": "1 Stern",
+    "2Stars": "2 Sterne",
+    "3Stars": "3 Sterne",
+    "4Stars": "4 Sterne",
+    "5Stars": "5 Sterne",
+
+    "lowCalorie": "Kalorienarm",
+    "highProtein": "Proteinreich",
+    "lowCarb": "Wenig Kohlenhydrate",
+    "lowFat": "Fettarm"
+  },
+  "flex_filters": {
+    "clear_all": "Alles löschen",
+    "reset": "Zurücksetzen",
+    "categories": {
+      "Cuisine": "Küche",
+      "FoodPrice": "Preis",
+      "Ratings": "Bewertungen",
+      "Dietary": "Ernährung",
+      "Capacity": "Kapazität"
+    },
+    "values": {
+      "Vegetarian": "Vegetarisch",
+      "Non-Vegetarian": "Nicht vegetarisch",
+      "Vegan": "Vegan"
+    }
+  }
+}

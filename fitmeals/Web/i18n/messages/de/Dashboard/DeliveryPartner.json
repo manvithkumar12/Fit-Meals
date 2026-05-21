@@ -1,0 +1,15 @@
+{
+  "navbar": {
+    "OrderId": "Bestellnummer",
+    "RestaurantName": "Restaurantname",
+    "ReceivedTime": "Empfangszeit",
+    "DeliveredTime": "Lieferzeit",
+    "Status": "Status",
+    "Earnings": "Einnahmen",
+    "PaymentStatus": "Zahlungsstatus",
+    "MyOrders": "Meine Bestellungen",
+    "Action": "Aktion",
+    "delivered": "geliefert",
+    "mark": "Als geliefert markieren"
+  }
+}

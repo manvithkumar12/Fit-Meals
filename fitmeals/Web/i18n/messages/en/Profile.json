@@ -1,0 +1,72 @@
+{
+  "main": {
+    "title": "Hello",
+    "sub-title": "Manage your personal details, account settings, and review your past interactions."
+  },
+  "role": {
+    "CUSTOMER": "CUSTOMER",
+    "OWNER": "OWNER",
+    "DELIVERY": "DELIVERY",
+    "ADMIN": "ADMIN",
+    "SUPPORT": "SUPPORT",
+    "NULL": "NONE"
+  },
+  "personal": {
+    "title": "Personal Information",
+    "sub-title": "Update your profile details",
+    "name": "Full Name",
+    "email": "Email Address",
+    "mobile": "Mobile Number",
+    "btnTxt": "Update Profile"
+  },
+  "account": {
+    "title": "Account Settings",
+    "sub-title": "Manage your data, security, preferences",
+    "password": "Change Password",
+    "sub-password": "Update your password regularly for security",
+    "manage-subscription": "Manage Subscription",
+    "sub-manage-subscription": "Manage or update your subscription plan",
+    "cancel-subscription": "Cancel Subscription",
+    "sub-cancel-subscription": "Remove your subscription plans",
+    "delete-subscription": "Delete Account",
+    "sub-delete-subscription": "All your personal data will be permanently deleted in accordance with GDPR",
+    "btn1": "Update",
+    "btn2": "Change plan",
+    "btn3": "Cancel Subscription",
+    "btn4": "Delete"
+  },
+  "popup": {
+    "title": "Enter the OTP sent to your registered email address.",
+    "password-placeholder1": "One-time password (OTP)",
+    "password-placeholder2": "New password",
+    "subscription-placeholder1": "One-time password (OTP)",
+    "subscription-placeholder2": "Please tell us your reason for cancelling (optional). This helps us understand and improve our service",
+    "subscription-alert": "This action will cancel your subscription. You will no longer be billed",
+    "deletion-text": "To confirm, type `DELETE MY ACCOUNT` in the box above",
+    "deletion-placeholder1": "To confirm, type `DELETE MY ACCOUNT` in the box above",
+    "startbtn": "start",
+    "password": "password",
+    "subscription_agree": "I agree to cancel my subscription"
+  },
+  "passwordUpdate": {
+    "success_title": "Password Updated!",
+    "success_sub": "Your account is now more secure.",
+    "title": "Change Password",
+    "sub": "Update your password to keep your account secure.",
+    "new_password": "New Password",
+    "new_password_ph": "Create new password",
+    "confirm_password": "Confirm Password",
+    "confirm_password_ph": "Confirm new password",
+    "req_length": "8+ chars",
+    "req_upper": "Uppercase",
+    "req_number": "Number",
+    "cancel": "Cancel",
+    "update": "Update Password",
+    "updating": "Updating..."
+  },
+  "common": {
+    "submit": "Submit",
+    "submitting": "Submitting...",
+    "change_sub_from": "Change Subscription from {type} to"
+  }
+}

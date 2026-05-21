@@ -1,0 +1,123 @@
+{
+  "cookbook": {
+    "title": "FitMeals Recipes",
+    "description": "Explore our FitMeals recipe collection featuring popular classics alongside exciting flavors from around the world. Every dish is thoughtfully crafted and can be cooked effortlessly in just 5 easy steps, perfect for everyday healthy living",
+    "search_placeholder": "Search for recipes",
+    "next": "Next",
+    "prev": "Prev",
+    "no_recipes": "No Recipes Found",
+    "failed_fetch": "Failed to fetch data",
+    "try_again": "Try again"
+  },
+  "chatbot": {
+    "greeting": "Hi! I'm MealBot."
+  },
+  "orders": {
+    "search_placeholder": "Search for Restaurants",
+    "city_search_placeholder": "Search for area or city",
+    "near_you": "Restaurants Near You",
+    "in_city": "Restaurants in",
+    "next": "Next",
+    "prev": "Prev",
+    "no_restaurants": "No Restaurants Found",
+    "failed_fetch": "Failed to fetch data",
+    "try_again": "Try again"
+  },
+  "reservation": {
+    "search_placeholder": "Search for Restaurants or Cities",
+    "title": "FitMeals Reservations",
+    "description": "Reserve your table at FitMeals and enjoy a thoughtfully curated dining experience featuring healthy, flavorful dishes made with fresh ingredients. Our meals are prepared with care and served in a welcoming atmosphere, making it easy to enjoy nutritious food without any hassle—perfect for relaxed dining and special occasions.",
+    "Cuisine_Type": "Cuisine Type:",
+    "Location": "Location:",
+    "open": "Open now",
+    "Tabletitle": "Reserve A Table",
+    "select_date": "Select Date",
+    "select_time": "Select Time",
+    "No_Timings_Available": "No Timings Available",
+    "select_guest": "Select Guests",
+    "book_now": "Book Now",
+    "processing": "Processing...",
+    "opens_till": "Open until",
+    "opens_at": "Opens at",
+    "closed": "Closed",
+    "Book_Table": "Book Tabel",
+    "Call": "Call",
+    "offers": "Offers",
+    "next": "Next",
+    "prev": "Prev",
+    "Direction": "Direction",
+    "Timings": "Timings",
+    "Facilities": "Facilities",
+    "view_on_map": "View on Map",
+    "Dineout": "Dineout",
+    "Menu": "Menu",
+    "Photos": "Photos",
+    "no_restaurants": "No Restaurants Found",
+    "failed_fetch": "Failed to fetch data",
+    "try_again": "Try again",
+    "page": "Page"
+  },
+  "Rating": {
+    "Good": "Good for health",
+    "Average": "Moderately suitable",
+    "Not_healthy": "Not healthy"
+  },
+  "RestaurantCard": {
+    "view_maps": "View maps",
+    "review": "reviews",
+    "for_two": "for two persons",
+    "Cuisine": "Cuisine",
+    "open_now": "Open now",
+    "closes_at": "Closes at",
+    "closed": "Closed",
+    "opens_at": "Opens at",
+    "book_now": "Book Now",
+    "view_menu": "View menu"
+  },
+  "filters": {
+    "Filters": "Filters",
+    "Types": "Types",
+    "Dietary": "Dietary",
+    "Category": "Category",
+    "Price_Range": "Price Range",
+    "Ratings": "Ratings",
+    "veg": "Veg",
+    "nonVeg": "Non-Veg",
+    "vegan": "Vegan",
+    "starters": "Starters",
+    "mainCourse": "Main Course",
+    "biryani": "Biryani",
+    "riceAndNoodles": "Rice & Noodles",
+    "desserts": "Desserts",
+    "beverages": "Beverages",
+    "under100": "Under ₹100",
+    "100to200": "₹100 – ₹200",
+    "200to400": "₹200 – ₹400",
+    "above400": "Above ₹400",
+    "1Star": "1 Star",
+    "2Stars": "2 Stars",
+    "3Stars": "3 Stars",
+    "4Stars": "4 Stars",
+    "5Stars": "5 Stars",
+    "lowCalorie": "Low calorie",
+    "highProtein": "High Protein",
+    "lowCarb": "Low Carb",
+    "lowFat": "Low Fat"
+  },
+  "flex_filters": {
+    "clear_all": "Clear All",
+    "reset": "Reset",
+    "categories": {
+      "Cuisine": "Cuisine",
+      "FoodPrice": "Price",
+      "Ratings": "Ratings",
+      "Dietary": "Dietary",
+      "Capacity": "Capacity"
+    },
+    "values": {
+      "Vegetarian": "Vegetarian",
+      "Non-Vegetarian": "Non-Vegetarian",
+      "Vegan": "Vegan"
+    }
+  }
+}

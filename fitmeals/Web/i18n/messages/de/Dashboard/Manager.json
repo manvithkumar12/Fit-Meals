@@ -1,0 +1,81 @@
+{
+    "navbar": {
+      "Complaints": "Beschwerden",
+      "Restaurants": "Restaurants",
+      "Customers": "Kunden",
+      "Support Team": "Support-Team",
+      "Delivery Partners": "Lieferpartner",
+      "Requests": "Anfragen",
+      "Blocklist": "Sperrliste"
+    },
+    "Complaints": {
+      "User_Id": "Benutzer-ID",
+      "Request_Id": "Anfrage-ID",
+      "Information": "Informationen",
+      "Assigned_To": "Zugewiesen an",
+      "Status": "Status",
+      "Complaint_Type": "Beschwerdeart",
+      "Created_Date": "Erstellungsdatum",
+      "Priority": "Priorität"
+    },
+    "Restaurants": {
+      "Restaurent_Id": "Restaurant-ID",
+      "Name": "Name",
+      "Owner": "Inhaber",
+      "Email": "E-Mail",
+      "Contact": "Kontakt",
+      "Complains": "Beschwerden",
+      "Address": "Adresse",
+      "Timings": "Öffnungszeiten",
+      "Status": "Status",
+      "Blocklist": "Sperrliste"
+    },
+    "Customers": {
+      "User_Id": "Benutzer-ID",
+      "Username": "Benutzername",
+      "Email": "E-Mail",
+      "Contact_Number": "Kontaktnummer",
+      "Membership": "Mitgliedschaft",
+      "Status": "Status",
+      "Created_At": "Erstellt am"
+    },
+    "SupportTeam": {
+      "User_Id": "Benutzer-ID",
+      "Username": "Benutzername",
+      "Email": "E-Mail",
+      "Contact_Number": "Kontaktnummer",
+      "Total_Request": "Gesamtanfragen",
+      "Request_Solved": "Gelöste Anfragen",
+      "Status": "Status"
+    },
+    "DeliveryPartners": {
+      "User_Id": "Benutzer-ID",
+      "Username": "Benutzername",
+      "Email": "E-Mail",
+      "Contact_Number": "Kontaktnummer",
+      "Total_Deliveries": "Gesamtlieferungen",
+      "Completed_Deliveries": "Abgeschlossene Lieferungen",
+      "Status": "Status"
+    },
+    "Request": {
+      "Restaurent_Id": "Restaurant-ID",
+      "Name": "Name",
+      "Owner": "Inhaber",
+      "Email": "E-Mail",
+      "Contact": "Kontakt",
+      "Address": "Adresse",
+      "Timings": "Öffnungszeiten",
+      "Registration_Document": "Registrierungsdokument",
+      "Approval": "Genehmigung"
+    },
+    "Blocklist": {
+      "Restaurent_Id": "Restaurant-ID",
+      "Name": "Name",
+      "Owner": "Inhaber",
+      "Email": "E-Mail",
+      "Contact": "Kontakt",
+      "Address": "Adresse",
+      "Reason_For_Blocklist": "Grund für Sperrung",
+      "Unblock": "Entsperren"
+    }
+  }

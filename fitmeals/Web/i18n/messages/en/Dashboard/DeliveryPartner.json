@@ -1,0 +1,15 @@
+{
+  "navbar": {
+    "OrderId": "Order ID",
+    "RestaurantName": "Restaurant Name",
+    "ReceivedTime": "Received Time",
+    "DeliveredTime": "Delivered Time",
+    "Status": "Status",
+    "Earnings": "Earnings",
+    "PaymentStatus": "Payment Status",
+    "MyOrders": "My Orders",
+    "action": "Action",
+    "delivered": "delivered",
+    "mark": "mark as delivered"
+  }
+}

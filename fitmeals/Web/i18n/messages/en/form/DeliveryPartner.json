@@ -1,0 +1,44 @@
+{
+    "form":{
+    "Driver_Registration":"Driver Registration",
+    "sub_title":"Fill out your details and sign up as driver to deliver to deliver with FitMeals",
+    "submit":"Submit"
+    },
+    "file_section":{
+    "title":"Upload Your Driving Licence",
+    "description":"According to German regulations, all delivery partners must hold a valid driving licence, even for electric scooters or motorcycles. Partner safety is our top priority, and all licences will be verified before approval.",
+    "upload_file":"Upload File",
+    "max_file_size":"Max. File Size:",
+    "upload_file_button":"Upload File",
+    "Browse_file": "Browse file"
+    },
+    "form_fields":{
+        "Full_Name":"Full Name*",
+        "Phone_Number":"Phone Number*",
+        "Placeholder_phone_number":"Enter phone number",
+        "Vechile_type":"Vechile type",
+        "Select_Vechile_Type":"Select Vechile Type",
+        "Age":"Age*",
+        "Select_Age":"Select Age",
+        "Upload_Selfie":"Upload Selfie",
+        "selfie_description":"Upload a clear selfie for identification",
+        "Scooter":"Scooter",
+        "E-scooty":"E-scooty",
+        "Motorcycle":"Motorcycle",
+        "others":"Others"
+    },
+    "Agreement_section":{
+        "title":"Agreement Certificate",
+        "sub_title":"Download the agreement, sign and upload as proof of agreement",
+        "Download Agreement":"Download Agreement",
+        "agreement_description":"Download the certification document, sign it, and upload the signed copy here as proof of your partnership.",
+        "agreement_btn":"Download Agreement",
+        "upload_document":"Upload Document"
+    },
+    "Regulations_section":{
+        "regulation_1":"I confirm that the information provided is correct and complies with EU delivery and safety regulations.",
+        "regulation_2":"The delivery partner is responsible for safe delivery and compliance with local laws. FitMeals is not liable for any violations or damages."
+    }
+
+
+}

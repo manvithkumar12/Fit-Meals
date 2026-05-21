@@ -1,0 +1,24 @@
+{
+  "title": "Payment Information",
+  "description": "Save your credit or debit card securely for quick and easy payments",
+  "sub-title": "Your Cards",
+  "add-new-card": "Add new card",
+  "card-limit": "You can add upto 3 cards",
+  "Add-Card": {
+    "Add_New_Card": "Add New Card",
+    "Card_Holder_Name": "Card Holder Name",
+    "placeholder_name": "Enter your name on card..",
+    "Card_Number": "Card Number",
+    "Expiry_Date": "Expiry Date",
+    "condition": "I agree that my card details are securely stored in encrypted form by our payment partner in accordance with the Privacy Policy.Save Card",
+    "btn_save": "Save Card"
+  },
+  "edit-card": {
+    "edit_card": "Edit Card",
+    "Card_Holder_Name": "Card Holder Name",
+    "placeholder_name": "Enter your name on card..",
+    "Expiry_Date": "Expiry Date",
+    "condition": "I agree that my card details are securely stored in encrypted form by our payment partner in accordance with the Privacy Policy.Save Changes",
+    "btn_change": "Save Card"
+  }
+}

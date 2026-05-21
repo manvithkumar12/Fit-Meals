@@ -1,0 +1,23 @@
+{
+  "title": "Speisen",
+  "subtitle": "Verwalten Sie die Speisen und Menüs Ihres Restaurants",
+  "addFoodItemBtn": "Speise hinzufügen",
+  "noItemsTitle": "Keine Speisen verfügbar",
+  "noItemsDescEmpty": "Sie haben noch keine Speisen zu Ihrem Menü hinzugefügt. Erstellen Sie Ihre erste, um Kunden anzulocken!",
+  "noItemsDescSearch": "Keine Speisen entsprechen Ihren Suchkriterien. Versuchen Sie einen anderen Begriff.",
+  "availableBadge": "Verfügbar",
+  "defaultDesc": "Eine köstliche Speise, zubereitet mit frischen Zutaten und authentischen Rezepten.",
+  "editTitle": "Speise bearbeiten",
+  "editSubtitle": "Details für {title} aktualisieren",
+  "itemNameLabel": "Name der Speise",
+  "priceLabel": "Preis (₹)",
+  "prepTimeLabel": "Zubereitungszeit (Min.)",
+  "macrosTitle": "Makros (pro 100g)",
+  "proteinLabel": "Protein (g)",
+  "carbsLabel": "Kohlenhydrate (g)",
+  "fatsLabel": "Fette (g)",
+  "caloriesLabel": "Kalorien (kcal)",
+  "cancelBtn": "Abbrechen",
+  "savingBtn": "Wird gespeichert...",
+  "saveChangesBtn": "Änderungen speichern"
+}

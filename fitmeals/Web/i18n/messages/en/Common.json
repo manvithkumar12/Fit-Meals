@@ -1,0 +1,50 @@
+{
+  "navbar": {
+    "home": "Home",
+    "about": "About Us",
+    "services": "Services",
+    "membership": "Subscription",
+    "contact": "Contact Us",
+    "status": "Status",
+    "dashboard": "Dashboard",
+    "manage": "Manage",
+    "earnings": "Earnings",
+    "items": "Items",
+    "reservation": "Reservation",
+    "Health": "Health",
+    "profile": "Profile",
+    "cart": "Cart",
+    "overview": "Overview"
+  },
+  "about": {
+    "wework": "How We Work",
+    "whyus": "Why FitMeals?"
+  },
+  "services": {
+    "cookbook": "Cook Book",
+    "order": "Order Now",
+    "dine": "Dine In"
+  },
+  "Health": {
+    "FitnessTracker": "Fitness-Tracker",
+    "dietplan": "Diet Plan",
+    "identifyMeals": "Identify Meals"
+  },
+  "profile": {
+    "login": "login",
+    "logout": "logout",
+    "view": "View Profile",
+    "subscription": "Subscription Overview",
+    "premiumdetails": "Subscription",
+    "payments": "Saved Payment Methods",
+    "address": "Saved Addresses",
+    "myOrder": "My Orders",
+    "dashboard": "Dashboard"
+  },
+  "contact": {
+    "email": "Email",
+    "phone": "Phone Number",
+    "feedback": "Feedback",
+    "raisequery": "Raise Query"
+  }
+}

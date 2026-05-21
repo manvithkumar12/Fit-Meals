@@ -1,0 +1,37 @@
+{
+  "header": {
+    "about": "About",
+    "discover": "Discover the story behind FitMeals, a platform built at the intersection of web development, AI, and health."
+  },
+  "creator": {
+    "name": "Manvith",
+    "role": "Creator & Lead Developer"
+  },
+  "vision": {
+    "title": "The Vision",
+    "desc1": "FitMeals is more than just an e-commerce platform. It is a comprehensive health-tracking ecosystem heavily focused on integrating <strong>Artificial Intelligence</strong> and <strong>Machine Learning</strong> models into daily nutrition and lifestyle management.",
+    "desc2": "I built this platform from the ground up primarily to deepen my understanding of advanced web development, modern system architecture, and how AI can be practically applied to improve personal health outcomes."
+  },
+  "builtByOne": {
+    "title": "Built by One",
+    "desc": "I have built this entire project entirely on my own. While I have put significant effort into making it bug-free and polished, there's always room for growth! If you encounter any issues or have suggestions for improvements, please don't hesitate to reach out to me directly."
+  },
+  "contact": {
+    "email": "Email Me",
+    "whatsapp": "WhatsApp"
+  },
+  "features": {
+    "ai": {
+      "title": "AI-Powered Health",
+      "desc": "Utilizing machine learning to provide intelligent nutrition tracking, food recognition, and personalized health recommendations."
+    },
+    "ecommerce": {
+      "title": "Modern E-Commerce",
+      "desc": "A seamless, fully responsive shopping experience built with cutting-edge web technologies and secure payment integrations."
+    },
+    "learning": {
+      "title": "Continuous Learning",
+      "desc": "This platform serves as a living laboratory for testing new architectural patterns, advanced state management, and modern UI/UX design."
+    }
+  }
+}

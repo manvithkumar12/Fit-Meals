@@ -1,0 +1,23 @@
+{
+  "navbar": {
+    "My_Orders": "My Orders",
+    "My_Request": "My Request"
+  },
+  "myOrders": {
+    "Order_Id": "Order Id",
+    "Hotel_Name": "Hotel Name",
+    "Items": "Items",
+    "Amount": "Amount",
+    "Date": "Date",
+    "Request": "Request",
+    "Reorder": "Reorder"
+  },
+  "myRequest": {
+    "Request_Id": "Request Id",
+    "Amount": "Amount",
+    "Information": "Information",
+    "Created-At": "Created At",
+    "Status": "Status",
+    "Items": "Items"
+  }
+}

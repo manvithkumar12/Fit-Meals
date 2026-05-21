@@ -1,0 +1,23 @@
+{
+  "navbar": {
+    "My_Orders": "Meine Bestellungen",
+    "My_Request": "Meine Anfragen"
+  },
+  "myOrders": {
+    "Order_Id": "Bestell-ID",
+    "Hotel_Name": "Hotelname",
+    "Items": "Artikel",
+    "Amount": "Betrag",
+    "Date": "Datum",
+    "Request": "Anfrage",
+    "Reorder": "Erneut bestellen"
+  },
+  "myRequest": {
+    "Request_Id": "Anfrage-ID",
+    "Amount": "Betrag",
+    "Information": "Information",
+    "Created-At": "Erstellt am",
+    "Status": "Status",
+    "Items": "Artikel"
+  }
+}

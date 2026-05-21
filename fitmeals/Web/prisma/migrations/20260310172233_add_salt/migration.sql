@@ -1,0 +1,2 @@
+-- AlterTable
+ALTER TABLE "FoodItem" ADD COLUMN     "salt" INTEGER NOT NULL DEFAULT 0;

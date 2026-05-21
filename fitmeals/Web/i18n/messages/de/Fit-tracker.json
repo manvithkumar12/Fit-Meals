@@ -1,0 +1,77 @@
+{
+  "hero-section": {
+    "main-title": "Lege deine täglichen Ernährungsziele fest",
+    "subtitle": "Lege deine Protein-, Kohlenhydrat- und Fettziele basierend auf deinen Fitnesszielen fest.",
+    "log-meal": "Mahlzeit protokollieren",
+    "title": "Heutige Nährwertübersicht",
+    "goal": "Ziel",
+    "Protein": "Protein",
+    "Carbs": "Kohlenhydrate",
+    "Fats": "Fette",
+    "calories": "Kalorien",
+    "prev": "Zurück",
+    "search": "Lebensmittel suchen...",
+    "next": "Nächste",
+    "log-meal-subtitle": "Mahlzeit hinzufügen, um Ihren Fortschritt zu aktualisieren"
+  },
+  "section-1": {
+    "title": "Empfohlene Mahlzeiten",
+    "description": "KI-gestützte Ernährungsempfehlungen"
+  },
+  "section-2": {
+    "title": "Wähle deine Lieblingsgerichte",
+    "description": "Empfehlungen werden anhand Ihrer Essenspräferenzen, Körperdaten, Ihres Aktivitätslevels, Ihrer Ziele und der verbleibenden täglichen Makronährstoffziele personalisiert, um Lebensmittel vorzuschlagen, die am besten zu Ihren Ernährungsbedürfnissen passen.",
+    "placeholder": "Lebensmittel in unserer Datenbank suchen",
+    "btn-txt": "Vorschläge aktualisieren"
+  },
+  "section-3": {
+    "title": "Protokollierte Mahlzeiten",
+    "description": "Lebensmittel, die du heute gegessen hast",
+    "remove": "Entfernen"
+  },
+  "userForm": {
+    "title": "Benutzerdetails",
+    "gender": "Geschlecht",
+    "weight": "Gewicht (kg)",
+    "height": "Größe (cm)",
+    "age": "Alter",
+    "activity": "Aktivität",
+    "goal": "Ziel",
+    "import": "Import",
+    "male": "Männlich",
+    "female": "Weiblich",
+    "high": "Hoch",
+    "low": "Niedrig",
+    "gain": "Gewinnen",
+    "loss": "Verlust",
+    "import_btn": "Daten aus diätplan importieren",
+    "submit": "Abschicken",
+    "submitting": "Abschicken..."
+  },
+  "logged": {
+    "error": "Fehler beim Laden der Daten. Bitte später erneut versuchen.",
+    "empty": "Keine protokollierten Lebensmittel gefunden. Füge Lebensmittel hinzu und komme später wieder."
+  },
+  "suggested": {
+    "error": "Fehler beim Laden der Empfehlungen. Bitte versuchen Sie es später erneut.",
+    "empty": "Keine Empfehlungen verfügbar",
+    "prefer": "Bitte aktualisieren Sie Ihre Präferenzen und Ernährungsanforderungen, um personalisierte Lebensmittel-Empfehlungen zu erhalten.",
+    "more": "Mehr",
+    "less": "Weniger"
+  },
+  "Goals": {
+    "title": "Tägliche Zielvorgaben aktualisieren",
+    "calories": "Kalorien",
+    "protein": "Protein",
+    "carbs": "Kohlenhydrate",
+    "fats": "Fette",
+    "save": "Ziele speichern",
+    "saving": "Speichern...",
+    "view_logged": "Protokollierte Mahlzeiten ansehen"
+  },
+  "foodCard": {
+    "score": "Punktzahl",
+    "score_tooltip": "Die Punktzahl wird basierend auf Ihrem Profil, Ihren Zielen, Körperdetails und Ernährungspräferenzen berechnet.",
+    "remove": "Entfernen"
+  }
+}

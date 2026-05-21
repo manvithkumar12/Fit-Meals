@@ -1,0 +1,101 @@
+{
+    "salads":{
+        "title":"Salads",
+        "subtitle":"Fresh greens with healthy toppings",
+        "heading1":"Low in calories , High in nutrients",
+        "heading2":"Great for weight loss and energy",
+        "heading3":"Collection of all dishes at one place",
+        "sub-title":"Delicious Salad Meals",
+        "sub-heading":"A variety of fresh, healthy salads"
+    },
+    "button":{
+        "view-cookbook":"View Cookbook",
+        "saladExplore":"Explore Salad Meals",
+        "bowlsExplore":"Explore Bowls",
+        "veganExplore":"Explore Vegan Meals",
+        "DpExplore":"Become a Delivery Partner",
+        "RpExplore":"Become a Restaurant Partner",
+        "userExplore":"Create User Account",
+        "membershipbtn":"Start Now"
+    },
+    "bowls":{
+        "title":"Bowls",
+        "subtitle":"Balanced meals packed with nutrients",
+        "heading1":"High in protein and fiber",
+        "heading2":"Great for muscle recovery and energy",
+        "heading3":"Convenient and delicious",
+        "sub-title":"Hearty and Healthy Bowls",
+        "sub-heading":"Satisfying, nutritious meal bowls created for a fit lifestyle"
+    },
+    "vegan":{
+        "title":"Vegan Meals",
+        "subtitle":"100% plant-based nutritious meals",
+        "heading1":"Rich in plant-based protein and nutrients",
+        "heading2":"Dairy-free, cruelty-free, and sustainable",
+        "heading3":"Light, healthy, and easy to digest",
+        "sub-title":"Wholesome Vegan Meals",
+        "sub-heading":"Delicious plant-based dishes prepared fresh"
+    },
+    "user":{
+        "title":"User Account",
+        "subtitle":"Browse meals, place orders, and manage subscriptions",
+        "heading1":"Browse healthy meals and categories",
+        "heading2":"Place orders and track delivery",
+        "heading3":"Manage profile and subscriptions"
+    },
+    "restaurantpartner":{
+        "title":"Restaurant Partner",
+        "subtitle":"Manage menus, receive orders, and grow your business",
+        "heading1":"Manage menu items and pricing",
+        "heading2":"Receive and process customer orders",
+        "heading3":"Track sales and business performance"
+    },
+    "deliverypartner":{
+        "title":"Delivery Partner",
+        "subtitle":"Pick up orders and deliver them quickly and safely",
+        "heading1":"Accept and manage delivery requests",
+        "heading2":"Navigate routes and deliver on time",
+        "heading3":"Track earnings and delivery history"
+    },
+    "terms":{
+        "title":"Terms & Conditions",
+        "t1":"Memberships can be upgraded or cancelled at any time; however, payments are non-refundable.",
+        "t2":"If a service issue occurs due to the company’s fault, a refund or compensation may be provided at the company’s discretion.",
+        "t3":"For annual plans, any price increase during the active subscription period will not apply. Revised pricing will take effect only after the current plan expires.",
+        "t4":"Membership benefits are valid only during the active subscription period.",
+        "t5":"Unused meals or benefits do not carry forward after plan expiry.",
+        "t6":"The company reserves the right to modify menu items, delivery availability, or service areas.",
+        "t7":"Misuse of membership benefits may result in suspension or termination without refund."
+    },
+    "starter": {
+      "title": "Starter Plan",
+      "sub-title": "Ideal for individual orders and beginners",
+      "heading1": "1 dish per month from Fit-Meals",
+      "heading2": "Free delivery for orders above €15",
+      "heading3": "Basic recipes included",
+      "btnTxt1": "€16.13/month",
+      "btnTxt2": "€200/year"
+    },
+    
+    "plus": {
+      "title": "Plus Plan",
+      "sub-title": "Ideal for families and large orders",
+      "heading1": "3 free dishes per month from Fit-Meals",
+      "heading2": "Advanced profiles",
+      "heading3": "Fast support",
+      "heading4": "Exclusive offers",
+      "btnTxt1": "€29.13/month",
+      "btnTxt2": "€299/year"
+    },
+
+    "premium": {
+      "title": "Premium Plan",
+      "sub-title": "Ideal for families and large orders",
+      "heading1": "5 free dishes per month from Fit-Meals",
+      "heading2": "Personal advice",
+      "heading3": "Flexible delivery",
+      "heading4": "Team & Family profiles",
+      "btnTxt1": "€49.13/month",
+      "btnTxt2": "€499/year"
+    }
+}

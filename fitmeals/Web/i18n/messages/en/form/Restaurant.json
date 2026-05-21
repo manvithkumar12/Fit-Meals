@@ -1,0 +1,55 @@
+{
+  "navbar": {
+    "title": "Create Your Restaurant Profile",
+    "subtitle": "Join FitMeals and reach more customers",
+    "submit": "Submit"
+  },
+  "upload_section": {
+    "upload_title": "Upload Photos",
+    "upload_subtitle": "Drag & drop or browse to upload",
+    "upload_note": "use .jpg or .png"
+  },
+  "form_section": {
+    "restaurant_name": "Restaurant Name",
+    "cuisine_type": "Cuisine Type",
+    "address": "Address",
+    "contact_number": "Phone Number",
+    "opening_time": "Opening Time",
+    "closing_time": "Closing Time",
+    "price_for_two": "Price for Two",
+    "pin_code": "Pin Code",
+    "location": "Location",
+    "g_maps": "Maps Link",
+    "facilities": "Facilities",
+    "description": "Description",
+    "phoneNumber": "Phone Number",
+    "streetNumber": "Street Name",
+    "houseNo": "House No",
+    "area": "Area",
+    "city": "City",
+    "totalCapacity": "Total Capacity",
+    "addbtn":"Add Location",
+    "alert":"Make sure you are at the exact location of hotel to add accurate location",
+    "latitude": "Latitude",
+    "longitude": "Longitude"
+  },
+  "notice": {
+    "title": "By submitting this form, you agree that your data will be stored securely and used only for platform operations."
+  },
+  "placeholders": {
+    "restaurant_name": "e.g. Luigi's Trattoria",
+    "address": "e.g. 123 Main St, New York, NY 10001",
+    "pin_code": "e.g. 10001",
+    "facilities": "e.g. Free Wi-Fi, Parking...",
+    "description": "e.g. A cozy restaurant serving...",
+    "g_maps": "e.g. https://maps.google.com/...",
+    "phoneNumber": "e.g. +1 234 567 8900",
+    "streetNumber": "e.g. Main Street",
+    "houseNo": "e.g. 12B",
+    "area": "e.g. Downtown",
+    "city": "e.g. New York",
+    "totalCapacity": "e.g. 50",
+    "longitude": "e.g. -74.0060",
+    "latitude": "e.g. 40.7128"
+  }
+}

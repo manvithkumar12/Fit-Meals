@@ -1,0 +1,22 @@
+{
+    "main":{
+        "title":"Contact us",
+        "sub-title":"Do you have any questions? We are here for you!"
+    },
+    "FeedBack":{
+        "title" : "Feed Back",
+        "sub-title":"Let us know what you think",
+        "btnTxt":"Send feedback"
+    },
+    "Contact":{
+        "title":"Contact Us",
+        "sub-title":"chat with bot or agent",
+        "btnTxt":"Contact Now"
+    },
+    "Query":{
+        "title":"Any Query",
+        "sub-title":"Ask us your question",
+        "btnTxt":"Send Query"
+    },
+    "bottomText": "We look forward to hearing from you!"
+}

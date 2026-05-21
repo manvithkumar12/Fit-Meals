@@ -1,0 +1,29 @@
+{
+  "title": "SUBSCRIPTION OVERVIEW",
+  "days": "Days Remaining",
+  "orders": "Orders Placed",
+  "Amount_saved": "Amount Saved",
+  "cancelSubscription": "Cancel Subscription",
+  "changeSubscription": "Change Subscription",
+  "Membership": {
+    "Membership_Details": "Membership Details",
+    "Plan_Type": "Plan Type",
+    "Renewal_Date": "Renewal Date",
+    "Monthly_Cost": "Monthly Cost",
+    "Status": "Status",
+    "Active": "Active"
+  },
+  "offers": {
+    "Exclusive_Offers": "Exclusive Offers",
+    "20%_Discount": "20% Discount",
+    "On_all_products": "On all products",
+    "Early_Access": "Early Access",
+    "New_product_launches": "New product launches",
+    "Priority_Support": "Priority Support",
+    "Faster_customer_service": "Faster customer service"
+  },
+  "enterOtpMessage": "Please enter the one-time password (OTP) sent to your registered email address",
+  "btn": "Change Subscription",
+  "alert": "By proceeding, your subscription will be cancelled. As per the terms and conditions, no refund will be issued",
+  "changeTitle": "Change Subscription from"
+}

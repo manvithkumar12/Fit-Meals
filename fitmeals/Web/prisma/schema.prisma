@@ -1,0 +1,532 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+model User {
+  id                Int                @id @default(autoincrement())
+  name              String
+  createdAt         DateTime           @default(now())
+  email             String             @unique
+  password          String
+  phoneNumber       String?            @unique
+  subscriptionsType S_Type             @default(NONE)
+  role              Role               @default(CUSTOMER)
+  profileUrl        String?
+  status            AccountStatus      @default(ACTIVE)
+  isVerified        VerificationStatus
+  lockUntil         DateTime?
+  failedAttempts    Int                @default(0)
+  addresses         Address[]
+  cartbox           Cart?
+  cookBook          CookBook[]
+  deliveryPartner   DeliveryPartner?
+  feedbacks         FeedBacks[]
+  orders            OrderInfo[]        @relation("CustomerOrders")
+  queries           Queries[]
+  reservation       Reservations[]
+  restaurants       Restaurant?
+  reviews           Review[]
+  subscription      SubscriptionData?
+  userData          UserData?
+  dietProfile       UserDietProfile?
+  targetData        TargetData?
+  loggedData        LoggedData[]
+  cartItems         CartItem[]
+  updates           updates?
+}
+
+model Restaurant {
+  id              Int              @id @default(autoincrement())
+  name            String
+  images          String
+  ownerId         Int              @unique
+  cuisineType     String
+  priceForTwo     Int
+  pinCode         Int
+  facilities      String[]
+  description     String[]
+  openingTime     String
+  reservation     Boolean?         @default(false)
+  menuUrls        String[]
+  resUrls         String[]
+  reservationTime String[]
+  closingTime     String
+  mapLink         String
+  phoneNumber     String
+  area            String
+  averageRating   Float            @default(0)
+  city            String
+  houseNo         String
+  lat             Float?
+  long            Float?
+  status          RestaurantStatus @default(VERIFICATION)
+  agreementUrl    String?
+  streetName      String
+  totalReviews    Int              @default(0)
+  totalPersons    Int              @default(0)
+  address         String           @default("N/A")
+  cart            Cart[]
+  FoodItems       FoodItem[]
+  orders          OrderInfo[]
+  Reservation     Reservations[]
+  owner           User             @relation(fields: [ownerId], references: [id])
+
+  @@index([name])
+  @@index([cuisineType])
+  @@index([averageRating])
+  @@index([priceForTwo])
+  @@index([city])
+}
+
+model FoodItem {
+  id                   Int              @id @default(autoincrement())
+  title                String
+  price                Float
+  weight               Int
+  time                 Int
+  description          String[]
+  proteinPer100gm      Int
+  carboHydratePer100gm Int
+  caloriesPer100gm     Int
+  fatsPer100gm         Int
+  averageRating        Float            @default(0)
+  createdAt            DateTime         @default(now())
+  isAvailable          Boolean
+  restaurantId         Int
+  totalReviews         Int              @default(0)
+  type                 String
+  category             String
+  foodBenefits         String[]
+  imgUrl               String?
+  salt                 Int              @default(0)
+  cartItem             CartItem[]
+  Ingredients          FoodIngredient[]
+  restaurant           Restaurant       @relation(fields: [restaurantId], references: [id])
+  orderItems           OrderItem[]
+  reviews              Review[]
+
+  @@unique([restaurantId, title])
+}
+
+model Cart {
+  id           Int        @id @default(autoincrement())
+  userId       Int        @unique
+  restaurantId Int
+  createdAt    DateTime   @default(now())
+  restaurants  Restaurant @relation(fields: [restaurantId], references: [id])
+  user         User       @relation(fields: [userId], references: [id])
+  cartItems    CartItem[]
+  voucherId    Int?
+  address      Address?   @relation(fields: [addressId], references: [id])
+  addressId    Int?
+  voucher      Voucher?   @relation(fields: [voucherId], references: [id])
+}
+
+model Voucher {
+  id           Int      @id @default(autoincrement())
+  createdAt    DateTime @default(now())
+  value        String   @unique
+  isActive     Boolean  @default(true)
+  validUntil   DateTime
+  discount     Float
+  minimumPrice Float
+  cart         Cart[]
+
+  @@index([value])
+}
+
+model CartItem {
+  id       Int      @id @default(autoincrement())
+  cartId   Int
+  itemId   Int
+  quantity Int
+  cart     Cart     @relation(fields: [cartId], references: [id])
+  item     FoodItem @relation(fields: [itemId], references: [id])
+  userId   Int
+  user     User     @relation(fields: [userId], references: [id])
+
+  @@unique([cartId, itemId])
+  @@index([cartId])
+  @@index([userId])
+}
+
+model FoodIngredient {
+  id         Int       @id @default(autoincrement())
+  title      String
+  quantity   String
+  foodItemId Int?
+  cookBookId Int?
+  imgUrl     String
+  cookBook   CookBook? @relation(fields: [cookBookId], references: [id])
+  foodItem   FoodItem? @relation(fields: [foodItemId], references: [id])
+}
+
+model CookBook {
+  id                   Int              @id @default(autoincrement())
+  title                String           @unique
+  calories             Int
+  steps                String[]
+  description          String[]
+  imgUrl               String[]
+  weight               Int
+  foodType             String
+  time                 Int
+  nutritionalValue     Int
+  proteinPer100gm      Int
+  caloriesPer100gm     Int
+  fatsPer100gm         Int
+  carboHydratePer100gm Int
+  mainurl              String
+  addedBy              Int
+  user                 User             @relation(fields: [addedBy], references: [id])
+  FoodIngredients      FoodIngredient[]
+
+  @@index([title])
+}
+
+model DeliveryPartner {
+  title           String
+  id              Int              @id @default(autoincrement())
+  UserId          Int              @unique
+  age             Int
+  deliveredOrders Int              @default(0)
+  TotalOrders     Int              @default(0)
+  lat             Float            @default(0)
+  ApplicationUrl  String
+  SelfieUrl       String
+  LicenseUrl      String
+  long            Float            @default(0)
+  status          RestaurantStatus @default(VERIFICATION)
+  vehicle         String
+  partnerstatus   PartnerStatus    @default(IDLE)
+  user            User             @relation(fields: [UserId], references: [id])
+  orders          OrderInfo[]
+}
+
+model Reservations {
+  id              Int               @id @default(autoincrement())
+  restaurantId    Int
+  reservationTime String
+  numberOfPeople  Int
+  userId          Int
+  customerName    String
+  customerNumber  String
+  endTime         DateTime
+  status          reservationStatus
+  createdAt       DateTime          @default(now())
+  reservationDate String
+  seatNo          String            @default("NA")
+  restaurant      Restaurant        @relation(fields: [restaurantId], references: [id])
+  users           User              @relation(fields: [userId], references: [id])
+}
+
+model FeedBacks {
+  id        Int      @id @default(autoincrement())
+  message   String
+  userId    Int
+  createdAt DateTime @default(now())
+  user      User     @relation(fields: [userId], references: [id])
+}
+
+model Queries {
+  id        Int         @id @default(autoincrement())
+  message   String
+  userId    Int
+  createdAt DateTime    @default(now())
+  status    QueryStatus
+  user      User        @relation(fields: [userId], references: [id])
+}
+
+model UserData {
+  userId        Int              @unique
+  id            Int              @id @default(autoincrement())
+  height        Int
+  weight        Int
+  gender        String
+  age           Int
+  ActivityLevel String
+  targetWeight  Int
+  Goal          String
+  user          User             @relation(fields: [userId], references: [id])
+  DietProfile   UserDietProfile?
+}
+
+model UserDietProfile {
+  id            Int       @id @default(autoincrement())
+  userId        Int       @unique
+  days          Int
+  dailyCalories Int
+  dailyprotein  Int
+  dailycarb     Int
+  date          DateTime?
+  dailyfat      Int
+  userdataId    Int       @unique
+
+  dietFoods DietFoodItem[]
+
+  userdata UserData? @relation(fields: [userdataId], references: [id], onDelete: Cascade)
+
+  user User @relation(fields: [userId], references: [id], onDelete: Cascade)
+
+  loggedMeals loggedMeals[] @relation("UserProfileMeals")
+}
+
+model DietFoodItem {
+  id Int @id @default(autoincrement())
+
+  userProfileId Int
+  foodItemId    Int
+
+  foodType String
+  quantity Int
+
+  protein  Float
+  calories Float
+  fats     Float
+  carbos   Float
+
+  userProfile UserDietProfile @relation(fields: [userProfileId], references: [id], onDelete: Cascade)
+
+  foodItem german_foods @relation(fields: [foodItemId], references: [id])
+
+  @@unique([userProfileId, foodType, foodItemId])
+}
+
+model loggedMeals {
+  id             Int            @id @default(autoincrement())
+  profileId      Int
+  loggedItems    german_foods[] @relation("LoggedMealItems")
+  loggedCalories Float
+  loggedProtein  Float
+  loggedQuantity Float
+  loggedCarbos   Float
+  loggedFat      Float
+  date           DateTime       @default(now())
+  time           String         @default("BREAKFAST")
+
+  userProfile UserDietProfile @relation("UserProfileMeals", fields: [profileId], references: [id], onDelete: Cascade)
+}
+
+model TargetData {
+  id            Int          @id @default(autoincrement())
+  dailyCalories Int
+  dailyprotein  Int
+  date          DateTime     @default(now())
+  dailycarb     Int
+  dailyfat      Int
+  userId        Int          @unique
+  user          User         @relation(fields: [userId], references: [id])
+  loggedData    LoggedData[]
+}
+
+model LoggedData {
+  id             Int          @id @default(autoincrement())
+  loggedCalories Float
+  loggedProtein  Float
+  loggedCarbos   Float
+  itemId         Int
+  fooditem       german_foods @relation(fields: [itemId], references: [id])
+  loggedFat      Float
+  date           DateTime     @default(now())
+  userId         Int
+  targetDataId   Int
+  targetData     TargetData   @relation(fields: [targetDataId], references: [id])
+  user           User         @relation(fields: [userId], references: [id])
+}
+
+model SubscriptionData {
+  id                   Int       @id @default(autoincrement())
+  userId               Int       @unique
+  stripeCustomerId     String?
+  stripeSubscriptionId String?
+  status               String
+  currentPeriodEnd     DateTime?
+  planType             String
+  freeOrders           Int       @default(0)
+  DaysRemaining        Int       @default(0)
+  OrdersPlaced         Int       @default(0)
+  createdAt            DateTime  @default(now())
+  updatedAt            DateTime  @updatedAt
+  user                 User      @relation(fields: [userId], references: [id])
+}
+
+
+
+model updates {
+  id     Int    @id @default(autoincrement())
+  email  String
+  userId Int    @unique
+  user   User   @relation(fields: [userId], references: [id])
+}
+
+model Address {
+  id          Int         @id @default(autoincrement())
+  userId      Int
+  name        String
+  street      String
+  area        String
+  city        String
+  state       String
+  pinCode     String
+  isDeleted   Boolean     @default(false)
+  lat         Float?
+  long        Float?
+  isDefault   Boolean     @default(false)
+  createdAt   DateTime    @default(now())
+  address     String
+  user        User        @relation(fields: [userId], references: [id])
+  carts       Cart[]
+  OrderInfoId OrderInfo[]
+}
+
+model OrderInfo {
+  orderNo           Int              @id @unique @default(autoincrement())
+  restaurantId      Int
+  customerId        Int
+  DeliveryAdressId  Int
+  estimatedTime     DateTime
+  DeliveryPartnerId Int?
+  OrderType         S_Type
+  OrderStatus       statusofOrder
+  Amount            Decimal          @db.Decimal(10, 2)
+  status            OrderStatus
+  modeOfPayment     PaymentType
+  DeliveredTime     DateTime?
+  OrderedTime       DateTime         @default(now())
+  deliveryPartner   DeliveryPartner? @relation(fields: [DeliveryPartnerId], references: [id])
+  customer          User             @relation("CustomerOrders", fields: [customerId], references: [id])
+  restaurant        Restaurant       @relation(fields: [restaurantId], references: [id])
+  deliveryAddress   Address          @relation(fields: [DeliveryAdressId], references: [id])
+  items             OrderItem[]
+}
+
+model OrderItem {
+  id         Int       @id @default(autoincrement())
+  orderId    Int
+  foodItemId Int
+  quantity   Int
+  price      Decimal   @db.Decimal(10, 2)
+  foodItem   FoodItem  @relation(fields: [foodItemId], references: [id])
+  order      OrderInfo @relation(fields: [orderId], references: [orderNo])
+
+  @@index([orderId])
+  @@index([foodItemId])
+}
+
+model Review {
+  id         Int      @id @default(autoincrement())
+  userId     Int
+  foodItemId Int
+  rating     Int
+  comment    String?
+  createdAt  DateTime @default(now())
+  foodItem   FoodItem @relation(fields: [foodItemId], references: [id])
+  user       User     @relation(fields: [userId], references: [id])
+
+  @@unique([userId, foodItemId])
+}
+
+model german_foods {
+  id           Int            @id @default(autoincrement())
+  bls_code     String?
+  foodname     String?
+  energy       Float?
+  protein      Float?
+  fat          Float?
+  carbohydrate Float?
+  salt         Float?
+  dietItems    DietFoodItem[]
+  loggedMeals  loggedMeals[]  @relation("LoggedMealItems")
+  loggedDatas  LoggedData[]
+
+  @@index([foodname])
+}
+
+enum S_Type {
+  NONE
+  STARTER
+  PLUS
+  PREMIUM
+}
+
+enum QueryStatus {
+  OPEN
+  CLOSED
+}
+
+enum PaymentType {
+  CASH
+  CARD
+  UPI
+}
+
+enum VerificationStatus {
+  VERIFIED
+  PENDING
+}
+
+enum OrderStatus {
+  PENDING
+  APPROVED
+}
+
+enum TargetLevel {
+  EASY
+  MODERATE
+  HARD
+}
+
+enum Gender {
+  MALE
+  FEMALE
+  DIVERS
+  NOT_SPECIFIED
+}
+
+enum PartnerStatus {
+  ON_ORDER
+  IDLE
+}
+
+enum Role {
+  CUSTOMER
+  OWNER
+  DELIVERY
+  ADMIN
+  SUPPORT
+}
+
+enum AccountStatus {
+  BLOCKED
+  SUSPENDED
+  ACTIVE
+  DELETED
+}
+
+enum RestaurantStatus {
+  ACTIVE
+  VERIFICATION
+  BLOCKED
+  REST
+  DELETED
+}
+
+enum statusofOrder {
+  Waiting
+  Cooking
+  Packing
+  CANCELLED
+  InDelivery
+  Delivered
+}
+
+enum reservationStatus {
+  CONFIRMED
+  COMPLETED
+  CANCELLED
+}

@@ -1,0 +1,34 @@
+{
+    "navbar":{
+        "home":"Home",
+        "status":"Status",
+        "order":"Order",
+        "description":"Your order is on the way"
+    },
+    "progress":{
+        "in":"In",
+        "cooking":"Cooking",
+        "packing":"Packing",
+        "outForDelivery":"Out for Delivery",
+        "orderDelivered":"Order Delivered"
+    },
+    "time":{
+        "Arriving_in":"Arriving in",
+        "minutes":"minutes"
+    },
+    "deliveryAgent":{
+        "name":"Name",
+        "contact":"Contact",
+        "Orders_Delivered":"Orders Delivered",
+        "title":"Delivery Agent Details"
+    },
+    "detailsCard":{
+        "title":"Order Details",
+        "deliveryAddress":"Delivery Address:",
+        "modeOfPayment":"Mode of Payment",
+        "cashOnDelivery":"Cash on Delivery",
+        "payOnlineInstead":"Pay Online Instead",
+        "dishes":"Dishes",
+        "contactSupport":"Contact Support"
+    }
+}

@@ -1,0 +1,22 @@
+{
+  "Description": "Beschreibung",
+  "nutriousCard": {
+    "title": "Nährwertangaben",
+    "per_serving": "pro Portion",
+    "per_100g": "pro 100 g",
+    "Energy_kJ": "Energie (kJ)",
+    "Energy_kcal": "Energie (kcal)",
+    "Fat": "Fett",
+    "Carbohydrates": "Kohlenhydrate",
+    "Protein": "Eiweiß",
+    "Salt": "Salz",
+    "Nutrient": "Nährstoff",
+    "Amount": "Menge"
+  },
+  "Ingredients": {
+    "title": "Zutaten",
+    "Serving_size": "Portionsgröße",
+    "Preparation": "Zubereitung",
+    "Description": "Beschreibung"
+  }
+}

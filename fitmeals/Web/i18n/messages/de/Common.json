@@ -1,0 +1,51 @@
+{
+  "navbar": {
+    "home": "Heim",
+    "menu": "Menü",
+    "about": "Über uns",
+    "services": "Dienstleistungen",
+    "membership": "Abonnement",
+    "contact": "Kontakt",
+    "status": "Status",
+    "dashboard": "Dashboard",
+    "manage": "Verwalten",
+    "earnings": "Einnahmen",
+    "items": "Artikel",
+    "reservation": "Reservierung",
+    "profile": "Profil",
+    "Health": "Gesundheit",
+    "cart": "Warenkorb",
+    "overview": "Überblick"
+  },
+  "about": {
+    "wework": "Unsere Arbeitsweise",
+    "whyus": "Warum FitMeals?"
+  },
+  "services": {
+    "cookbook": "Kochbuch",
+    "order": "Jetzt bestellen",
+    "dine": "Tisch reservieren"
+  },
+  "Health": {
+    "FitnessTracker": "Fitness-Tracker",
+    "dietplan": "Diätplan",
+    "identifyMeals": "Mahlzeiten identifizieren"
+  },
+  "profile": {
+    "login": "Anmelden",
+    "logout": "Abmelden",
+    "view": "Profil ansehen",
+    "subscription": "Abonnementübersicht",
+    "premiumdetails": "Abonnement",
+    "payments": "Zahlungen",
+    "address": "Adressen",
+    "myOrder": "Meine Bestellungen",
+    "dashboard": "Meine Anfragen"
+  },
+  "contact": {
+    "email": "E-Mail",
+    "phone": "Telefonnummer",
+    "feedback": "Feedback",
+    "raisequery": "Anfrage stellen"
+  }
+}

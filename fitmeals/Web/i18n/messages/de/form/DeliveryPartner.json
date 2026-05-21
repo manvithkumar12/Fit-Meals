@@ -1,0 +1,43 @@
+{
+  "form": {
+    "Driver_Registration": "Fahrerregistrierung",
+    "sub_title": "Füllen Sie Ihre Daten aus und melden Sie sich als Fahrer an, um mit FitMeals zu liefern",
+    "submit":"Absenden"
+  },
+  "file_section": {
+    "title": "Führerschein hochladen",
+    "description": "Gemäß den deutschen Vorschriften müssen alle Lieferpartner über einen gültigen Führerschein verfügen, auch für Elektroroller oder Motorräder. Die Sicherheit unserer Partner hat höchste Priorität, und alle Führerscheine werden vor der Genehmigung überprüft.",
+    "upload_file": "Datei hochladen",
+    "max_file_size": "Max. Dateigröße:",
+    "upload_file_button": "Datei hochladen",
+    "Browse_file": "Datei auswählen"
+  },
+  "form_fields": {
+    "Full_Name": "Vollständiger Name*",
+    "Phone_Number": "Telefonnummer*",
+    "Placeholder_phone_number": "Telefonnummer eingeben",
+    "Vechile_type": "Fahrzeugtyp",
+    "Select_Vechile_Type": "Fahrzeugtyp auswählen",
+    "Age": "Alter*",
+    "Select_Age": "Alter auswählen",
+    "Upload_Selfie": "Selfie hochladen",
+    "selfie_description": "Laden Sie ein klares Selfie zur Identifikation hoch",
+    "Scooter": "Roller",
+    "E-scooty": "E-Scooter",
+    "Motorcycle": "Motorrad",
+    "others": "Andere"
+  },
+  "Agreement_section": {
+    "title": "Vereinbarungszertifikat",
+    "sub_title": "Laden Sie die Vereinbarung herunter, unterschreiben Sie sie und laden Sie sie als Nachweis hoch",
+    "Download Agreement": "Vereinbarung herunterladen",
+    "agreement_description": "Laden Sie das Zertifizierungsdokument herunter, unterschreiben Sie es und laden Sie die unterschriebene Kopie hier als Nachweis Ihrer Partnerschaft hoch.",
+    "agreement_btn": "Vereinbarung herunterladen",
+    "upload_document":"Dokument hochladen"
+  },
+    "Regulations_section": {
+        "regulation_1": "Ich bestätige, dass die angegebenen Informationen korrekt sind und den EU-Liefer- und Sicherheitsvorschriften entsprechen.",
+        "regulation_2": "Der Lieferpartner ist für eine sichere Lieferung und die Einhaltung der örtlichen Gesetze verantwortlich. FitMeals haftet nicht für Verstöße oder Schäden."
+    }
+
+}

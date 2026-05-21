@@ -1,0 +1,68 @@
+{
+  "sidebar": {
+    "underDevelopment": "Under Development",
+    "title": "Food Recognition AI",
+    "description": "Food Recognition AI is currently under development. The current model supports the following food categories and will continue expanding in future releases.",
+    "developmentProgress": "Development Progress",
+    "comingSoon": "More food categories and nutrition intelligence features are coming soon.",
+    "downloadSample": "Download Sample Data"
+  },
+  "nutritionCard": {
+    "title": "Nutritional Estimate",
+    "forTopMatch": "For top match:",
+    "portionSize": "Portion Size",
+    "calories": "Calories 🔥",
+    "protein": "Protein 💪",
+    "carbs": "Carbs 🍚",
+    "fats": "Fats 🥑",
+    "kcal": "kcal",
+    "g": "g"
+  },
+  "uploadDropzone": {
+    "heroTitle": "Train. Recognize. Analyze.",
+    "heroSubtitle": "Recognize meals, estimate calories, and understand nutrition instantly.",
+    "uploadPrompt": "Upload Meal Image",
+    "uploadHelp": "Drag & drop or click to browse",
+    "remove": "Remove",
+    "change": "Change",
+    "analyzingOverlay": "Analyzing image with AI...",
+    "analyzeButton": "Analyze Food",
+    "analyzingButton": "Analyzing..."
+  },
+  "featureCards": {
+    "card1Title": "Food Recognition",
+    "card1Desc": "Advanced computer vision models trained to identify specific ingredients and complex mixed meals with high precision.",
+    "card2Title": "Nutrition Analysis",
+    "card2Desc": "Automatic breakdown of macronutrients including protein, carbohydrates, and fats based on the recognized food items.",
+    "card3Title": "Calorie Estimation",
+    "card3Desc": "Intelligent portion size estimation combined with our extensive database to provide accurate calorie counts instantly."
+  },
+  "analysisResults": {
+    "title": "Match Results"
+  },
+  "toast": {
+    "error": "An error occurred during analysis."
+  },
+  "categories": {
+    "Caesar Salad": "Caesar Salad",
+    "Omelette": "Omelette",
+    "Spaghetti Bolognese": "Spaghetti Bolognese",
+    "Steak": "Steak",
+    "Apple Pie": "Apple Pie",
+    "Cheesecake": "Cheesecake",
+    "Waffles": "Waffles",
+    "Pancakes": "Pancakes",
+    "Sushi": "Sushi",
+    "Ramen": "Ramen",
+    "Fried Rice": "Fried Rice",
+    "Hamburger": "Hamburger",
+    "Pizza": "Pizza",
+    "Hot Dog": "Hot Dog",
+    "Ice Cream": "Ice Cream"
+  },
+  "ux": {
+    "noFoodDetected": "⚠ No recognizable food detected. Please upload a food image.",
+    "lowConfidence": "Low confidence prediction.",
+    "emptyState": "Upload a food image and click Analyze Food."
+  }
+}

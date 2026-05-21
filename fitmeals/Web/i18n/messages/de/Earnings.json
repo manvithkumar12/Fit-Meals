@@ -1,0 +1,28 @@
+{
+  "main": {
+    "title": "Einnahmenübersicht",
+    "subtitle": "Deine Einnahmen werden jeden Montag gutgeschrieben",
+    "days": "Mo–So"
+  },
+  "earnings": {
+    "This_Week_Earnings": "Einnahmen dieser Woche",
+    "todaysEarnings": "Heutige Einnahmen",
+    "amountEarnedToday": "Heute verdientes Geld",
+    "nextPayout": "Nächste Auszahlung",
+    "monday": "Montag",
+    "monSun": "Mo–So",
+    "autoCreditedToBank": "Automatisch auf das Bankkonto gutgeschrieben"
+  },
+  "TotalRevenue": {
+    "title": "Gesamtumsatz",
+    "Total_Orders": "Gesamte Bestelleinnahmen",
+    "FitMeals_Platform_Fee": "FitMeals-Plattformgebühr",
+    "GST": "GST",
+    "Final_Payable_Amount": "Endgültig auszuzahlender Betrag"
+  },
+  "more": {
+    "Recent_Earnings": "Letzte Einnahmen (pro Bestellung)",
+    "loadmorebtn": "Mehr laden",
+    "showlessbtn":"Weniger anzeigen"
+  }
+}

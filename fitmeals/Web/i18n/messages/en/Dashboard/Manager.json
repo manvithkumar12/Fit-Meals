@@ -1,0 +1,83 @@
+{
+    "navbar": {
+      "Complaints": "Complaints",
+      "Restaurants": "Restaurants",
+      "Customers": "Customers",
+      "Support Team": "Support Team",
+      "Delivery Partners": "Delivery Partners",
+      "Requests": "Requests",
+      "Blocklist": "Blocklist"
+    },
+    "Complaints":{
+      "User_Id":"User Id",
+      "Request_Id":"Request Id",
+      "Information":"Information",
+      "Assigned_To":"Assigned To",
+      "Status":"Status",
+      "Complaint_Type":"Complaint Type",
+      "Created_Date":"Created Date",
+      "Priority":"Priority"
+    },
+    "Restaurants":{
+      "Restaurent_Id":"Restaurent Id",
+      "Name":"Name",
+      "Owner":"Owner",
+      "Email":"Email",
+      "Contact":"Contact",
+      "Complains":"Complains",
+      "Address":"Address",
+      "Timings":"Timings",
+      "Status":"Status",
+      "Blocklist":"Blocklist"
+    },
+    "Customers":{
+      "User_Id":"User Id",
+      "Username":"Username",
+      "Email":"Email",
+      "Contact_Number":"Contact Number",
+      "Membership":"Membership",
+      "Status":"Status",
+      "Created_At":"Created At"
+    },
+    "SupportTeam":{
+      "User_Id":"User Id",
+      "Username":"Username",
+      "Email":"Email",
+      "Contact_Number":"Contact Number",
+      "Total_Request":"Total Request",
+      "Request_Solved":"Request Solved",
+      "Status":"Status"
+    },
+    "DeliveryPartners":{
+      "User_Id":"User Id",
+      "Username":"Username",
+      "Email"	:"Email",
+      "Contact_Number":"Contact Number",	
+      "Total_Deliveries"	:"Total Deliveries",
+      "Completed_Deliveries"	:"Completed Deliveries",
+      "Status":"Status"
+    },
+    "Request":{
+      "Restaurent_Id"	:"Restaurent Id",
+      "Name"	:"Name",
+      "Owner"	:"Owner",
+      "Email"	:"Email",
+      "Contact"	:"Contact",
+      "Address"	:"Address",
+      "Timings"	:"Timings",
+      "Registration_Document"	:"Registration Document",
+      "Approval"	:"Approval"
+    },
+    "Blocklist":{
+      "Restaurent_Id"	:"Restaurent Id",
+      "Name"	:"Name",
+      "Owner"	:"Owner",
+      "Email"	:"Email",
+      "Contact"	:"Contact",
+      "Address"	:"Address",
+      "Reason_For_Blocklist":"Reason For Blocklist",
+      "Unblock"	:"Unblock"
+    }
+
+    
+  }

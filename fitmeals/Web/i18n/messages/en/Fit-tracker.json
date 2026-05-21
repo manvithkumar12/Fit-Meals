@@ -1,0 +1,77 @@
+{
+  "hero-section": {
+    "main-title": "Set Your Daily Nutrition Goals",
+    "subtitle": "Set your protein, carbs & fat targets based on your fitness goals.",
+    "log-meal": "Log Meal",
+    "title": "Today’s Nutrition Overview",
+    "goal": "goal",
+    "Protein": "Protein",
+    "log-meal-subtitle": "Add Meals to update your progress",
+    "Carbs": "Carbohydrates",
+    "Fats": "Fats",
+    "calories": "Calories",
+    "search": "Search food items...",
+    "prev": "Back",
+    "next": "Next"
+  },
+  "section-1": {
+    "title": "Recommended Meals",
+    "description": "AI-powered nutrition recommendations"
+  },
+  "section-2": {
+    "title": "Choose your favorite foods",
+    "description": "Recommendations are personalized using your food preferences, body details, activity level, goals, and remaining daily macro targets to suggest foods that best match your nutritional needs.",
+    "placeholder": "Search foods in our database",
+    "btn-txt": "Update suggestions"
+  },
+  "section-3": {
+    "title": "Logged Meals",
+    "description": "Foods you’ve eaten today",
+    "remove": "Remove"
+  },
+  "userForm": {
+    "title": "User Details",
+    "gender": "Gender",
+    "weight": "Weight (kg)",
+    "height": "Height (cm)",
+    "age": "Age",
+    "activity": "Activity",
+    "goal": "Goal",
+    "import": "Import",
+    "male": "Male",
+    "female": "Female",
+    "high": "High",
+    "low": "Low",
+    "gain": "Gain",
+    "loss": "Loss",
+    "import_btn": "Import data from dietPlan",
+    "submit": "Submit",
+    "submitting": "Submitting..."
+  },
+  "logged": {
+    "error": "An error occurred while fetching the data. Please try again later.",
+    "empty": "No logged foods found please add some foods to track and come back later"
+  },
+  "suggested": {
+    "error": "An error occurred while fetching recommendations. Please try again later.",
+    "empty": "No recommendations available",
+    "less": "less",
+    "more": "More",
+    "prefer": "Please update your preferences and dietary requirements to receive personalized food recommendations."
+  },
+  "Goals": {
+    "title": "Update Daily Goals",
+    "calories": "Calories",
+    "protein": "Protein",
+    "carbs": "Carbs",
+    "fats": "Fats",
+    "save": "Save goals",
+    "saving": "Saving...",
+    "view_logged": "View logged foods"
+  },
+  "foodCard": {
+    "score": "Score",
+    "score_tooltip": "Score is calculated based on your profile, goals, body details, and nutrition preferences.",
+    "remove": "Remove"
+  }
+}

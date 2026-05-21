@@ -1,0 +1,101 @@
+{
+  "salads": {
+    "title": "Salate",
+    "subtitle": "Frisches Grün mit gesunden Toppings",
+    "heading1": "Kalorienarm, reich an Nährstoffen",
+    "heading2": "Ideal für Gewichtsverlust und Energie",
+    "heading3": "Alle Gerichte an einem Ort",
+    "sub-title": "Leckere Salatgerichte",
+    "sub-heading": "Eine Auswahl an frischen, gesunden Salaten"
+  },
+  "button": {
+    "view-cookbook": "Kochbuch ansehen",
+    "saladExplore": "Salatgerichte entdecken",
+    "bowlsExplore": "Bowls entdecken",
+    "veganExplore": "Vegane Gerichte entdecken",
+    "DpExplore": "Delivery-Partner werden",
+    "RpExplore": "Restaurant-Partner werden",
+    "userExplore": "Benutzerkonto erstellen",
+    "membershipbtn": "Jetzt starten"
+  },
+  "bowls": {
+    "title": "Bowls",
+    "subtitle": "Ausgewogene Mahlzeiten voller Nährstoffe",
+    "heading1": "Reich an Protein und Ballaststoffen",
+    "heading2": "Ideal für Muskelregeneration und Energie",
+    "heading3": "Praktisch und lecker",
+    "sub-title": "Herzhafte und gesunde Bowls",
+    "sub-heading": "Sättigende, nährstoffreiche Bowls für einen fitten Lebensstil"
+  },
+  "vegan": {
+    "title": "Vegane Gerichte",
+    "subtitle": "100 % pflanzliche, nährstoffreiche Mahlzeiten",
+    "heading1": "Reich an pflanzlichem Protein und Nährstoffen",
+    "heading2": "Milchfrei, tierleidfrei und nachhaltig",
+    "heading3": "Leicht, gesund und gut verdaulich",
+    "sub-title": "Ganzheitliche vegane Mahlzeiten",
+    "sub-heading": "Frisch zubereitete, köstliche pflanzliche Gerichte"
+  },
+  "user": {
+    "title": "Benutzerkonto",
+    "subtitle": "Mahlzeiten entdecken, Bestellungen aufgeben und Abos verwalten",
+    "heading1": "Gesunde Mahlzeiten und Kategorien entdecken",
+    "heading2": "Bestellungen aufgeben und Lieferung verfolgen",
+    "heading3": "Profil und Abonnements verwalten"
+  },
+  "restaurantpartner": {
+    "title": "Restaurant-Partner",
+    "subtitle": "Menüs verwalten, Bestellungen erhalten und Ihr Geschäft ausbauen",
+    "heading1": "Menüpunkte und Preise verwalten",
+    "heading2": "Kundenbestellungen empfangen und bearbeiten",
+    "heading3": "Umsätze und Geschäftsleistung verfolgen"
+  },
+  "deliverypartner": {
+    "title": "Delivery-Partner",
+    "subtitle": "Bestellungen abholen und sicher sowie schnell liefern",
+    "heading1": "Lieferanfragen annehmen und verwalten",
+    "heading2": "Routen navigieren und pünktlich liefern",
+    "heading3": "Einnahmen und Lieferhistorie verfolgen"
+  },
+  "terms": {
+    "title": "Allgemeine Geschäftsbedingungen",
+    "t1": "Mitgliedschaften können jederzeit upgraden oder gekündigt werden; Zahlungen sind jedoch nicht erstattungsfähig.",
+    "t2": "Bei einem Serviceproblem aufgrund eines Unternehmensfehlers kann nach Ermessen des Unternehmens eine Rückerstattung oder Entschädigung erfolgen.",
+    "t3": "Bei Jahresplänen gelten Preiserhöhungen während der aktiven Laufzeit nicht. Überarbeitete Preise treten erst nach Ablauf des aktuellen Plans in Kraft.",
+    "t4": "Mitgliedsvorteile gelten nur während der aktiven Abonnementlaufzeit.",
+    "t5": "Nicht genutzte Mahlzeiten oder Vorteile verfallen nach Ablauf des Plans.",
+    "t6": "Das Unternehmen behält sich das Recht vor, Menüartikel, Lieferverfügbarkeit oder Servicegebiete zu ändern.",
+    "t7": "Missbrauch von Mitgliedsvorteilen kann zur Sperrung oder Kündigung ohne Rückerstattung führen."
+  },
+  "starter": {
+    "title": "Starter-Plan",
+    "sub-title": "Ideal für Einzelbestellungen und Einsteiger",
+    "heading1": "1 Gericht pro Monat von Fit-Meals",
+    "heading2": "Kostenlose Lieferung bei Bestellungen über 15 €",
+    "heading3": "Grundlegende Rezepte enthalten",
+    "btnTxt1": "€16,13/Monat",
+    "btnTxt2": "€200/Jahr"
+  },
+
+  "plus": {
+    "title": "Plus-Plan",
+    "sub-title": "Ideal für Familien und größere Bestellungen",
+    "heading1": "3 kostenlose Gerichte pro Monat von Fit-Meals",
+    "heading2": "Erweiterte Profile",
+    "heading3": "Schneller Support",
+    "heading4": "Exklusive Angebote",
+    "btnTxt1": "€29,13/Monat",
+    "btnTxt2": "€299/Jahr"
+  },
+
+  "premium": {
+    "title": "Premium-Plan",
+    "sub-title": "Ideal für Familien und größere Bestellungen",
+    "heading1": "5 kostenlose Gerichte pro Monat von Fit-Meals",
+    "heading2": "Persönliche Beratung",
+    "heading3": "Flexible Lieferung",
+    "heading4": "Team- & Familienprofile",
+    "btnTxt1": "€49,13/Monat",
+    "btnTxt2": "€499/Jahr"
+  }
+}

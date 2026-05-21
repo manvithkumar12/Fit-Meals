@@ -1,0 +1,49 @@
+{
+  "header": {
+    "title": "Add a New Meal to Your Restaurant",
+    "subtitle": "Please provide accurate details about the meal you are adding."
+  },
+  "MealDetails": {
+    "Title": "Meal Title",
+    "placeholder_title": "Enter Item Name",
+    "Price": "Price ",
+    "placeholder_price": "Enter Price"
+  },
+  "form_section": {
+    "Type": "Type",
+    "placeholder_type": "Select Food Type",
+    "Weight": "Weight (approx)",
+    "placeholder_weight": "Eg- 200g",
+    "Cooking_Time": "Cooking Time (approx)",
+    "placeholder_cooking_time": "Select (minutes)",
+    "Food Benefits (max 2)": "Food Benefits (max 2)",
+    "placeholder_food_benefits": "Eg-Healthy, Protein",
+    "Description (max 4)": "Description (max 4)  ",
+    "placeholder_description": "Enter Food Description",
+    "Ingredients": "Ingredients used to make food",
+    "placeholder_ingredients": "Enter Food Ingredients ",
+    "AI_btn": "Add with AI",
+    "add_ingredient": "Add Ingredient",
+    "Vegetarian": "vegetarian",
+    "Non-Vegetarian": "non-vegetarian",
+    "Vegan": "vegan",
+    "Category": "Category"
+  },
+  "Nutritions": {
+    "title": "Nutritions",
+    "subtitle": "Use AI to estimate nutrition value based on title & Ingredients",
+    "Per_Serving": "Per Serving",
+    "Protein": "Protein",
+    "Carbohydrates": "Carbohydrates",
+    "Calories": "Calories",
+    "kcal": "kcal",
+    "Fats": "Fats",
+    "edit": "edit",
+    "Per_100g": "Per 100g",
+    "Add_with_AI": "Add with AI"
+  },
+  "Guidelines_section": {
+    "guideline_1": "I confirm that the information provided is correct and complies with EU food regulations.",
+    "guideline_2": "The restaurant is responsible for accuracy of ingredients, allergens, and nutritional values. FitMeals is not liable for incorrect information.Add Meal"
+  }
+}

@@ -1,0 +1,58 @@
+{
+  "title-section1": {
+    "title": "User Login",
+    "subtitle": "Login in to your account",
+    "coloum1": "New user?",
+    "Register": "Register"
+  },
+  "title-section2": {
+    "title": "Delivery Partner Login",
+    "subtitle": "Log in to your delivery partner account",
+    "coloum1": "New delivery partner?",
+    "Register": "Register"
+  },
+  "title-section3": {
+    "title": "Restaurant Partner Login",
+    "subtitle": "Log in to your restaurant partner account",
+    "coloum1": "New restaurant partner?",
+    "Register": "Register"
+  },
+  "title-section4": {
+    "title": "Support Team Login",
+    "subtitle": "Log in to your account",
+    "coloum1": "",
+    "Register": ""
+  },
+  "body": {
+    "title": "User Login",
+    "placeholder_email": "Email",
+    "placeholder_password": "Password",
+    "forgot_password": "Forgot Password?",
+    "login": "Login",
+    "login_with_otp": "Login With Magic Link",
+    "or": "OR",
+    "sign_up_with_google": "Sign up with google",
+    "sign_up_with_facebook": "Sign up with facebook",
+    "sign_up_with_apple": "Sign up with apple"
+  },
+  "footer": {
+    "new_user": "New user?",
+    "register": "Register"
+  },
+  "app_card": {
+    "title": "Download our app",
+    "subtitle": "Soon it will be available as a mobile app"
+  },
+  "dynamic_card": {
+    "login_as_restaurant_partner": "Login as Restaurant Partner",
+    "login_as_user": "Login as Customer",
+    "login_as_delivery_partner": "Login as Delivery Partner"
+  },
+  "login_card": {
+    "title": "Login with OTP",
+    "sub-title": "(One Time Password)",
+    "placeholder-1": "Enter Mobile Number",
+    "placeholder-2": "Enter OTP",
+    "btn": "Verify OTP"
+  }
+}

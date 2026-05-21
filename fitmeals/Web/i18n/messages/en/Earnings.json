@@ -1,0 +1,28 @@
+{
+  "main": {
+    "title": "Earnings Dashboard",
+    "subtitle": "Your earnings are credited every Monday",
+    "days": "Mon–Sun"
+  },
+  "earnings": {
+    "This_Week_Earnings": "This Week Earnings",
+    "todaysEarnings": "Weekly Earnings",
+    "amountEarnedToday": "Amount Earned Today",
+    "nextPayout": "Next Payout",
+    "monday": "Monday",
+    "monSun": "Mon–Sun",
+    "autoCreditedToBank": "Auto credited to bank"
+  },
+  "TotalRevenue": {
+    "title": "Total Revenue",
+    "Total_Orders": "Total Order Earnings",
+    "FitMeals_Platform_Fee": "FitMeals Platform Fee",
+    "GST": "GST",
+    "Final_Payable_Amount": "Final Payable Amount"
+  },
+  "more":{
+    "Recent_Earnings":"Recent Earnings (Per Order)",
+    "loadmorebtn":"Load More",
+    "showlessbtn":"Show Less"
+  }
+}

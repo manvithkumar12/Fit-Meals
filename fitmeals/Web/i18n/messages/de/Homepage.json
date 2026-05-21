@@ -1,0 +1,79 @@
+{
+  "hero": {
+    "title1": "Gesund essen",
+    "title2": "Gesund leben",
+    "buttonText": "Neue Funktionen"
+  },
+  "section": {
+    "order": "Bestellen",
+    "cookbook": "Kochbuch",
+    "dinein": "Vor Ort essen",
+    "orderintro": "Schnell. Frisch. Zuverlässig.",
+    "cookbookintro": "Frisch. Gesund. Hausgemacht.",
+    "dineintro": "Entspannen. Genießen. Wohlfühlen.",
+    "orderbtn": "Jetzt bestellen",
+    "cookbtn": "Kochbuch ansehen",
+    "dinebtn": "Tisch reservieren"
+  },
+  "orderfeatures": {
+    "order1": "Frische Zutaten",
+    "order2": "Schnelle Lieferung",
+    "order3": "Ausgewogene Rezepte",
+    "info1": "Zubereitet mit hochwertigen, frischen Zutaten für besten Geschmack und hohen Nährwert",
+    "info2": "Online bestellen und frische Mahlzeiten schnell und zuverlässig nach Hause geliefert bekommen",
+    "info3": "Jedes Gericht ist sorgfältig abgestimmt für optimale Ernährung, Geschmack und Zufriedenheit"
+  },
+  "cbookfeatures": {
+    "cbook1": "Gesunde Rezepte",
+    "cbook2": "Einfach zuzubereiten",
+    "cbook3": "Expertenwissen",
+    "info1": "Nährstoffreiche Rezepte zur Unterstützung eines ausgewogenen und gesunden Lebensstils",
+    "info2": "Schritt-für-Schritt-Anleitungen, die das Kochen für alle einfach machen",
+    "info3": "Entwickelt von Ernährungsexperten und Köchen für zuverlässige Ergebnisse"
+  },
+  "dinefeatures": {
+    "dine1": "Angenehmes Ambiente",
+    "dine2": "Frisch serviert",
+    "dine3": "Hochwertiger Service",
+    "info1": "Genießen Sie eine entspannte und einladende Atmosphäre für maximalen Komfort",
+    "info2": "Speisen werden frisch zubereitet und heiß direkt an Ihrem Tisch serviert",
+    "info3": "Freundlicher Service und aufmerksames Personal sorgen für ein angenehmes Erlebnis"
+  },
+  "updates": {
+    "title": "Updates erhalten",
+    "subtitle": "Wählen Sie frische, ausgewogene Gerichte für Ihren Alltag. Online bestellen, bequem liefern lassen – einfach, schnell und gesund",
+    "submitbtn": "Absenden",
+    "loginfirst": "Bitte loggen Sie sich zuerst ein",
+    "submitting": "Wird gesendet..."
+  },
+  "feedback": {
+    "title": "Vertrauen, das zählt",
+    "subtitle": "Erfahrungen unserer Nutzer"
+  },
+  "faq": {
+    "title": "Häufig gestellte Fragen",
+    "subtitle": "Alle wichtigen Informationen zu Bestellung, Lieferung und Zubereitung. Für weitere Fragen kontaktieren Sie uns gerne.",
+    "q1": "Wie kann ich bestellen?",
+    "s1": "Wählen Sie Ihr Gericht aus, legen Sie es in den Warenkorb und schließen Sie die Bestellung online ab. Anschließend erhalten Sie eine Bestellbestätigung.",
+    "q2": "Wann wird geliefert?",
+    "s2": "Standardbestellungen werden innerhalb von 30 Minuten geliefert. Plus- und Premium-Mitglieder erhalten eine bevorzugte Lieferung innerhalb von 15 Minuten.",
+    "q3": "Sind die Speisen frisch?",
+    "s3": "Wir legen großen Wert auf frische Speisen, die mit hochwertigen Zutaten zubereitet werden. Sollte es in seltenen Fällen zu Verderb oder Auslaufen kommen, erstatten wir Ihnen den Betrag selbstverständlich zurück.",
+    "q4": "Gibt es nicht-vegane Optionen?",
+    "s4": "Die meisten unserer Gerichte sind vegan. Eine kleine Auswahl an nicht-veganen Optionen ist ebenfalls verfügbar – selbstverständlich mit dem gleichen Fokus auf Gesundheit und Qualität.",
+    "q5": "Warum gibt es weniger nicht-vegane Optionen?",
+    "s5": "Wir konzentrieren uns hauptsächlich auf vegane Gerichte, da sie eine natürliche und ausgewogene Ernährung mit biologischen Zutaten unterstützen. Unser Ziel ist es, Fitness und Wohlbefinden zu fördern – nicht proteinlastige Ernährungsformen."
+  },
+  "contact": {
+    "title": "Fragen? Wir helfen Ihnen gerne",
+    "subtitle": "Kontaktieren Sie uns"
+  },
+  "Qform": {
+    "firstname": "Vorname",
+    "lastname": "Nachname",
+    "email": "E-Mail",
+    "question": "Ihre Frage",
+    "qplaceholder": "Geben Sie hier Ihre Frage ein …",
+    "submit": "Anfrage senden"
+  }
+}

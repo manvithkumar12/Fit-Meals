@@ -1,0 +1,23 @@
+{
+  "title": "Food Items",
+  "subtitle": "Manage your restaurant foods and menus",
+  "addFoodItemBtn": "Add Food Item",
+  "noItemsTitle": "No food items available",
+  "noItemsDescEmpty": "You haven't added any food items to your menu yet. Let's create your first one to attract customers!",
+  "noItemsDescSearch": "No food items matched your search criteria. Try a different term.",
+  "availableBadge": "Available",
+  "defaultDesc": "A delicious item prepared with fresh ingredients and authentic recipes.",
+  "editTitle": "Edit Food Item",
+  "editSubtitle": "Update details for {title}",
+  "itemNameLabel": "Item Name",
+  "priceLabel": "Price (₹)",
+  "prepTimeLabel": "Prep Time (min)",
+  "macrosTitle": "Macros (per 100g)",
+  "proteinLabel": "Protein (g)",
+  "carbsLabel": "Carbs (g)",
+  "fatsLabel": "Fats (g)",
+  "caloriesLabel": "Calories (kcal)",
+  "cancelBtn": "Cancel",
+  "savingBtn": "Saving...",
+  "saveChangesBtn": "Save Changes"
+}

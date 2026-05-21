@@ -1,0 +1,12 @@
+{
+  "orders": "Orders",
+  "reservations": "Reservations",
+  "title": "Past & Ongoing Orders",
+  "error_loading_orders": "Error loading orders",
+  "no_orders": "No orders yet",
+  "search_restaurants": "Search Restaurants",
+  "prev": "Prev",
+  "next": "Next",
+  "error_loading_reservations": "Error loading reservations",
+  "no_reservations": "No reservations yet"
+}

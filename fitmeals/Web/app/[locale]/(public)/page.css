@@ -1,0 +1,68 @@
+/* Hide scrollbar but allow scrolling */
+.scrollbar-hide::-webkit-scrollbar {
+  display: none;
+}
+
+.scrollbar-hide {
+  -ms-overflow-style: none;  /* IE & Edge */
+  scrollbar-width: none;     /* Firefox */
+}
+/* Hide scrollbar but allow scrolling */
+.scrollbar-hide {
+  overflow: auto;
+  -ms-overflow-style: none;  /* IE & Edge */
+  scrollbar-width: none;     /* Firefox */
+}
+
+.scrollbar-hide::-webkit-scrollbar {
+  display: none;
+}
+
+.hidebar {
+  -ms-overflow-style: none;  /* IE & Edge */
+  scrollbar-width: none;     /* Firefox */
+}
+/* Hide scrollbar but allow scrolling */
+.hidebar {
+  -ms-overflow-style: none;  /* IE & Edge */
+  scrollbar-width: none;     /* Firefox */
+}
+
+.hidebar::-webkit-scrollbar {
+  display: none;
+}
+
+/* Order status scrollbar hide */
+.order-status-hide {
+  overflow-y: auto; /* or scroll */
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+.order-status-hide::-webkit-scrollbar {
+  display: none;
+}
+
+/* Animated multicolor loading border for inputs */
+.ai-border-loading {
+  padding: 2px;
+  border-radius: 6px;
+  background: linear-gradient(90deg, red, yellow, green, blue);
+  background-size: 300% 300%;
+  animation: aiBorderMove 2s linear infinite;
+}
+
+.ai-border-loading > .ai-border-inner {
+  background: white;
+  border-radius: 5px;
+}
+
+/* Moves the gradient so the border colors flow around the element */
+@keyframes aiBorderMove {
+  0% {
+    background-position: 0% 50%;
+  }
+  100% {
+    background-position: 100% 50%;
+  }
+}

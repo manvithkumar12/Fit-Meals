@@ -1,0 +1,15 @@
+{
+  "homepage": {
+    "featurepop": "Vielen Dank für Ihre Anmeldung! Wir senden Ihnen Updates an Ihre E-Mail-Adresse.",
+    "submission": "ihre anfrage wirdbearbeitet. wir werden uns so bald wie möglich mit Ihnen in verbindung setzen"
+  },
+  "about": {
+    "pleaseLogin": "Bitte melden Sie sich zuerst an",
+    "callbacksoon": "Unser Team wird Sie in Kürze per E-Mail oder Telefon kontaktieren"
+  },
+  "common": {
+    "error": "Ein Fehler ist aufgetreten",
+    "failed": "Fehler beim Laden der Artikel",
+    "tryAgain": "Versuchen Sie es erneut"
+  }
+}

@@ -1,0 +1,22 @@
+{
+    "main": {
+      "title": "Kontakt",
+      "sub-title": "Haben Sie Fragen? Wir sind für Sie da!"
+    },
+    "FeedBack": {
+      "title": "Feedback",
+      "sub-title": "Teilen Sie uns Ihre Meinung mit",
+      "btnTxt": "Feedback senden"
+    },
+    "Contact": {
+      "title": "Kontakt",
+      "sub-title":"Chat mit Bot oder Mitarbeiter",
+      "btnTxt": "Jetzt kontaktieren"
+    },
+    "Query": {
+      "title": "Anfrage",
+      "sub-title": "Stellen Sie uns Ihre Frage",
+      "btnTxt": "Anfrage senden"
+    },
+    "bottomText": "Wir freuen uns, von Ihnen zu hören!"
+  }

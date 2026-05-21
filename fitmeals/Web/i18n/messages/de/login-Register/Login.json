@@ -1,0 +1,58 @@
+{
+  "title-section1": {
+    "title": "Benutzeranmeldung",
+    "subtitle": "Melden Sie sich in Ihrem Konto an",
+    "coloum1": "Neuer Benutzer?",
+    "Register": "Registrieren"
+  },
+  "title-section2": {
+    "title": "Anmeldung für Lieferpartner",
+    "subtitle": "Melden Sie sich in Ihrem Lieferpartnerkonto an",
+    "coloum1": "Neuer Lieferpartner?",
+    "Register": "Registrieren"
+  },
+  "title-section3": {
+    "title": "Anmeldung für Restaurantpartner",
+    "subtitle": "Melden Sie sich in Ihrem Restaurantpartnerkonto an",
+    "coloum1": "Neuer Restaurantpartner?",
+    "Register": "Registrieren"
+  },
+  "title-section4": {
+    "title": "Support-Team Anmeldung",
+    "subtitle": "Melden Sie sich in Ihrem Konto an",
+    "coloum1": "",
+    "Register": ""
+  },
+  "body": {
+    "title": "Benutzeranmeldung",
+    "placeholder_email": "E-Mail",
+    "placeholder_password": "Passwort",
+    "forgot_password": "Passwort vergessen?",
+    "login": "Anmelden",
+    "login_with_otp": "Mit Magic-Link anmelden",
+    "or": "ODER",
+    "sign_up_with_google": "Mit Google registrieren",
+    "sign_up_with_facebook": "Mit Facebook registrieren",
+    "sign_up_with_apple": "Mit Apple registrieren"
+  },
+  "footer": {
+    "new_user": "Neuer Benutzer?",
+    "register": "Registrieren"
+  },
+  "app_card": {
+    "title": "Unsere App herunterladen",
+    "subtitle": "Bald als mobile App verfügbar"
+  },
+  "dynamic_card": {
+    "login_as_restaurant_partner": "Als Restaurantpartner anmelden",
+    "login_as_user": "Als Kunde anmelden",
+    "login_as_delivery_partner": "Als Lieferpartner anmelden"
+  },
+  "login_card": {
+    "title": "Mit OTP anmelden",
+    "sub-title": "(Einmalpasswort)",
+    "placeholder-1": "Mobilnummer eingeben",
+    "placeholder-2": "OTP eingeben",
+    "btn": "OTP bestätigen"
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "homepage": {
+    "featurepop": "Thanks for subscribing! We’ll send updates to your email",
+    "submission": "Your query has been submitted successfully"
+  },
+  "about": {
+    "callbacksoon": "Our team will contact you shortly via email or phone",
+    "pleaseLogin": "Please login first"
+  },
+  "common": {
+    "error": "an error occured",
+    "failed": "Failed to load items",
+    "tryAgain": "Try again"
+  }
+}

@@ -1,0 +1,134 @@
+{
+  "main": {
+    "title": "KI-gestützter Ernährungsplan",
+    "sub-title": "Individueller täglicher Ernährungsplan mit KI",
+    "log_meal": "Mahlzeit"
+  },
+  "disclamer": {
+    "title": "Haftungsausschluss",
+    "description": "Gesundheits- und persönliche Daten der Nutzer werden sicher gespeichert und ausschließlich zur Erstellung personalisierter Ernährungsempfehlungen in diesem Prototyp-System verwendet. ",
+    "description2": "Dieses System ist ein Prototyp und ersetzt keine professionelle medizinische Beratung, Diagnose oder Behandlung."
+  },
+  "whySection": {
+    "title": "Warum dieser Ernährungsplan?",
+    "description": "Dieser Ernährungsplan wird basierend auf den Körperdaten, dem Lebensstil und dem Ziel des Benutzers personalisiert. Er hilft, ein gesundes Gewicht sicher zu erreichen und gleichzeitig eine ausgewogene Ernährung und ausreichend Energie zu gewährleisten."
+  },
+  "Methodology": {
+    "title": "KI-Methodik:",
+    "point1": "Erfasst Benutzereingaben (Geschlecht, Gewicht, Größe, Alter, Aktivität, Ziel, Zielgewicht)",
+    "point2": "Wandelt Eingaben mithilfe von Kodierung in numerische Werte um",
+    "point3": "Verwendet ein trainiertes Random-Forest-Modell zur Vorhersage von Kalorien und Makronährstoffen",
+    "point4": "Schätzt die benötigte Zeit basierend auf der Gewichtsdifferenz",
+    "point5": "Erstellt eine mahlzeitenbasierte Nährstoffverteilung (Frühstück, Mittagessen, Abendessen)"
+  },
+  "Navbar": {
+    "Protein": "Protein",
+    "Carbo": "Kohlenhydrate",
+    "Calories": "Kalorien",
+    "Fats": "Fette",
+    "replace": "Ersetzen",
+    "todaysProgress": "Heutiger Fortschritt"
+  },
+  "Suggestions": {
+    "title": "KI-Vorschläge",
+    "description": "Ernährungsplan zur Gewichtsabnahme, berechnet basierend auf Ihrem",
+    "weight": "Gewicht",
+    "height": "Größe",
+    "age": "Alter",
+    "activity level": "Aktivitätsniveau",
+    "goal": "Ziel",
+    "goals": "Ihre Informationen & Ziele",
+    "updatebtn": "Aktualisieren",
+    "male": "Männlich",
+    "targetWeight": "Zielgewicht",
+    "sh-1": "Mit Ihrem personalisierten Ernährungsplan erreichen Sie Ihr Ziel in ",
+    "sh-2": "Tagen, mit einem täglichen Bedarf von",
+    "Protein": "Protein",
+    "Carbo": "Kohlenhydrate",
+    "Calories": "Kalorien",
+    "Fats": "Fette"
+  },
+  "MealTypes": {
+    "BreakFast": "Frühstück",
+    "Lunch": "Mittagessen",
+    "Dinner": "Abendessen"
+  },
+  "Information": {
+    "title": "Ihre Informationen",
+    "Gender": "Geschlecht",
+    "FeMale": "Weiblich",
+    "Weight": "Gewicht",
+    "Height": "Größe",
+    "goal": "Ziel",
+    "Age": "Alter",
+    "Activity Level": "Aktivitätsniveau",
+    "Hard": "Hoch",
+    "Weight_Loss": "Gewichtsabnahme",
+    "updatebtn": "Aktualisieren"
+  },
+  "btnTxt": {
+    "View_Meal": "Mahlzeit anzeigen"
+  },
+  "Details": {
+    "title": "Informationen Aktualisieren",
+    "male": "Männlich",
+    "female": "Weiblich",
+    "Weight": "Gewicht",
+    "Height": "Größe",
+    "goal": "Ziel",
+    "Age": "Alter",
+    "low": "Niedrig",
+    "moderate": "Mittel",
+    "high": "Hoch",
+    "weight_gain": "Gewichtszunahme",
+    "weight_loss": "Gewichtsverlust",
+    "maintain_weight": "Gewicht halten",
+    "targetWeight": "Zielgewicht",
+    "update": "Aktualisieren",
+    "updating": "Aktualisieren"
+  },
+  "ai_steps": {
+    "createbtn": "Diätplan erstellen"
+  },
+  "timeTable": {
+    "progressFor": "Fortschritt für",
+    "creationDate": "Erstellungsdatum",
+    "days": "Tage",
+    "breakFast": "Frühstück",
+    "lunch": "Mittagessen",
+    "dinner": "Abendessen",
+    "noItems": "Keine Artikel für ",
+    "yet": "hinzugefügt.",
+    "addItems": "Beginnen Sie, indem Sie Ihre Lebensmittel hinzufügen",
+    "mealsLogged": "Mahlzeitenprotokoll: ",
+    "remaining": "Verbleibend:"
+  },
+  "error": {
+    "no_results": "Keine Lebensmittel für diese Mahlzeit gefunden.",
+    "search_again": "Lebensmittel suchen"
+  },
+  "dailyGoal": {
+    "title": "Ihr tägliches Ziel:",
+    "calories": "Kalorien:",
+    "protein": "Protein:",
+    "fats": "Fette:",
+    "carbs": "Kohlenhydrate:",
+    "achieve1": "Sie werden Ihr Ziel voraussichtlich in ",
+    "achieve2": " Tagen erreichen",
+    "selectFood": "Wählen Sie Lebensmittel, die zu Ihrem Ernährungsplan passen",
+    "breakfast": "Frühstück",
+    "lunch": "Mittagessen",
+    "dinner": "Abendessen",
+    "added_goals": "hinzugefügte Ziele ="
+  },
+  "foodCard": {
+    "unknown": "Unbekanntes Lebensmittel",
+    "calories": "Kalorien:",
+    "protein": "Protein:",
+    "fats": "Fette:",
+    "carbo": "Kohlenhydrate:",
+    "salts": "Salz:",
+    "remove": "Entfernen",
+    "add": "Hinzufügen"
+  }
+}

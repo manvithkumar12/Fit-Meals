@@ -1,0 +1,68 @@
+{
+  "sidebar": {
+    "underDevelopment": "In Entwicklung",
+    "title": "KI-Lebensmittelerkennung",
+    "description": "Die KI-Lebensmittelerkennung befindet sich derzeit in der Entwicklung. Das aktuelle Modell unterstützt die folgenden Lebensmittelkategorien und wird in zukünftigen Versionen weiter ausgebaut.",
+    "developmentProgress": "Entwicklungsfortschritt",
+    "comingSoon": "Weitere Lebensmittelkategorien und Funktionen zur Ernährungsinformation folgen in Kürze.",
+    "downloadSample": "Beispieldaten herunterladen"
+  },
+  "nutritionCard": {
+    "title": "Nährwertschätzung",
+    "forTopMatch": "Für Top-Treffer:",
+    "portionSize": "Portionsgröße",
+    "calories": "Kalorien 🔥",
+    "protein": "Protein 💪",
+    "carbs": "Kohlenhydrate 🍚",
+    "fats": "Fette 🥑",
+    "kcal": "kcal",
+    "g": "g"
+  },
+  "uploadDropzone": {
+    "heroTitle": "Trainieren. Erkennen. Analysieren.",
+    "heroSubtitle": "Erkennen Sie Mahlzeiten, schätzen Sie Kalorien und verstehen Sie die Ernährung sofort.",
+    "uploadPrompt": "Mahlzeitbild hochladen",
+    "uploadHelp": "Drag & Drop oder zum Durchsuchen klicken",
+    "remove": "Entfernen",
+    "change": "Ändern",
+    "analyzingOverlay": "Bild wird mit KI analysiert...",
+    "analyzeButton": "Lebensmittel analysieren",
+    "analyzingButton": "Analysieren..."
+  },
+  "featureCards": {
+    "card1Title": "Lebensmittelerkennung",
+    "card1Desc": "Fortschrittliche Computer-Vision-Modelle, trainiert, um spezifische Zutaten und komplexe gemischte Mahlzeiten mit hoher Präzision zu identifizieren.",
+    "card2Title": "Nährwertanalyse",
+    "card2Desc": "Automatische Aufschlüsselung von Makronährstoffen einschließlich Protein, Kohlenhydraten und Fetten basierend auf den erkannten Lebensmitteln.",
+    "card3Title": "Kalorienschätzung",
+    "card3Desc": "Intelligente Schätzung der Portionsgröße in Kombination mit unserer umfangreichen Datenbank, um sofort genaue Kalorienzahlen bereitzustellen."
+  },
+  "analysisResults": {
+    "title": "Ergebnisse abgleichen"
+  },
+  "toast": {
+    "error": "Während der Analyse ist ein Fehler aufgetreten."
+  },
+  "categories": {
+    "Caesar Salad": "Caesar-Salat",
+    "Omelette": "Omelett",
+    "Spaghetti Bolognese": "Spaghetti Bolognese",
+    "Steak": "Steak",
+    "Apple Pie": "Apfelkuchen",
+    "Cheesecake": "Käsekuchen",
+    "Waffles": "Waffeln",
+    "Pancakes": "Pfannkuchen",
+    "Sushi": "Sushi",
+    "Ramen": "Ramen",
+    "Fried Rice": "Gebratener Reis",
+    "Hamburger": "Hamburger",
+    "Pizza": "Pizza",
+    "Hot Dog": "Hot Dog",
+    "Ice Cream": "Eiscreme"
+  },
+  "ux": {
+    "noFoodDetected": "⚠ Kein erkennbares Essen gefunden. Bitte laden Sie ein Bild von einem Essen hoch.",
+    "lowConfidence": "Vorhersage mit geringer Zuverlässigkeit.",
+    "emptyState": "Laden Sie ein Bild hoch und klicken Sie auf 'Lebensmittel analysieren'."
+  }
+}

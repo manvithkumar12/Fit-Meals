@@ -1,0 +1,72 @@
+{
+  "main": {
+    "title": "Hallo",
+    "sub-title": "Verwalten Sie Ihre persönlichen Daten, Kontoeinstellungen und sehen Sie sich Ihre bisherigen Interaktionen an."
+  },
+  "personal": {
+    "title": "Persönliche Informationen",
+    "sub-title": "Aktualisieren Sie Ihre Profildaten",
+    "name": "Vollständiger Name",
+    "email": "E-Mail-Adresse",
+    "mobile": "Mobilnummer",
+    "btnTxt": "Profil aktualisieren"
+  },
+  "role": {
+    "CUSTOMER": "KUNDE",
+    "OWNER": "BESITZER",
+    "DELIVERY": "LIEFERUNG",
+    "ADMIN": "ADMIN",
+    "SUPPORT": "SUPPORT",
+    "NULL": "KEINE"
+  },
+  "account": {
+    "title": "Kontoeinstellungen",
+    "sub-title": "Verwalten Sie Ihre Daten, Sicherheit und Einstellungen",
+    "password": "Passwort ändern",
+    "sub-password": "Aktualisieren Sie Ihr Passwort regelmäßig zur Sicherheit",
+    "manage-subscription": "Abonnement verwalten",
+    "sub-manage-subscription": "Verwalten oder aktualisieren Sie Ihren Abonnementplan",
+    "cancel-subscription": "Abonnement kündigen",
+    "sub-cancel-subscription": "Entfernen Sie Ihre Abonnementpläne",
+    "delete-subscription": "Konto löschen",
+    "sub-delete-subscription": "Alle Ihre persönlichen Daten werden gemäß der DSGVO dauerhaft gelöscht",
+    "btn1": "Aktualisieren",
+    "btn2": "Plan ändern",
+    "btn3": "Abonnement kündigen",
+    "btn4": "Löschen"
+  },
+  "popup": {
+    "title": "Geben Sie den an Ihre registrierte E-Mail-Adresse gesendeten OTP-Code ein.",
+    "password-placeholder1": "Einmalpasswort (OTP)",
+    "password-placeholder2": "Neues Passwort",
+    "subscription-placeholder1": "Einmalpasswort (OTP)",
+    "subscription-placeholder2": "Bitte teilen Sie uns den Grund für die Kündigung mit (optional). Dies hilft uns, unseren Service zu verbessern.",
+    "subscription-alert": "Diese Aktion kündigt Ihr Abonnement. Ihnen werden keine weiteren Gebühren berechnet.",
+    "deletion-text": "Zur Bestätigung geben Sie `MEIN KONTO LÖSCHEN` in das obige Feld ein",
+    "deletion-placeholder1": "Zur Bestätigung geben Sie `MEIN KONTO LÖSCHEN` in das obige Feld ein",
+    "startbtn": "Starten",
+    "password": "Passwort",
+    "subscription_agree": "Ich stimme der Kündigung meines Abonnements zu"
+  },
+  "passwordUpdate": {
+    "success_title": "Passwort aktualisiert!",
+    "success_sub": "Ihr Konto ist jetzt sicherer.",
+    "title": "Passwort ändern",
+    "sub": "Aktualisieren Sie Ihr Passwort, um Ihr Konto sicher zu halten.",
+    "new_password": "Neues Passwort",
+    "new_password_ph": "Neues Passwort erstellen",
+    "confirm_password": "Passwort bestätigen",
+    "confirm_password_ph": "Neues Passwort bestätigen",
+    "req_length": "8+ Zeichen",
+    "req_upper": "Großbuchstabe",
+    "req_number": "Zahl",
+    "cancel": "Abbrechen",
+    "update": "Passwort aktualisieren",
+    "updating": "Aktualisiere..."
+  },
+  "common": {
+    "submit": "Einreichen",
+    "submitting": "Einreichen...",
+    "change_sub_from": "Abonnement ändern von {type} zu"
+  }
+}

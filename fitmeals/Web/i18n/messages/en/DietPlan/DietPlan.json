@@ -1,0 +1,136 @@
+{
+  "main": {
+    "title": "AI-powered Diet Plan",
+    "sub-title": "Customized daily meal plan using AI",
+    "log_meal": "Log Meal"
+  },
+  "disclamer": {
+    "title": "Disclaimer",
+    "description": "User health and personal data are stored securely and are used only for generating personalized diet recommendations in this prototype system. ",
+    "description2": "This system is a prototype and does not replace professional medical advice, diagnosis, or treatment."
+  },
+  "whySection": {
+    "title": "Why this diet plan ?",
+    "description": "This diet plan is personalized based on the user's body parameters, lifestyle, and fitness goal. It helps users achieve healthy weight changes safely while maintaining balanced nutrition and energy levels."
+  },
+  "Methodology": {
+    "title": "AI Methodology:",
+    "point1": "Collects user inputs (gender, weight, height, age, activity, goal, target weight)",
+    "point2": "Converts inputs into numerical format using encoding",
+    "point3": "Uses a trained Random Forest model to predict calories and macros",
+    "point4": "Estimates timeline based on weight difference",
+    "point5": "Generates meal-wise nutrition distribution (breakfast, lunch, dinner)"
+  },
+  "Navbar": {
+    "Protein": "Protein",
+    "Carbo": "Carbohydrates",
+    "Calories": "Calories",
+    "Fats": "Fats",
+    "replace": "Replace",
+    "todaysProgress": "Todays Progress"
+  },
+  "Suggestions": {
+    "title": "AI Suggestions",
+    "description": "Diet plan generated for weight loss, calculated based on your",
+    "weight": "weight",
+    "height": "height",
+    "age": "age",
+    "activity level": "Activity level",
+    "goal": "goal",
+    "goals": "Your Info & Goals",
+    "updatebtn": "Update",
+    "male": "Male",
+    "sh-1": "Based on your personalized diet plan, you will reach your goal in ",
+    "sh-2": "days, with a daily requirement of",
+    "Protein": "Protein",
+    "Carbo": "Carbohydrates",
+    "Calories": "Calories",
+    "Fats": "Fats",
+    "targetWeight": "Target Weight"
+  },
+  "MealTypes": {
+    "BreakFast": "Breakfast",
+    "Lunch": "Lunch",
+    "Dinner": "Dinner"
+  },
+  "Information": {
+    "title": "Your Information",
+    "Gender": "Gender",
+    "FeMale": "Female",
+    "Weight": "Weight",
+    "Height": "Height",
+    "goal": "Goal",
+    "Age": "Age",
+    "Activity Level": "Activity Level",
+    "Hard": "Hard",
+    "Weight_Loss": "Weight Loss",
+    "updatebtn": "Update"
+  },
+  "btnTxt": {
+    "View_Meal": "View Meal"
+  },
+  "Details": {
+    "title": "Update Information",
+    "male": "Male",
+    "female": "Female",
+    "Weight": "Weight",
+    "Height": "Height",
+    "goal": "Goal",
+    "Age": "Age",
+    "Activity Level": "Activity Level",
+    "Hard": "Hard",
+    "weight_gain": "Weight Gain",
+    "weight_loss": "Weight Loss",
+    "updatebtn": "Update",
+    "targetWeight": "Target Weight",
+    "low": "Low",
+    "moderate": "Moderate",
+    "high": "High",
+    "update": "Update",
+    "updating": "Updating"
+  },
+  "ai_steps": {
+    "createbtn": "Create Diet Plan"
+  },
+  "timeTable": {
+    "progressFor": "Progress for",
+    "creationDate": "Creation Date",
+    "days": "Days",
+    "breakFast": "BreakFast",
+    "lunch": "Lunch",
+    "dinner": "Dinner",
+    "noItems": "No items added for",
+    "yet": "yet.",
+    "addItems": "Start by adding your food items",
+    "mealsLogged": "Meals Logged: ",
+    "remaining": "Remaining:"
+  },
+  "error": {
+    "no_results": "No food items found for this meal.",
+    "search_again": "Search Food"
+  },
+  "dailyGoal": {
+    "title": "Your daily goal:",
+    "calories": "Calories:",
+    "protein": "Protein:",
+    "fats": "Fats:",
+    "carbs": "Carbohydrates:",
+    "achieve1": "You are likely to achieve your goal in ",
+    "achieve2": " days",
+    "selectFood": "Select food items that match your diet plan",
+    "breakfast": "Breakfast",
+    "lunch": "Lunch",
+    "dinner": "Dinner",
+    "added_goals": "added goals ="
+  },
+  "foodCard": {
+    "unknown": "Unknown Food",
+    "calories": "Calories:",
+    "protein": "Protein:",
+    "fats": "Fats:",
+    "carbo": "Carbo:",
+    "salts": "Salts:",
+    "remove": "Remove",
+    "add": "Add"
+  }
+}

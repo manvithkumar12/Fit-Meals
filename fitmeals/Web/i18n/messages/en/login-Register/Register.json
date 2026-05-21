@@ -1,0 +1,42 @@
+{
+  "Register": {
+    "Customer_Registeration": "Customer Registration",
+    "Email": "Email",
+    "Username": "Username",
+    "Password": "Password",
+    "RegisterBtn": "Register",
+    "OR": "OR",
+    "RegisterWithGoogle": "Register with google",
+    "Already_have_account": "Already have account",
+    "Login?": "Login?",
+    "app_card": {
+      "title": "Download our app",
+      "subtitle": "Soon it will be available as a mobile app"
+    },
+    "card": {
+      "RP": "Register as Restaurant Partner",
+      "CU": "Register as Customer",
+      "DP": "Register as Delivery Partner"
+    },
+    "RoleConfig": {
+      "Customer": {
+        "title": "Customer Registeration",
+        "subtitle": "Customer Registeration",
+        "coloum1": "Already have account",
+        "Login": "Login?"
+      },
+      "DeliveryPartner": {
+        "title": "Delivery Partner Registeration",
+        "subtitle": "Log in to your delivery partner account",
+        "coloum1": "Already have account",
+        "Login": "Login?"
+      },
+      "RestaurantPartner": {
+        "title": "Restaurant Partner Registeration",
+        "subtitle": "Log in to your restaurant partner account",
+        "coloum1": "Already have account",
+        "Login": "Login?"
+      }
+    }
+  }
+}
