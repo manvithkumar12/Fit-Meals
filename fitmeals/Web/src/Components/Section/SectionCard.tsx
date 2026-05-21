@@ -92,7 +92,7 @@ const SectionCard = () => {
               fill
               sizes="(min-width: 1280px) 50vw, 100vw"
               className="object-cover object-top rounded-2xl md:shadow-2xl"
-              loading="lazy"
+              priority
               placeholder="blur"
               blurDataURL="/blur.jpeg"
             />
@@ -104,7 +104,7 @@ const SectionCard = () => {
               fill
               sizes="(max-width:1280px),50vw,100vw"
               className="object-contain"
-              loading="lazy"
+              priority
               placeholder="blur"
               blurDataURL="/blur.jpeg"
             />
@@ -116,7 +116,7 @@ const SectionCard = () => {
               fill
               sizes="(max-width:1280px),50vw,100vw"
               className="object-contain"
-              loading="lazy"
+              priority
               placeholder="blur"
               blurDataURL="/blur.jpeg"
             />
