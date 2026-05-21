@@ -1,0 +1,78 @@
+{
+  "cta": {
+    "badge": "Gesund essen starten",
+    "title": "Bereit, gesünder zu essen?",
+    "desc": "Frische Mahlzeiten, kreiert von Ernährungsexperten und direkt an Ihre Haustür geliefert. Beginnen Sie noch heute Ihre Wellness-Reise.",
+    "order": "Jetzt bestellen",
+    "browse": "Menü durchstöbern"
+  },
+  "brand": {
+    "desc": "Nahrhafte Mahlzeiten, täglich frisch zubereitet, um Ihnen zu helfen, gesünder zu leben, wertvolle Zeit zu sparen und sich rundum wohlzufühlen."
+  },
+  "columns": {
+    "quickLinks": "Schnelllinks",
+    "services": "Dienstleistungen",
+    "management": "Verwaltung",
+    "contactInfo": "Kontaktinfo"
+  },
+  "links": {
+    "home": "Startseite",
+    "aboutUs": "Über uns",
+    "services": "Dienstleistungen",
+    "healthPlans": "Gesundheitspläne",
+    "contactUs": "Kontakt",
+    "faq": "FAQ",
+    "verificationStatus": "Überprüfungsstatus",
+    "verifyPartner": "Partner verifizieren"
+  },
+  "servicesList": {
+    "mealDelivery": "Essenslieferung",
+    "dietPlans": "Personalisierte Ernährungspläne",
+    "weightLoss": "Programme zur Gewichtsabnahme",
+    "fitness": "Fitness-Ernährung",
+    "corporate": "Firmenverpflegung",
+    "catering": "Gesundes Catering"
+  },
+  "managementList": {
+    "dashboard": "Dashboard",
+    "earnings": "Einnahmen",
+    "items": "Gerichte",
+    "reservation": "Reservierung",
+    "profile": "Profil"
+  },
+  "contact": {
+    "support": "24/7 Premium-Support verfügbar"
+  },
+  "newsletter": {
+    "title": "Bleiben Sie auf dem Laufenden",
+    "desc": "Abonnieren Sie unseren Newsletter für gesunde Rezepte, Ernährungstipps und exklusive Rabattangebote.",
+    "placeholder": "Geben Sie Ihre E-Mail-Adresse ein",
+    "button": "Abonnieren",
+    "success": "Vielen Dank für das Abonnieren von FitMeals!",
+    "error": "Bitte geben Sie eine gültige E-Mail-Adresse ein."
+  },
+  "trust": {
+    "ingredients": {
+      "title": "Gesunde Zutaten",
+      "desc": "100% biologische & erntefrische Herkunft"
+    },
+    "nutritionists": {
+      "title": "Erfahrene Ernährungsberater",
+      "desc": "Von zertifizierten Experten geprüfte Diäten"
+    },
+    "delivery": {
+      "title": "Schnelle Lieferung",
+      "desc": "Täglich direkt an Ihre Haustür"
+    },
+    "payments": {
+      "title": "Sichere Zahlungen",
+      "desc": "Sichere & voll verschlüsselte Kassenbereiche"
+    }
+  },
+  "bottom": {
+    "privacy": "Datenschutz-Bestimmungen",
+    "terms": "Nutzungsbedingungen",
+    "cookies": "Cookie-Richtlinie",
+    "rights": "© 2026 FitMeals. Alle Rechte vorbehalten."
+  }
+}
