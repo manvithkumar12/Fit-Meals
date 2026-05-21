@@ -75,5 +75,39 @@
     "question": "YOUR QUESTION",
     "qplaceholder": "Type your question here …",
     "submit": "Submit request"
+  },
+  "featuresModal": {
+    "headerTitle": "Explore Premium Features",
+    "headerSubtitle": "Discover what makes FitMeals the ultimate fitness companion.",
+    "smartRecommendations": {
+      "title": "Smart Recommendations",
+      "description": "Get AI-powered meal and nutrition suggestions tailored to your fitness goals, dietary preferences, and lifestyle.",
+      "tag1": "AI Powered",
+      "tag2": "Personalized"
+    },
+    "macroTracking": {
+      "title": "Macro Tracking",
+      "description": "Monitor calories, protein, carbohydrates, and fats with detailed insights to stay aligned with your nutrition goals.",
+      "tag1": "Nutrition",
+      "tag2": "Analytics"
+    },
+    "dietPlan": {
+      "title": "Diet Plan",
+      "description": "Generate personalized meal plans and structured nutrition schedules for weight loss, muscle gain, or healthy living.",
+      "tag1": "Meal Planning",
+      "tag2": "Goals"
+    },
+    "foodRecognition": {
+      "title": "Food Recognition",
+      "description": "Upload food images to instantly identify dishes and view calorie estimates, ingredients, and nutritional information.",
+      "tag1": "AI Vision",
+      "tag2": "Nutrition"
+    },
+    "chatBot": {
+      "title": "Chat Bot",
+      "description": "Get instant answers to fitness, diet, nutrition, and wellness questions with your intelligent health assistant.",
+      "tag1": "AI Assistant",
+      "tag2": "24/7 Support"
+    }
   }
 }
