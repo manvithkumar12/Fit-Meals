@@ -266,8 +266,8 @@ const MealInfo = () => {
               {t("form_section.Weight")} (in g)
               <span className="text-red-500">*</span>
             </label>
-            <input
-              type="text"
+     <input
+              type="number"
               onChange={handleChange}
               name="weight"
               value={context?.inputData?.weight || ""}
