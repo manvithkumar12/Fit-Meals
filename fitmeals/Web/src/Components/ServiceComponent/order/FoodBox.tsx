@@ -256,8 +256,8 @@ const FoodBox = ({
                   {t("CartPage.add_to_cart")}
                 </button>
               )}
-              <div className=" bg-green-100 mt-2 p-2 rounded-md whitespace-nowrap">
-                <span className="font-bold">€ 23</span>
+              <div className=" bg-green-100 mt-2 p-2 text-[14px] rounded-md whitespace-nowrap">
+                <span className="font-bold">€{itemsData.price}</span>
               </div>
             </div>
           </div>
