@@ -168,27 +168,25 @@ const FoodBox = ({
         <div className="flex items-center gap-2">
           {(itemsData.type?.toUpperCase() === "VEGETARIAN" ||
             itemsData.type?.toUpperCase() === "NON_VEGETARIAN") && (
-            <div
-              className={`w-3.5 h-3.5 border flex items-center justify-center rounded-[3px] shrink-0 bg-white ${
-                itemsData.type?.toUpperCase() === "VEGETARIAN"
+              <div
+                className={`w-3.5 h-3.5 border flex items-center justify-center rounded-[3px] shrink-0 bg-white ${itemsData.type?.toUpperCase() === "VEGETARIAN"
                   ? "border-green-600"
                   : "border-red-600"
-              }`}
-              title={
-                itemsData.type?.toUpperCase() === "VEGETARIAN"
-                  ? "Vegetarian"
-                  : "Non-Vegetarian"
-              }
-            >
-              <div
-                className={`w-1.5 h-1.5 rounded-full ${
+                  }`}
+                title={
                   itemsData.type?.toUpperCase() === "VEGETARIAN"
+                    ? "Vegetarian"
+                    : "Non-Vegetarian"
+                }
+              >
+                <div
+                  className={`w-1.5 h-1.5 rounded-full ${itemsData.type?.toUpperCase() === "VEGETARIAN"
                     ? "bg-green-600"
                     : "bg-red-600"
-                }`}
-              />
-            </div>
-          )}
+                    }`}
+                />
+              </div>
+            )}
           <h1 className="text-sm md:text-lg font-semibold">{itemsData.title}</h1>
         </div>
         <h3 className="text-[12px] md:text-[14px] w-[95%] truncate ">
@@ -201,24 +199,23 @@ const FoodBox = ({
         <div className="flex w-full">
           <div className="flex-col text-xs md:text-lg flex w-full">
             <div className="md:text-[13px] text-xs md:text-base whitespace-nowrap xl:text-[14px]">
-              Protein :{" "}
+              {t("macros.protein")} :{" "}
               <span className="font-semibold">
                 {" "}
                 {itemsData.proteinPer100gm} g{" "}
               </span>
-              <span className="font-bold text-xs md:text-base">•</span> calories
-              :
+              <span className="font-bold text-xs md:text-base">•</span> {t("macros.calories")} :
               <span className="font-semibold">
                 {itemsData.caloriesPer100gm} kcal{" "}
               </span>
             </div>
-            <div className="md:text-[13px] text-xs md:text-base whitespace-nowrap lg:text-[14px]">
-              Carbohydrates :{" "}
+            <div className="md:text-[13px]  text-xs md:text-base whitespace-nowrap lg:text-[14px]">
+              {t("macros.carbohydrates")} :{" "}
               <span className="font-semibold">
                 {" "}
                 {itemsData.carboHydratePer100gm} g{" "}
               </span>
-              <span className="font-bold">•</span> Fats :
+              <span className="font-bold">•</span> {t("macros.fats")} :{" "}
               <span className="font-semibold">
                 {" "}
                 {itemsData.fatsPer100gm} g{" "}
