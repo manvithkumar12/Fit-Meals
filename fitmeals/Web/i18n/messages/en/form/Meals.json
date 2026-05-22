@@ -7,7 +7,12 @@
     "Title": "Meal Title",
     "placeholder_title": "Enter Item Name",
     "Price": "Price ",
-    "placeholder_price": "Enter Price"
+    "placeholder_price": "Enter Price",
+    "Image": "Meal Image",
+    "placeholder_image": "Upload Meal Image",
+    "change_image": "Change Photo",
+    "remove_image": "Remove Photo",
+    "upload_subtext": "Drag & drop or click to browse JPG, PNG or WEBP"
   },
   "form_section": {
     "Type": "Type",
@@ -18,7 +23,7 @@
     "placeholder_cooking_time": "Select (minutes)",
     "Food Benefits (max 2)": "Food Benefits (max 2)",
     "placeholder_food_benefits": "Eg-Healthy, Protein",
-    "Description (max 4)": "Description (max 4)  ",
+    "Description (max 4)": "Description (max 3)  ",
     "placeholder_description": "Enter Food Description",
     "Ingredients": "Ingredients used to make food",
     "placeholder_ingredients": "Enter Food Ingredients ",
@@ -27,7 +32,8 @@
     "Vegetarian": "vegetarian",
     "Non-Vegetarian": "non-vegetarian",
     "Vegan": "vegan",
-    "Category": "Category"
+    "Category": "Category",
+    "quantity": "Quantity"
   },
   "Nutritions": {
     "title": "Nutritions",
@@ -45,5 +51,28 @@
   "Guidelines_section": {
     "guideline_1": "I confirm that the information provided is correct and complies with EU food regulations.",
     "guideline_2": "The restaurant is responsible for accuracy of ingredients, allergens, and nutritional values. FitMeals is not liable for incorrect information.Add Meal"
+  },
+  "ConfirmSection": {
+    "btnTxt": "Add Meal",
+    "title": "Confirm Meal Details",
+    "subtitle": "Please review all the details before adding the meal to your menu.",
+    "general_info": "General Information",
+    "meal_name": "Meal Name",
+    "not_specified": "Not specified",
+    "price": "Price",
+    "type": "Type",
+    "category": "Category",
+    "weight": "Weight",
+    "prep_time": "Prep Time",
+    "nutrition_title": "Nutrition (per 100g)",
+    "protein": "Protein",
+    "carbs": "Carbs",
+    "fats": "Fats",
+    "calories": "Calories",
+    "salt": "Salt",
+    "image": "Image",
+    "no_image": "No image selected",
+    "saving": "Saving to Menu...",
+    "confirm_btn": "Confirm & Add Meal"
   }
 }
