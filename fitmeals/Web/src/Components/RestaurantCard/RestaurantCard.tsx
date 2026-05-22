@@ -96,7 +96,7 @@ const RestaurantCard = ({
   return (
     <div className="w-full overflow-scroll h-max max-h-57 rounded-lg pl-2 pt-2 pb-2 shadow-md hover:shadow-lg transition-shadow flex bg-white border border-gray-300">
       <div className="w-[38%] mt-3">
-        <div className="image relative rounded-lg h-30 md:h-38 bg-red-400">
+        <div className="image relative rounded-lg h-30 md:h-38">
           <Image
             alt={hotelData?.name || "Restaurant Image"}
             src={hotelData?.images || "/Fitmeals-logo.png"}
