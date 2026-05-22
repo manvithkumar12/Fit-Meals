@@ -32,6 +32,9 @@ export const getCookbooksById = async (itemId: number) => {
   try {
     const cookbookData = await prisma.cookBook.findUnique({
       where: { id: itemId },
+      include: {
+        FoodIngredients: true,
+      },
     });
     return cookbookData;
   } catch {
