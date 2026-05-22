@@ -26,14 +26,26 @@ interface FoodDataProps {
     category: string;
     imgUrl: string | null;
     salt: number;
+    Ingredients?: {
+      id?: number;
+      title: string;
+      quantity: string;
+      imgUrl: string;
+    }[];
   };
   restaurantName: string;
 }
+
 const OrderItem = ({ itemData, restaurantName }: FoodDataProps) => {
+  const ingredients = itemData.Ingredients || [];
+
   return (
     <>
       <ChatBotButton />
-      <div className="pb-5  flex flex-col overflow-hidden justify-center items-center z-5">
+      {/* Premium Content Wrapper */}
+      <div className="min-h-screen bg-zinc-50/40 dark:bg-zinc-950 pb-20">
+        
+        {/* Navigation Navbar */}
         <NavbarData
           NavType={"order"}
           itemsdata={{
@@ -43,87 +55,49 @@ const OrderItem = ({ itemData, restaurantName }: FoodDataProps) => {
             restaurant: restaurantName,
           }}
         />
-        <div className="w-screen flex pt-10 flex-col lg:flex-row  lg:pl-20 ">
-          <HeroSection
-            title={itemData.title}
-            description={itemData.description}
-            calories={itemData.caloriesPer100gm}
-            time={itemData.time}
-            weight={itemData.weight}
-            ImgUrl={itemData.imgUrl ?? "/Fitmeals-logo.png"}
-            price={itemData.price}
-            Rating={itemData.averageRating}
-          />
-        </div>
-        <div className="h-max w-[98%] flex-col  pl-0 lg:items-start  lg:flex-row flex gap-5  pt-5 xl:pl-10 xl:pr-10 justify-center items-center ">
-          <div className="h-max w-[90%] xl:w-[60%] lg:w-[50%] gap-3 flex flex-col">
-            <Ingredients
-              IngredientList={[
-                {
-                  title: "Chicken",
-                  weight: 300,
-                  imgUrl:
-                    "https://drin721riupcf.cloudfront.net/cookbook/chicken.webp",
-                },
-                {
-                  title: "Chicken",
-                  weight: 300,
-                  imgUrl:
-                    "https://drin721riupcf.cloudfront.net/cookbook/chicken.webp",
-                },
-                {
-                  title: "Chicken",
-                  weight: 300,
-                  imgUrl:
-                    "https://drin721riupcf.cloudfront.net/cookbook/chicken.webp",
-                },
-                {
-                  title: "Chicken",
-                  weight: 300,
-                  imgUrl:
-                    "https://drin721riupcf.cloudfront.net/cookbook/chicken.webp",
-                },
-              ]}
-            />
-            <Ingredients
-              IngredientList={[
-                {
-                  title: "Chicken",
-                  weight: 300,
-                  imgUrl:
-                    "https://drin721riupcf.cloudfront.net/cookbook/chicken.webp",
-                },
-                {
-                  title: "Chicken",
-                  weight: 300,
-                  imgUrl:
-                    "https://drin721riupcf.cloudfront.net/cookbook/chicken.webp",
-                },
-                {
-                  title: "Chicken",
-                  weight: 300,
-                  imgUrl:
-                    "https://drin721riupcf.cloudfront.net/cookbook/chicken.webp",
-                },
-                {
-                  title: "Chicken",
-                  weight: 300,
-                  imgUrl:
-                    "https://drin721riupcf.cloudfront.net/cookbook/chicken.webp",
-                },
-              ]}
-            />
-          </div>
-          <div className="h-max p-5 w-[90%] lg:mr-0 lg:ml-0 lg:w-[80%] lg:max-w-max pr-10 rounded-2xl shadow-lg">
-            <NutritionalComponent
-              EnergyKcal={itemData.caloriesPer100gm}
-              Fat={itemData.fatsPer100gm}
-              Salt={itemData.salt}
-              Carbohydrates={itemData.carboHydratePer100gm}
-              Protein={itemData.proteinPer100gm}
+
+        {/* Hero Banner Section */}
+        <div className="w-full max-w-7xl mx-auto pt-8 px-4 sm:px-6 lg:px-8">
+          <div className="w-full flex flex-col lg:flex-row gap-8 bg-white dark:bg-zinc-900 rounded-3xl p-6 md:p-8 border border-zinc-100 dark:border-zinc-800/80 shadow-xl shadow-zinc-100/30 dark:shadow-none">
+            <HeroSection
+              title={itemData.title}
+              description={itemData.description}
+              calories={itemData.caloriesPer100gm}
+              time={itemData.time}
+              weight={itemData.weight}
+              ImgUrl={itemData.imgUrl ?? "/Fitmeals-logo.png"}
+              price={itemData.price}
+              Rating={itemData.averageRating}
             />
           </div>
         </div>
+
+        {/* 2-Column Responsive Layout Grid (Ingredients + Nutrition) */}
+        <div className="w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mt-8">
+          <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 items-start">
+            
+            {/* Left/Main Column - Ingredients */}
+            <div className="lg:col-span-2 flex flex-col gap-8">
+              {/* Dynamic Ingredients card (rendered ONCE) */}
+              <Ingredients IngredientList={ingredients} />
+            </div>
+
+            {/* Sidebar Column - Nutritional Info */}
+            <div className="lg:col-span-1 lg:sticky lg:top-8">
+              <div className="bg-white dark:bg-zinc-900 border border-zinc-100 dark:border-zinc-800/80 rounded-3xl p-6 shadow-xl shadow-zinc-100/30 dark:shadow-none transition-all duration-300">
+                <NutritionalComponent
+                  EnergyKcal={itemData.caloriesPer100gm}
+                  Fat={itemData.fatsPer100gm}
+                  Salt={itemData.salt}
+                  Carbohydrates={itemData.carboHydratePer100gm}
+                  Protein={itemData.proteinPer100gm}
+                />
+              </div>
+            </div>
+            
+          </div>
+        </div>
+
       </div>
     </>
   );
