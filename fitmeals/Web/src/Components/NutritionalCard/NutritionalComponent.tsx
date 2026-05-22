@@ -9,6 +9,12 @@ interface Data {
   Carbohydrates: number;
   Protein: number;
 }
+const formatVal = (v: number | string | undefined | null) => {
+  const num = Number(v);
+  if (v === undefined || v === null || isNaN(num)) return "0";
+  return Number(num.toFixed(2));
+};
+
 const NutritionalComponent = ({
   EnergyKcal,
   Fat,
@@ -72,31 +78,31 @@ const NutritionalComponent = ({
         <tbody>
           <tr className="border-b">
             <td className="py-2 font-medium">{t("nutriousCard.Energy_kJ")}</td>
-            <td className="py-2 text-right">{values.EnergyKJ} kJ</td>
+            <td className="py-2 text-right">{formatVal(values.EnergyKJ)} kJ</td>
           </tr>
           <tr className="border-b">
             <td className="py-2 font-medium">
               {t("nutriousCard.Energy_kcal")}
             </td>
-            <td className="py-2 text-right">{values.EnergyKcal} kcal</td>
+            <td className="py-2 text-right">{formatVal(values.EnergyKcal)} kcal</td>
           </tr>
           <tr className="border-b">
             <td className="py-2 font-medium">{t("nutriousCard.Fat")}</td>
-            <td className="py-2 text-right">{values.Fat} g</td>
+            <td className="py-2 text-right">{formatVal(values.Fat)} g</td>
           </tr>
           <tr className="border-b">
             <td className="py-2 font-medium">
               {t("nutriousCard.Carbohydrates")}
             </td>
-            <td className="py-2 text-right">{values.Carbohydrates} g</td>
+            <td className="py-2 text-right">{formatVal(values.Carbohydrates)} g</td>
           </tr>
           <tr className="border-b">
             <td className="py-2 font-medium">{t("nutriousCard.Protein")}</td>
-            <td className="py-2 text-right">{values.Protein} g</td>
+            <td className="py-2 text-right">{formatVal(values.Protein)} g</td>
           </tr>
           <tr>
             <td className="py-2 font-medium">{t("nutriousCard.Salt")}</td>
-            <td className="py-2 text-right">{values.Salt} g</td>
+            <td className="py-2 text-right">{formatVal(values.Salt)} g</td>
           </tr>
         </tbody>
       </table>
