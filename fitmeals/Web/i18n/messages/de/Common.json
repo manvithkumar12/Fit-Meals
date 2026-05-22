@@ -1,6 +1,6 @@
 {
   "navbar": {
-    "home": "Heim",
+    "home": "Startseite",
     "menu": "Menü",
     "about": "Über uns",
     "services": "Dienstleistungen",
@@ -24,6 +24,7 @@
   "services": {
     "cookbook": "Kochbuch",
     "order": "Jetzt bestellen",
+    "orderNav": "Bestellen",
     "dine": "Tisch reservieren"
   },
   "Health": {
