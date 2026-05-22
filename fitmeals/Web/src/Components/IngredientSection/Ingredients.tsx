@@ -93,7 +93,7 @@ const Ingredients = ({ IngredientList }: IngredientsItems) => {
                   <Image
                     alt={item.title}
                     className="object-cover transition-transform duration-500 ease-out group-hover:scale-110"
-                    src={item.imgUrl || "https://drin721riupcf.cloudfront.net/cookbook/chicken.webp"}
+                    src={item.imgUrl || "/Fitmeals-logo.png"}
                     fill
                     sizes="64px"
                     loading="lazy"
