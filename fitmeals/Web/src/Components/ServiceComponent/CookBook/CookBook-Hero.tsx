@@ -33,6 +33,17 @@ interface LocaleProps {
   error?: boolean;
 }
 
+const getDifficulty = (time: number, locale?: string) => {
+  if (locale === "de") {
+    if (time <= 20) return "einfach";
+    if (time <= 40) return "mittel";
+    return "schwer";
+  }
+  if (time <= 20) return "easy";
+  if (time <= 40) return "medium";
+  return "hard";
+};
+
 const CookBookHero = ({ locale, data, error }: LocaleProps) => {
   const user = useUser();
 
@@ -92,7 +103,7 @@ const CookBookHero = ({ locale, data, error }: LocaleProps) => {
                   id={item.id}
                   key={item.id}
                   imageUrl={item.mainurl}
-                  difficulity="easy"
+                  difficulity={getDifficulty(item.time, locale)}
                   time={item.time}
                   calories={item.calories}
                   protein={item.proteinPer100gm}
@@ -127,7 +138,7 @@ const CookBookHero = ({ locale, data, error }: LocaleProps) => {
                 id={item.id}
                 key={item.id}
                 imageUrl={item.mainurl}
-                difficulity="easy"
+                difficulity={getDifficulty(item.time, locale)}
                 time={item.time}
                 calories={item.calories}
                 protein={item.proteinPer100gm}
