@@ -4,7 +4,7 @@ import Skeleton from "@mui/material/Skeleton";
 
 const ProductCardLoading = () => {
   return (
-    <div className="h-max w-40 pb-3 md:pb-0 lg:w-72 overflow-hidden xl:h-100.5 xl:w-85.5 bg-[#f4f1ea] rounded-2xl md:shadow-lg relative flex flex-col items-center md:w-80">
+    <div className="h-max w-40 pb-3 md:pb-0 lg:w-72 overflow-hidden xl:h-100.5 xl:w-85.5 bg-gray-100 rounded-2xl md:shadow-lg relative flex flex-col items-center md:w-80">
       <div className="w-[90%] ml-auto mr-auto  md:h-50 mt-2 relative md:mt-3 rounded-xl group overflow-hidden h-30">
         <Skeleton
           animation="wave"
