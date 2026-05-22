@@ -195,23 +195,29 @@ const RestaurantCard = ({
         </div>
 
         <div className="w-max ml-auto">
-          <Link
-            href={getHref(
-              locale,
-              CardType,
-              hotelData?.id || null,
-              hotelData?.name || "",
-              pageNo || 1,
-              pageNoReservation || 1,
-            )}
-            className="ml-auto"
-          >
-            <button className="ml-auto md:mt-1 flex gap-1 items-center max-h-8 mt-3 bg-green-600 h-10 group rounded-md text-white font-semibold cursor-pointer p-1 pr-1.5 pl-1.5 md:p-2">
-              {buttonText}
-
-              <i className="fa-solid text-xl fa-angle-right transition-transform duration-200 group-hover:translate-x-0.5"></i>
+          {isOpen === false ? (
+            <button className="ml-auto md:mt-1 flex gap-1 items-center max-h-8 mt-3 bg-red-600 h-10 rounded-md text-white font-semibold cursor-not-allowed p-1 pr-1.5 pl-1.5 md:p-2">
+              {t("closed")}
             </button>
-          </Link>
+          ) : (
+            <Link
+              href={getHref(
+                locale,
+                CardType,
+                hotelData?.id || null,
+                hotelData?.name || "",
+                pageNo || 1,
+                pageNoReservation || 1,
+              )}
+              className="ml-auto"
+            >
+              <button className="ml-auto md:mt-1 flex gap-1 items-center max-h-8 mt-3 bg-green-600 h-10 group rounded-md text-white font-semibold cursor-pointer p-1 pr-1.5 pl-1.5 md:p-2">
+                {buttonText}
+
+                <i className="fa-solid text-xl fa-angle-right transition-transform duration-200 group-hover:translate-x-0.5"></i>
+              </button>
+            </Link>
+          )}
         </div>
       </div>
     </div>
