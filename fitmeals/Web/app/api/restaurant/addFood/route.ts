@@ -7,17 +7,25 @@ import { Prisma } from "@prisma/client";
 export const POST = isOwner(async (req, userId, userRole, restaurantId) => {
   try {
     const body = await req.json();
-    const FoodDetails = await foodItemCreate(body, Number(restaurantId));
+
+    console.log(JSON.stringify(body, null, 2));
+
+    const FoodDetails = await foodItemCreate(
+      body,
+      Number(restaurantId)
+    );
+
     return NextResponse.json(
       {
-        message: "Item Added Sucessfully",
+        message: "Item Added Successfully",
         state: "Success",
         data: FoodDetails,
       },
-      { status: 200 },
+      { status: 200 }
     );
   } catch (error) {
-    console.log(error);
+    console.error(error);
+
     if (
       error instanceof Prisma.PrismaClientKnownRequestError &&
       error.code === "P2002"
@@ -27,24 +35,29 @@ export const POST = isOwner(async (req, userId, userRole, restaurantId) => {
           message: "This food item already exists",
           state: "Warning",
         },
-        { status: 409 },
+        { status: 409 }
       );
     }
+
     if (error instanceof ZodError) {
+      console.error(JSON.stringify(error.issues, null, 2));
+
       return NextResponse.json(
         {
           message: error.issues[0]?.message || "Validation error",
           state: "Warning",
+          issues: error.issues,
         },
-        { status: 400 },
+        { status: 400 }
       );
     }
+
     return NextResponse.json(
       {
-        message: "Unknown error occured try again",
+        message: "Unknown error occurred. Try again.",
         state: "Failed",
       },
-      { status: 500 },
+      { status: 500 }
     );
   }
 });
