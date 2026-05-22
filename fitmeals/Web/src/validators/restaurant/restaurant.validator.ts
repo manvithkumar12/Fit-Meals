@@ -7,7 +7,7 @@ export const restaurantSchema: ZodType<RestaurantInput> = z.object({
   name: z
     .string()
     .min(2, "Minimum 2 letters")
-    .max(15, "Maximum 15 Letters Allowed"),
+    .max(15, "Maximum 30 Letters Allowed"),
   images: z.url({ message: "Invalid image URL" }),
   agreementUrl: z.string().url("Invalid document URL").optional(),
   cuisineType: z.enum(CUISINE_TYPES, {
