@@ -187,7 +187,7 @@ const FoodBox = ({
                 />
               </div>
             )}
-          <h1 className="text-sm md:text-lg font-semibold">{itemsData.title}</h1>
+          <h1 className="text-sm md:text-lg font-semibold whitespace-nowrap overflow-x-auto scrollbar-none">{itemsData.title}</h1>
         </div>
         <h3 className="text-[12px] md:text-[14px] w-[95%] truncate ">
           {itemsData.description[0]}
