@@ -7,7 +7,7 @@ interface Ingredient {
   title: string;
   weight?: number;
   quantity?: string | number;
-  imgUrl: string;
+  imgUrl?: string | null;
 }
 
 interface IngredientsItems {
@@ -89,18 +89,26 @@ const Ingredients = ({ IngredientList }: IngredientsItems) => {
                 key={`${item.title}-${index}`}
               >
 
-                <div className="relative w-16 h-16 rounded-full overflow-hidden border-2 border-white dark:border-zinc-800 shadow-md group-hover:scale-105 group-hover:border-[#00a73c] transition-all duration-300 ease-out">
-                  <Image
-                    alt={item.title}
-                    className="object-cover transition-transform duration-500 ease-out group-hover:scale-110"
-                    src={item.imgUrl || "/Fitmeals-logo.png"}
-                    fill
-                    sizes="64px"
-                    loading="lazy"
-                    blurDataURL="/blur.jpeg"
-                    placeholder="blur"
-                  />
-                </div>
+                {item.imgUrl ? (
+                  <div className="relative w-16 h-16 rounded-full overflow-hidden border-2 border-white dark:border-zinc-800 shadow-md group-hover:scale-105 group-hover:border-[#00a73c] transition-all duration-300 ease-out">
+                    <Image
+                      alt={item.title}
+                      className="object-cover transition-transform duration-500 ease-out group-hover:scale-110"
+                      src={item.imgUrl}
+                      fill
+                      sizes="64px"
+                      loading="lazy"
+                      blurDataURL="/blur.jpeg"
+                      placeholder="blur"
+                    />
+                  </div>
+                ) : (
+                  <div className="relative w-16 h-16 rounded-full bg-zinc-100 dark:bg-zinc-800/50 border-2 border-white dark:border-zinc-850 shadow-md group-hover:scale-105 group-hover:border-[#00a73c] flex items-center justify-center transition-all duration-300 ease-out">
+                    <span className="text-zinc-400 dark:text-zinc-500 font-extrabold text-xl uppercase font-montserrat select-none">
+                      {item.title ? item.title.charAt(0) : "•"}
+                    </span>
+                  </div>
+                )}
 
                 <span className="font-bold text-[#00a73c] dark:text-[#00c84b] text-sm mt-3 font-montserrat">
                   {getScaledQuantity(item, servingsize)}
