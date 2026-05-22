@@ -40,5 +40,11 @@
     "no": " No",
     "yes": "Yes, start fresh",
     "view": "View"
+  },
+  "macros": {
+    "protein": "Protein",
+    "carbohydrates": "Carbohydrates",
+    "fats": "Fats",
+    "calories": "Calories"
   }
 }
