@@ -23,16 +23,20 @@ const Ingredients = ({ IngredientList }: IngredientsItems) => {
     if (rawVal === undefined || rawVal === null) return "";
 
     const valStr = String(rawVal).trim();
-    const match = valStr.match(/^([\d.,]+)\s*([a-zA-Z%]*)$/);
+    const parts = valStr.split(/\s+/);
 
-    if (match) {
-      const numPart = parseFloat(match[1].replace(",", "."));
-      const unitPart = match[2] || "g";
+    if (parts.length > 0) {
+      const numPart = parseFloat(parts[0].replace(",", "."));
       if (!isNaN(numPart)) {
+        const unitPart = parts.slice(1).join(" ").trim();
         const scaleFactor = Number(servingSize) / 2;
         const scaledVal = numPart * scaleFactor;
         const formattedVal = scaledVal % 1 === 0 ? scaledVal.toString() : scaledVal.toFixed(1);
-        return `${formattedVal} ${unitPart}`;
+
+        if (unitPart) {
+          return `${formattedVal} ${unitPart}`;
+        }
+        return formattedVal;
       }
     }
 
