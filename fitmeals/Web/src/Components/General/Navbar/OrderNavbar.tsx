@@ -3,6 +3,7 @@ import React from "react";
 import Link from "@/src/Components/LocalizedLink";
 import { isSupportTeam } from "@/lib/userRole";
 import { useUser } from "@/src/context/UserContext";
+import { useTranslations } from "next-intl";
 
 interface NavbarProps {
   NavType: "CookBook" | "order";
@@ -15,15 +16,21 @@ interface NavbarProps {
 }
 
 const NavbarData = ({ itemsdata, NavType }: NavbarProps) => {
+  const t = useTranslations("");
+  
   const navData =
     NavType === "CookBook"
       ? {
-          names: ["Home", "CookBook", "Salads"],
+          names: [t("navbar.home"), t("services.cookbook"), "Salads"],
           links: ["/", "/services/cookbook", "#"],
         }
       : NavType === "order"
         ? {
-            names: ["Home", "Order", itemsdata.restaurant],
+            names: [
+              t("navbar.home"),
+              t("services.orderNav"),
+              decodeURIComponent(itemsdata.restaurant),
+            ],
             links: [
               "/",
               "/services/order",
@@ -47,7 +54,7 @@ const NavbarData = ({ itemsdata, NavType }: NavbarProps) => {
           </Link>
         ))}
         <h4 className="cursor-pointer font-semibold hover:text-black flex items-center gap-2">
-          {itemsdata.title}
+          {decodeURIComponent(itemsdata.title)}
         </h4>
       </div>
       <div className="ml-auto mr-0 md:mr-10 flex items-center gap-2 md:gap-5">
