@@ -15,6 +15,9 @@ export const getFoodItemsDetails = async ({
         id,
         restaurantId,
       },
+      include: {
+        Ingredients: true,
+      },
     });
 
     if (!data) {
