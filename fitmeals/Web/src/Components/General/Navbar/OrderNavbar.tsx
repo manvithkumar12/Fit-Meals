@@ -3,7 +3,22 @@ import React from "react";
 import Link from "@/src/Components/LocalizedLink";
 import { isSupportTeam } from "@/lib/userRole";
 import { useUser } from "@/src/context/UserContext";
-import { useTranslations } from "next-intl";
+import { useTranslations, useLocale } from "next-intl";
+
+const decodeFully = (str: string): string => {
+  if (!str) return "";
+  try {
+    let prev = str;
+    let curr = decodeURIComponent(str);
+    while (curr !== prev) {
+      prev = curr;
+      curr = decodeURIComponent(curr);
+    }
+    return curr;
+  } catch {
+    return str;
+  }
+};
 
 interface NavbarProps {
   NavType: "CookBook" | "order";
@@ -17,30 +32,35 @@ interface NavbarProps {
 
 const NavbarData = ({ itemsdata, NavType }: NavbarProps) => {
   const t = useTranslations("");
+  const locale = useLocale();
   
+  const decodedRestaurant = decodeFully(itemsdata.restaurant);
+  const decodedTitle = decodeFully(itemsdata.title);
+
   const navData =
     NavType === "CookBook"
       ? {
-          names: [t("navbar.home"), t("services.cookbook"), "Salads"],
-          links: ["/", "/services/cookbook", "#"],
+          names: [t("navbar.home"), t("services.cookbook")],
+          links: ["/", "/services/cookbook/1"],
         }
       : NavType === "order"
         ? {
             names: [
               t("navbar.home"),
               t("services.orderNav"),
-              decodeURIComponent(itemsdata.restaurant),
+              decodedRestaurant,
             ],
             links: [
               "/",
-              "/services/order",
-              `/services/order/1/${itemsdata.restaurantId}-${itemsdata.restaurant}`,
+              "/services/order/1",
+              `/services/order/1/${itemsdata.restaurantId}-${decodedRestaurant}`,
             ],
           }
         : {
             names: [""],
             links: [""],
           };
+
   const user = useUser();
   return (
     <div className="w-full h-15 border-b border-b-black/10 text-black/30 md:text-[16px] flex text-sm items-center ">
@@ -49,12 +69,12 @@ const NavbarData = ({ itemsdata, NavType }: NavbarProps) => {
           <Link key={index + 1} href={navData.links[index]}>
             <h4 className="cursor-pointer font-semibold hover:text-black flex items-center gap-2">
               {name}
-              <i className="fa-solid fa-greater-than"></i>
+              <i className="fa-solid fa-greater-than text-[10px] text-zinc-400/80 mx-1"></i>
             </h4>
           </Link>
         ))}
-        <h4 className="cursor-pointer font-semibold hover:text-black flex items-center gap-2">
-          {decodeURIComponent(itemsdata.title)}
+        <h4 className="cursor-pointer font-semibold hover:text-black flex items-center gap-2 text-black/70">
+          {decodedTitle}
         </h4>
       </div>
       <div className="ml-auto mr-0 md:mr-10 flex items-center gap-2 md:gap-5">
