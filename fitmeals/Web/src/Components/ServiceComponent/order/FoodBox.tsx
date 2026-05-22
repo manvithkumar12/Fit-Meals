@@ -9,6 +9,7 @@ import { addToCart } from "@/app/api/actions/cart/addToCart";
 import { useUser } from "@/src/context/UserContext";
 import CartPopup from "../../PopUp/CartPopup";
 import { useTranslations } from "next-intl";
+import "@/app/[locale]/(public)/page.css"
 
 interface FoodProps {
   cartItems:
@@ -187,7 +188,7 @@ const FoodBox = ({
                 />
               </div>
             )}
-          <h1 className="text-sm md:text-lg font-semibold whitespace-nowrap overflow-x-auto scrollbar-none">{itemsData.title}</h1>
+          <h1 className="text-sm md:text-lg font-semibold hidebar whitespace-nowrap overflow-x-auto scrollbar-none">{itemsData.title}</h1>
         </div>
         <h3 className="text-[12px] md:text-[14px] w-[95%] truncate ">
           {itemsData.description[0]}
