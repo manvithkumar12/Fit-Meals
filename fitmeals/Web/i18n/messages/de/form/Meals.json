@@ -7,7 +7,12 @@
     "Title": "Mahlzeitenname",
     "placeholder_title": "Artikelname eingeben",
     "Price": "Preis",
-    "placeholder_price": "Preis eingeben"
+    "placeholder_price": "Preis eingeben",
+    "Image": "Mahlzeitenbild",
+    "placeholder_image": "Mahlzeitenbild hochladen",
+    "change_image": "Foto ändern",
+    "remove_image": "Foto entfernen",
+    "upload_subtext": "Drag & Drop oder klicken zum Durchsuchen (JPG, PNG oder WEBP)"
   },
   "form_section": {
     "Type": "Typ",
@@ -18,7 +23,7 @@
     "placeholder_cooking_time": "Auswählen (Minuten)",
     "Food Benefits (max 2)": "Vorteile des Essens (max. 2)",
     "placeholder_food_benefits": "z. B. Gesund, Protein",
-    "Description (max 4)": "Beschreibung (max. 4)",
+    "Description (max 4)": "Beschreibung (max. 3)",
     "placeholder_description": "Essensbeschreibung eingeben",
     "Ingredients": "Zutaten zur Zubereitung des",
     "placeholder_ingredients": "Zutaten eingeben",
@@ -27,7 +32,8 @@
     "Vegetarian": "vegetarisch",
     "Non-Vegetarian": "nicht-vegetarisch",
     "Vegan": "vegan",
-    "Category": "Kategorie"
+    "Category": "Kategorie",
+    "quantity": "Menge"
   },
   "Nutritions": {
     "title": "Nährwerte",
@@ -45,5 +51,28 @@
   "Guidelines_section": {
     "guideline_1": "Ich bestätige, dass die angegebenen Informationen korrekt sind und den EU-Lebensmittelvorschriften entsprechen.",
     "guideline_2": "Das Restaurant ist für die Richtigkeit der Zutaten, Allergene und Nährwerte verantwortlich. FitMeals haftet nicht für falsche Angaben."
+  },
+  "ConfirmSection": {
+    "btnTxt": "Mahlzeit hinzufügen",
+    "title": "Mahlzeitendetails bestätigen",
+    "subtitle": "Bitte überprüfen Sie alle Details, bevor Sie die Mahlzeit Ihrem Menü hinzufügen.",
+    "general_info": "Allgemeine Informationen",
+    "meal_name": "Mahlzeitenname",
+    "not_specified": "Nicht angegeben",
+    "price": "Preis",
+    "type": "Typ",
+    "category": "Kategorie",
+    "weight": "Gewicht",
+    "prep_time": "Kochzeit",
+    "nutrition_title": "Nährwerte (pro 100 g)",
+    "protein": "Protein",
+    "carbs": "Kohlenhydrate",
+    "fats": "Fette",
+    "calories": "Kalorien",
+    "salt": "Salz",
+    "image": "Bild",
+    "no_image": "Kein Bild ausgewählt",
+    "saving": "Speichern im Menü...",
+    "confirm_btn": "Bestätigen & Mahlzeit hinzufügen"
   }
 }
