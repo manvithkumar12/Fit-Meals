@@ -12,12 +12,12 @@ import { useTranslations } from "next-intl";
 
 interface FoodProps {
   cartItems:
-    | {
-        id: number;
-        quantity: number;
-        itemId: number;
-      }[]
-    | undefined;
+  | {
+    id: number;
+    quantity: number;
+    itemId: number;
+  }[]
+  | undefined;
   itemsData: {
     id: number;
     title: string;
@@ -165,7 +165,32 @@ const FoodBox = ({
         </div>
       </div>
       <div className="flex flex-col w-[90%] ml-5 lg:ml-3 lg:mt-3 overflow-hidden">
-        <h1 className="text-sm md:text-lg font-semibold">{itemsData.title}</h1>
+        <div className="flex items-center gap-2">
+          {(itemsData.type?.toUpperCase() === "VEGETARIAN" ||
+            itemsData.type?.toUpperCase() === "NON_VEGETARIAN") && (
+            <div
+              className={`w-3.5 h-3.5 border flex items-center justify-center rounded-[3px] shrink-0 bg-white ${
+                itemsData.type?.toUpperCase() === "VEGETARIAN"
+                  ? "border-green-600"
+                  : "border-red-600"
+              }`}
+              title={
+                itemsData.type?.toUpperCase() === "VEGETARIAN"
+                  ? "Vegetarian"
+                  : "Non-Vegetarian"
+              }
+            >
+              <div
+                className={`w-1.5 h-1.5 rounded-full ${
+                  itemsData.type?.toUpperCase() === "VEGETARIAN"
+                    ? "bg-green-600"
+                    : "bg-red-600"
+                }`}
+              />
+            </div>
+          )}
+          <h1 className="text-sm md:text-lg font-semibold">{itemsData.title}</h1>
+        </div>
         <h3 className="text-[12px] md:text-[14px] w-[95%] truncate ">
           {itemsData.description[0]}
         </h3>
