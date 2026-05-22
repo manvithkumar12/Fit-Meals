@@ -1,50 +1,52 @@
 {
   "navbar": {
-    "home": "Home",
-    "about": "About Us",
-    "services": "Services",
-    "membership": "Subscription",
-    "contact": "Contact Us",
+    "home": "Heim",
+    "menu": "Menü",
+    "about": "Über uns",
+    "services": "Dienstleistungen",
+    "membership": "Abonnement",
+    "contact": "Kontakt",
     "status": "Status",
     "dashboard": "Dashboard",
-    "manage": "Manage",
-    "earnings": "Earnings",
-    "items": "Items",
-    "reservation": "Reservation",
-    "Health": "Health",
-    "profile": "Profile",
-    "cart": "Cart",
-    "overview": "Overview"
+    "manage": "Verwalten",
+    "earnings": "Einnahmen",
+    "items": "Artikel",
+    "reservation": "Reservierung",
+    "profile": "Profil",
+    "Health": "Gesundheit",
+    "cart": "Warenkorb",
+    "overview": "Überblick"
   },
   "about": {
-    "wework": "How We Work",
-    "whyus": "Why FitMeals?"
+    "wework": "Unsere Arbeitsweise",
+    "whyus": "Warum FitMeals?"
   },
   "services": {
-    "cookbook": "Cook Book",
-    "order": "Order Now",
-    "dine": "Dine In"
+    "cookbook": "Kochbuch",
+    "order": "Jetzt bestellen",
+    "orderNav": "Bestellen",
+    "dine": "Tisch reservieren"
   },
   "Health": {
     "FitnessTracker": "Fitness-Tracker",
-    "dietplan": "Diet Plan",
-    "identifyMeals": "Identify Meals"
+    "dietplan": "Diätplan",
+    "identifyMeals": "Mahlzeiten identifizieren"
   },
   "profile": {
-    "login": "login",
-    "logout": "logout",
-    "view": "View Profile",
-    "subscription": "Subscription Overview",
-    "premiumdetails": "Subscription",
-    "payments": "Saved Payment Methods",
-    "address": "Saved Addresses",
-    "myOrder": "My Orders",
-    "dashboard": "Dashboard"
+    "login": "Anmelden",
+    "logout": "Abmelden",
+    "view": "Profil ansehen",
+    "subscription": "Abonnementübersicht",
+    "premiumdetails": "Abonnement",
+    "payments": "Zahlungen",
+    "address": "Adressen",
+    "myOrder": "Meine Bestellungen",
+    "dashboard": "Meine Anfragen"
   },
   "contact": {
-    "email": "Email",
-    "phone": "Phone Number",
+    "email": "E-Mail",
+    "phone": "Telefonnummer",
     "feedback": "Feedback",
-    "raisequery": "Raise Query"
+    "raisequery": "Anfrage stellen"
   }
 }
