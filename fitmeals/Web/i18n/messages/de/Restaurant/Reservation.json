@@ -9,5 +9,86 @@
   "submitBtn": "Einreichen",
   "errorUpload": "Bilder können nicht hochgeladen werden",
   "errorFileSize": "{fileName} überschreitet 300KB",
-  "to": "bis"
+  "to": "bis",
+  "steps": {
+    "slotTimes": {
+      "name": "Zeitfenster",
+      "subtitle": "Öffnungszeiten festlegen"
+    },
+    "uploadMenu": {
+      "name": "Speisekarte",
+      "subtitle": "Menü hinzufügen (PDF/Bild)"
+    },
+    "restaurantPhotos": {
+      "name": "Restaurantfotos",
+      "subtitle": "Ihr Restaurant präsentieren"
+    },
+    "reviewSubmit": {
+      "name": "Prüfen & Senden",
+      "subtitle": "Details prüfen und senden"
+    }
+  },
+  "dashboard": {
+    "stepText": "Schritt {current} von {total}",
+    "completedText": "{percent}% Abgeschlossen",
+    "saveDraft": "Entwurf speichern",
+    "preview": "Vorschau",
+    "back": "Zurück",
+    "saveContinue": "Speichern & Weiter",
+    "allowReservation": "Reservierung zulassen",
+    "processing": "Wird verarbeitet...",
+    "activeConfig": "Aktive Konfiguration: {count} Zeitfenster ausgewählt",
+    "timings": "Zeiten: {opening} bis {closing}",
+    "configured": "Konfiguriert",
+    "configRequired": "Erforderlich",
+    "morning": "Vormittags-Fenster (06:00 - 11:30)",
+    "afternoon": "Nachmittags-Fenster (12:00 - 17:30)",
+    "evening": "Abend-Fenster (18:00 - 23:30)",
+    "dragDropMenu": "Ziehen Sie Ihre Speisekarte hierher",
+    "browseFiles": "Dateien durchsuchen",
+    "maxSizeMenu": "Max. Größe: 300KB • PDF, JPG, PNG",
+    "filesUploaded": "{count} von 5 Dateien hochgeladen",
+    "noMenuFiles": "Keine Speisekarte hochgeladen",
+    "uploadMenuDesc": "Laden Sie hochwertige PDF- oder Bilddokumente hoch, die Preise und Gerichte zeigen",
+    "dragDropPhotos": "Fotos hierher ziehen",
+    "selectPhotos": "Fotos auswählen",
+    "maxSizePhotos": "Max. Größe: 300KB je • JPG, PNG",
+    "photosUploaded": "{count} von 3 Fotos hochgeladen",
+    "noPhotos": "Keine Galerie-Fotos",
+    "noPhotosDesc": "Laden Sie Innenaufnahmen hoch, um den Gästen die schönen Sitzplätze zu präsentieren",
+    "addMore": "Mehr hinzufügen",
+    "checklistTitle": "Checkliste zum Registrierungsstatus",
+    "timingsDesc": "{count} Zeitfenster konfiguriert ({opening} bis {closing})",
+    "noTimingsDesc": "Noch keine aktiven Zeitfenster ausgewählt",
+    "menuDesc": "{count} Datei(en) bereit zum Senden",
+    "noMenuDesc": "Noch keine Speisekarten-Dateien hochgeladen",
+    "photosDesc": "{count} von 3 Fotos hinzugefügt",
+    "optionalPhotosDesc": "Optionale Innenaufnahmen (sehr empfohlen)",
+    "incomplete": "Unvollständig",
+    "optional": "Optional"
+  },
+  "subtitles": {
+    "step1": "Wählen Sie die Zeitfenster aus, in denen Ihr Restaurant für Reservierungen verfügbar ist",
+    "step2": "Stellen Sie ein hochwertiges Speisekarte-Dokument für Restaurantgäste bereit",
+    "step3": "Präsentieren Sie das Ambiente, die Räumlichkeiten und das kulinarische Flair Ihres Saals",
+    "step4": "Bestätigen Sie alle Angaben, bevor Sie diese in den Buchungsverzeichnissen freischalten"
+  },
+  "titles": {
+    "step1": "Zeitfenster festlegen",
+    "step2": "Speisekarte hochladen",
+    "step3": "Restaurant-Galerie hochladen",
+    "step4": "Prüfen & Veröffentlichen"
+  },
+  "toasts": {
+    "draftSaved": "Entwurf erfolgreich gespeichert!",
+    "previewMode": "Öffne visuellen Vorschaumodus...",
+    "selectSlotError": "Bitte wählen Sie mindestens ein Zeitfenster aus, bevor Sie fortfahren.",
+    "selectSlotSubmitError": "Bitte wählen Sie mindestens ein Zeitfenster aus, bevor Sie senden.",
+    "uploadMenuError": "Bitte laden Sie mindestens eine Speisekarte hoch, bevor Sie fortfahren.",
+    "uploadSuccess": "Reservierungsdetails erfolgreich übermittelt!",
+    "menuLimitReached": "Sie haben das Limit von 5 Speisekarten-Dateien bereits erreicht.",
+    "menuLimitWarning": "Limit ist 5 Dateien. Nur die ersten {remaining} gültigen Datei(en) wurden hinzugefügt.",
+    "photoLimitReached": "Sie haben das Limit von 3 Restaurantfotos bereits erreicht.",
+    "photoLimitWarning": "Limit ist 3 Fotos. Nur die ersten {remaining} gültigen Foto(s) wurden hinzugefügt."
+  }
 }
