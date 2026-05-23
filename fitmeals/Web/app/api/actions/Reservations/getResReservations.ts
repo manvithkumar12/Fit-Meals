@@ -1,7 +1,7 @@
 "use server"
 import { prisma } from "@/src/lib/prisma"
 
-export const getResResvertations = async (restaurantId: number) => {
+export const getResReservations = async (restaurantId: number) => {
     try {
         const res = await prisma.reservations.findMany({
             where: { restaurantId: restaurantId },
