@@ -157,7 +157,7 @@ const AuthSuccessPage = () => {
       }
     };
     handleLogin();
-  }, [router, locale]);
+  }, [router, locale, supabase]);
 
   const handleAnswer = (selected: number) => {
     if (!question) return;
