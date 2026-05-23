@@ -31,14 +31,10 @@ const page = async ({ params }: { params: Promise<{ hotelId: string }> }) => {
               contactNo={Number.parseInt(data.phoneNumber)}
             />
             <CarouselCards
-              ImageUrl={[
-                "https://drin721riupcf.cloudfront.net/cookbook/item5.jpeg",
-                "https://drin721riupcf.cloudfront.net/cookbook/item5.jpeg",
-                "https://drin721riupcf.cloudfront.net/cookbook/item5.jpeg",
-              ]}
+              ImageUrl={data.resUrls}
             />
           </div>
-          <Navbar />
+          <Navbar menuUrls={data.menuUrls} photos={data.resUrls}  />
         </ReservationContextProvider>
       </div>
     </div>
