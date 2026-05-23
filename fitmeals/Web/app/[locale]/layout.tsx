@@ -6,6 +6,7 @@ import { getUser } from "@/lib/CurrentUser";
 import { UserProvider } from "@/src/context/UserContext";
 import { CoordsProvider } from "@/src/context/UseCoords";
 import TanQueryProviders from "@/src/context/queryProvider";
+import ScrollToTop from "./ScrollToTop";
 
 export default async function LocaleLayout({
   children,
@@ -20,6 +21,7 @@ export default async function LocaleLayout({
   return (
     <NextIntlClientProvider locale={locale} messages={messages}>
       <TanQueryProviders>
+        <ScrollToTop />
         <UserProvider user={receivedUser}>
           <CoordsProvider>
             {children}
