@@ -1,4 +1,4 @@
-import { getResResvertations } from "@/app/api/actions/Reservations/getResReservations";
+import { getResReservations } from "@/app/api/actions/Reservations/getResReservations";
 import { useQuery } from "@tanstack/react-query";
 
 export const useReservations = (restaurantId: number) => {
