@@ -75,7 +75,7 @@ const ReservationDashboard = ({ restaurantId }: ReservationDashboardProps) => {
 
   // Calculate metrics
   const totalReservations = reservations.length;
-  const totalGuests = reservations.reduce((acc: number, curr) => acc + (curr.numberOfPeople || 0), 0);
+  const totalGuests = reservations.reduce((acc: number, curr: { numberOfPeople: number | null }) => acc + (curr.numberOfPeople || 0), 0);
 
   const formatDate = (dateVal: string | Date) => {
     try {
