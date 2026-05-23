@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { X, ZoomIn } from "lucide-react";
 import ErrorComponent from "@/src/Components/errorComponent/ErrorComponent";
+import Image from "next/image";
 
 interface GridComponentsProps {
   images?: string[];
@@ -32,14 +33,15 @@ const GridComponents = ({ images = [] }: GridComponentsProps) => {
             onClick={() => setSelectedImage(url)}
             className="group relative h-40 w-40 md:h-70 md:w-70 bg-slate-50 border border-slate-100 rounded-[20px] overflow-hidden shadow-sm hover:shadow-md hover:scale-[1.02] active:scale-[0.98] transition-all duration-300 cursor-pointer"
           >
-            <img
+            <Image
               src={url}
               alt={`Restaurant asset ${i + 1}`}
-              className="w-full h-full object-cover select-none pointer-events-none group-hover:scale-105 transition-transform duration-500"
-              loading="lazy"
+              fill
+              sizes="(max-width: 768px) 160px, 280px"
+              className="object-cover select-none pointer-events-none group-hover:scale-105 transition-transform duration-500"
             />
             {/* Subtle Hover Overlay */}
-            <div className="absolute inset-0 bg-black/10 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
+            <div className="absolute inset-0 bg-black/10 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center z-10">
               <div className="bg-white/90 text-slate-800 p-2 rounded-full shadow-lg backdrop-blur-xs scale-90 group-hover:scale-100 transition-all duration-300">
                 <ZoomIn size={16} className="text-emerald-700" />
               </div>
@@ -81,6 +83,7 @@ const GridComponents = ({ images = [] }: GridComponentsProps) => {
               onClick={(e) => e.stopPropagation()}
               className="relative max-w-full max-h-[85vh] md:max-h-[90vh] rounded-[24px] overflow-hidden bg-slate-900 border border-white/10 shadow-2xl flex items-center justify-center cursor-default"
             >
+              {/* eslint-disable-next-line @next/next/no-img-element */}
               <img
                 src={selectedImage}
                 alt="Selected asset fullscreen view"
