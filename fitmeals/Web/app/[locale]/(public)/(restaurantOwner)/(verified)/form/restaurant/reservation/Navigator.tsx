@@ -1,6 +1,6 @@
 "use client"
 import { RestaurantById } from '@/app/api/actions/Reservations/getRestaurants'
-import ReservationDashboard from '@/app/api/actions/Reservations/ReservationDashboard'
+import ReservationDashboard from '@/src/Components/reservation/ReservationDashboard'
 import SlotsCard from '@/src/Components/SlotCards/SlotsCard'
 import React from 'react'
 
