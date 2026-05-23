@@ -9,8 +9,17 @@ interface ReservationDashboardProps {
   restaurantId: number;
 }
 
+interface ReservationItem {
+  id: number;
+  reservationTime: string;
+  numberOfPeople: number | null;
+  customerName: string;
+  reservationDate: Date | string;
+}
+
 const ReservationDashboard = ({ restaurantId }: ReservationDashboardProps) => {
-  const { data: reservations, isLoading, isError, refetch } = useReservations(restaurantId);
+  const { data: reservationsData, isLoading, isError, refetch } = useReservations(restaurantId);
+  const reservations = reservationsData as ReservationItem[] | undefined;
 
   if (isLoading) {
     return (
@@ -75,7 +84,7 @@ const ReservationDashboard = ({ restaurantId }: ReservationDashboardProps) => {
 
   // Calculate metrics
   const totalReservations = reservations.length;
-  const totalGuests = reservations.reduce((acc: number, curr: { numberOfPeople: number | null }) => acc + (curr.numberOfPeople || 0), 0);
+  const totalGuests = reservations.reduce((acc: number, curr: ReservationItem) => acc + (curr.numberOfPeople || 0), 0);
 
   const formatDate = (dateVal: string | Date) => {
     try {
@@ -190,7 +199,7 @@ const ReservationDashboard = ({ restaurantId }: ReservationDashboardProps) => {
               </tr>
             </thead>
             <tbody>
-              {reservations.map((item, index) => (
+              {reservations.map((item: ReservationItem, index) => (
                 <tr
                   key={item.id}
                   className={`border-b border-slate-100 hover:bg-slate-50/30 transition-colors duration-200 ${
