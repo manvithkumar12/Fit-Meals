@@ -78,10 +78,13 @@ const CarouselCards = ({ ImageUrl }: Data) => {
               onClick={(e) => e.stopPropagation()}
               className="relative max-w-full max-h-[85vh] md:max-h-[90vh] rounded-[24px] overflow-hidden bg-slate-900 border border-white/10 shadow-2xl flex items-center justify-center cursor-default"
             >
-              <img
+              <Image
                 src={selectedImage}
                 alt="Selected asset fullscreen view"
+                width={1200}
+                height={800}
                 className="max-w-full max-h-[85vh] md:max-h-[90vh] object-contain select-none pointer-events-none rounded-[24px]"
+                priority
               />
             </motion.div>
           </motion.div>
