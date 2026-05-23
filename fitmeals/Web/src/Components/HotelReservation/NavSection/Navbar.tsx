@@ -1,10 +1,15 @@
 "use client";
 import React from "react";
 import Dineoutsection from "../DineoutComponents/Dineout-section";
-import MenuComponents from "../MenuSection/GridComponents";
+import GridComponents from "../MenuSection/GridComponents";
 import { useTranslations } from "next-intl";
 
-const Navbar = () => {
+interface NavbarProps {
+  menuUrls?: string[];
+  photos?: string[];
+}
+
+const Navbar = ({ menuUrls = [], photos = [] }: NavbarProps) => {
   const [category, setCategory] = React.useState<"Dineout" | "Menu" | "Photos">(
     "Dineout",
   );
@@ -41,8 +46,8 @@ const Navbar = () => {
         </div>
       </div>
       {category === "Dineout" && <Dineoutsection />}
-      {category === "Menu" && <MenuComponents />}
-      {category === "Photos" && <MenuComponents />}
+      {category === "Menu" && <GridComponents images={menuUrls} />}
+      {category === "Photos" && <GridComponents images={photos} />}
     </div>
   );
 };
