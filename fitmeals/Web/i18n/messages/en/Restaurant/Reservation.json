@@ -9,5 +9,86 @@
   "submitBtn": "Submit",
   "errorUpload": "Unable to upload images",
   "errorFileSize": "{fileName} exceeds 300KB",
-  "to": "to"
+  "to": "to",
+  "steps": {
+    "slotTimes": {
+      "name": "Slot Times",
+      "subtitle": "Set your restaurant timings"
+    },
+    "uploadMenu": {
+      "name": "Upload Menu",
+      "subtitle": "Add your menu (PDF/Image)"
+    },
+    "restaurantPhotos": {
+      "name": "Restaurant Photos",
+      "subtitle": "Showcase your restaurant"
+    },
+    "reviewSubmit": {
+      "name": "Review & Submit",
+      "subtitle": "Verify and submit details"
+    }
+  },
+  "dashboard": {
+    "stepText": "Step {current} of {total}",
+    "completedText": "{percent}% Completed",
+    "saveDraft": "Save Draft",
+    "preview": "Preview",
+    "back": "Back",
+    "saveContinue": "Save & Continue",
+    "allowReservation": "Allow Reservation",
+    "processing": "Processing...",
+    "activeConfig": "Active Config: {count} slot(s) selected",
+    "timings": "Timings: {opening} to {closing}",
+    "configured": "Configured",
+    "configRequired": "Config Required",
+    "morning": "Morning Slots (06:00 - 11:30)",
+    "afternoon": "Afternoon Slots (12:00 - 17:30)",
+    "evening": "Evening Slots (18:00 - 23:30)",
+    "dragDropMenu": "Drag & drop your menu here",
+    "browseFiles": "Browse Files",
+    "maxSizeMenu": "Max size: 300KB • PDF, JPG, PNG",
+    "filesUploaded": "{count} of 5 files uploaded",
+    "noMenuFiles": "No Menu Files Uploaded",
+    "uploadMenuDesc": "Upload high-quality PDF or image documents showing menu prices and items",
+    "dragDropPhotos": "Drag & drop photos here",
+    "selectPhotos": "Select Photos",
+    "maxSizePhotos": "Max size: 300KB each • JPG, PNG",
+    "photosUploaded": "{count} of 3 photos uploaded",
+    "noPhotos": "No Gallery Photos",
+    "noPhotosDesc": "Upload interior photos to showcase beautiful seating layouts to guests",
+    "addMore": "Add More",
+    "checklistTitle": "Registration Status Checklist",
+    "timingsDesc": "{count} slot(s) configured ({opening} to {closing})",
+    "noTimingsDesc": "No active slot times selected yet",
+    "menuDesc": "{count} file(s) ready to submit",
+    "noMenuDesc": "No menu files uploaded yet",
+    "photosDesc": "{count} of 3 photos added",
+    "optionalPhotosDesc": "Optional interior photos (highly recommended)",
+    "incomplete": "Incomplete",
+    "optional": "Optional"
+  },
+  "subtitles": {
+    "step1": "Choose the time slots when your restaurant is available for reservations",
+    "step2": "Provide a high-quality Speisekarte document for dine-in guests",
+    "step3": "Showcase the ambience, spacing, and culinary vibe of your dining hall",
+    "step4": "Confirm all selections before sending live to booking directories"
+  },
+  "titles": {
+    "step1": "Set Your Slot Times",
+    "step2": "Upload Restaurant Menu",
+    "step3": "Upload Restaurant Gallery",
+    "step4": "Review & Publish"
+  },
+  "toasts": {
+    "draftSaved": "Draft saved successfully!",
+    "previewMode": "Opening visual preview mode...",
+    "selectSlotError": "Please select at least one time slot before proceeding.",
+    "selectSlotSubmitError": "Please select at least one time slot before submitting.",
+    "uploadMenuError": "Please upload at least one menu card/file before proceeding.",
+    "uploadSuccess": "Reservation details submitted successfully!",
+    "menuLimitReached": "You have already reached the limit of 5 menu files.",
+    "menuLimitWarning": "Limit is 5 menu files. Only first {remaining} valid file(s) were added.",
+    "photoLimitReached": "You have already reached the limit of 3 restaurant photos.",
+    "photoLimitWarning": "Limit is 3 restaurant photos. Only first {remaining} valid file(s) were added."
+  }
 }
