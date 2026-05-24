@@ -27,6 +27,7 @@ export default function RootLayout({
     <html suppressHydrationWarning>
       <head>
         <title>FitMeals</title>
+        <link rel="icon" href="/Fitmeals-logo.png" />
         <link
           rel="stylesheet"
           href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
