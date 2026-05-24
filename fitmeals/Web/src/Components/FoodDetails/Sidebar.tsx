@@ -40,7 +40,7 @@ export default function Sidebar({ supportedCategories }: Readonly<SidebarProps>)
 
       <div className="mt-auto">
         <a
-          href="/sample_data.zip"
+          href="/Foods.zip"
           download
           className="flex items-center justify-center gap-2 w-full py-3 px-4 bg-green-50 text-green-700 font-semibold rounded-xl hover:bg-green-100 transition-colors border border-green-200 shadow-sm"
         >
