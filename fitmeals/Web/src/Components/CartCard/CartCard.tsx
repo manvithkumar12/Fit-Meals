@@ -91,34 +91,38 @@ const CartCard = ({
 
   return (
     <div
-      className={`w-full h-max flex border-b border-black/20 p-2 ${
+      className={`w-full flex items-center border-b border-black/10 py-2 gap-3 md:gap-4 ${
         isdeleted ? "hidden" : ""
-      } `}
+      }`}
     >
       <Link
         href={`/services/order/${restaurantId}-${restaurantName}/${itemId}-${itemName}`}
+        className="shrink-0"
       >
-        <div className="h-20 w-25 relative rounded-md overflow-hidden cursor-pointer">
+        <div className="h-20 w-24 md:h-24 md:w-32 relative rounded-md overflow-hidden cursor-pointer shadow-sm">
           <Image
             src={imgUrl}
             alt={name}
             fill
-            sizes="100px"
-            className="object-cover rounded-md overflow-hidden"
+            sizes="(max-width: 768px) 96px, 128px"
+            className="object-cover"
           />
         </div>
       </Link>
 
-      <div className="flex flex-col p-2.5">
-        <h2 className="font-semibold md:w-40 truncate md:text-lg">{name}</h2>
-
-        <h2 className="font-semibold">${(amount * items).toFixed(2)}</h2>
+      <div className="flex flex-col flex-1 min-w-0">
+        <h2 className="font-semibold text-base md:text-lg text-gray-800 truncate" title={name}>
+          {name}
+        </h2>
+        <h2 className="font-medium text-sm md:text-base text-gray-600 mt-1">
+          ${(amount * items).toFixed(2)}
+        </h2>
       </div>
 
-      <div className="ml-auto flex mt-5 md:mt-0 flex-col">
-        <div className="w-20 md:w-35 border border-black/20 h-6 md:h-10 flex">
+      <div className="flex flex-col items-end justify-between shrink-0 gap-2 md:gap-3">
+        <div className="w-24 md:w-32 border border-black/20 h-8 md:h-10 flex rounded-md overflow-hidden bg-white shadow-sm">
           <button
-            className="w-16 border-r border-black/20 flex justify-center items-center text-sm md:text-xl font-semibold cursor-pointer"
+            className="flex-1 border-r border-black/20 flex justify-center items-center text-lg md:text-xl font-medium cursor-pointer hover:bg-gray-50 transition-colors active:bg-gray-100"
             onClick={() => {
               setItems((prev) => {
                 const newValue = IncreaseValue(prev);
@@ -145,13 +149,12 @@ const CartCard = ({
             +
           </button>
 
-          <div className="w-17.5 border-r border-black/20 flex justify-center items-center text-sm md:text-lg font-semibold">
+          <div className="flex-1 border-r border-black/20 flex justify-center items-center text-sm md:text-base font-semibold">
             {items}
           </div>
 
-          {/* DECREASE */}
           <button
-            className="w-16 flex justify-center items-center text-sm md:text-3xl font-semibold cursor-pointer"
+            className="flex-1 flex justify-center items-center text-lg md:text-xl font-medium cursor-pointer hover:bg-gray-50 transition-colors active:bg-gray-100"
             onClick={() => {
               const newValue = DecreaseValue(items);
 
@@ -181,7 +184,7 @@ const CartCard = ({
           onClick={() => {
             handleisdeleted(cartId);
           }}
-          className="ml-auto mt-auto mb-1 font-semibold cursor-pointer text-sm md:text-lg text-black/60"
+          className="font-medium cursor-pointer text-xs md:text-sm text-red-500 hover:text-red-600 transition-colors mt-1"
         >
           {t("CartPage.Removebtn")}
         </button>
