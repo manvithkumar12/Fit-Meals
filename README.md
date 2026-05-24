@@ -52,20 +52,21 @@ The platform empowers users to make healthier food choices while providing busin
 
 ## 👤 Customer Features
 
-- User registration and authentication
-- Browse restaurants and menus
-- Search and filter meals
-- AI-powered meal recommendations
-- Nutrition and calorie analysis
-- Personalized health insights
-- Shopping cart management
-- Secure checkout process
-- Order tracking
-- Order history management
-- Wishlist functionality
-- Profile management
-
----
+- User registration and secure authentication
+- Browse healthy meals and restaurant menus
+- Place food orders with real-time order tracking
+- Create personalized diet plans based on fitness goals
+- Track daily calorie intake, macronutrients, and nutrition targets
+- Monitor progress toward weight loss, muscle gain, or maintenance goals
+- AI-powered meal recommendations tailored to dietary preferences and health objectives
+- Food recognition using image analysis to identify meals and nutritional information
+- Upload food images to estimate calories and nutrient composition
+- Interactive AI health assistant chatbot for nutrition, fitness, and dietary guidance
+- Personalized health insights and wellness recommendations
+- Shopping cart and checkout management
+- Order history and meal tracking
+- Wishlist and favorite meals management
+- User profile and fitness preference management
 
 ## 🏪 Restaurant Owner Features
 
