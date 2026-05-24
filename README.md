@@ -74,9 +74,8 @@ The platform empowers users to make healthier food choices while providing busin
 - Menu creation and management
 - Product inventory management
 - Order management
-- Sales monitoring
 - Customer order tracking
-- Analytics and reporting
+- Reservations Handling
 
 ---
 
@@ -85,8 +84,6 @@ The platform empowers users to make healthier food choices while providing busin
 - Delivery dashboard
 - Assigned order management
 - Delivery status updates
-- Order tracking workflow
-- Delivery performance monitoring
 
 ---
 
@@ -167,17 +164,6 @@ Customer / Owner / Delivery Partner
 
 ---
 
-# 👥 User Roles
-
-| Role | Description |
-|--------|------------|
-| Customer | Browse meals, receive AI recommendations, place orders, and track nutrition |
-| Restaurant Owner | Manage menus, products, orders, and business operations |
-| Delivery Partner | Manage deliveries and update delivery status |
-| Administrator | Monitor platform operations and user activities |
-
----
-
 # 🚀 Live Application
 
 ### Production Deployment
@@ -250,26 +236,6 @@ npm start
 
 ---
 
-# 📂 Project Structure
-
-```text
-Fit-Meals/
-│
-├── app/
-├── components/
-├── hooks/
-├── services/
-├── lib/
-├── context/
-├── utils/
-├── public/
-├── styles/
-├── types/
-├── database/
-└── configuration/
-```
-
----
 
 # 🧠 Learning Outcomes
 
@@ -303,20 +269,6 @@ FitMeals showcases the integration of:
 - Full-Stack Development
 
 The project demonstrates the ability to design and implement a real-world software solution that addresses practical challenges in nutrition management, healthy food discovery, and digital commerce.
-
----
-
-# 📈 Future Enhancements
-
-- AI-powered fitness coach
-- Personalized workout recommendations
-- Health wearable integration
-- Real-time nutrition tracking
-- Advanced analytics dashboard
-- Multi-language support
-- Mobile application support
-- AI-generated diet plans
-- Smart grocery recommendations
 
 ---
 
