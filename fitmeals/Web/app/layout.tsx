@@ -27,6 +27,13 @@ export default function RootLayout({
     <html suppressHydrationWarning>
       <head>
         <title>FitMeals</title>
+
+        {/* Google Search Console Verification */}
+        <meta
+          name="google-site-verification"
+          content="wg9FMd9Qd1wp3dCiKdhpBdq1KPVRhghC00vXKbWS5Fw"
+        />
+
         <link rel="icon" href="/Fitmeals-logo.png" />
         <link
           rel="stylesheet"
