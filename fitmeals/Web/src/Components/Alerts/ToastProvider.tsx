@@ -10,8 +10,25 @@ export default function ToastProvider() {
       position="top-right"
       closeButton={false}
       autoClose={3000}
-      hideProgressBar={true}
-      newestOnTop={true}
+      hideProgressBar
+      newestOnTop
+      pauseOnHover={false}
+      draggable={false}
+      style={{
+        top: "20px",
+        right: "1rem",
+        left: "auto",
+        width: "fit-content",
+      }}
+      toastStyle={{
+        width: "320px",
+        minHeight: "50px",
+        borderRadius: "14px",
+        background: "#0f0f0f",
+        color: "#fff",
+        fontSize: "15px",
+        marginLeft: "auto",
+      }}
       icon={({ type }) => {
         if (type === "success") return "✅";
         if (type === "error") return "❌";
