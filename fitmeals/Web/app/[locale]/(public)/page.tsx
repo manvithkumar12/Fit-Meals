@@ -10,6 +10,8 @@ import UpdatesCard from "@/src/Components/General/updatesCard/UpdatesCard";
 import FeedBack from "@/src/Components/General/FeedBackCard/FeedBack";
 import FaqCards from "@/src/Components/General/Faqs/FaqCards";
 import ContactCard from "@/src/Components/ChatBot/ContactCard";
+import DebugLogger from "./DebugLogger.tsx"
+import HeroDebugImage from "./HeroDebugImage
 
 export default async function HomePage({
   params,
@@ -27,21 +29,12 @@ export default async function HomePage({
 
   return (
     <div>
+      <DebugLogger/>
       <LanguagePopup />
 
       <section className="hero-page">
         <div className="relative w-full aspect-[3/2] md:aspect-[5/2]">
-          <Image
-            src="/home-img.webp"
-            alt="intro"
-            fill
-            priority
-            quality={70}
-            sizes="100vw"
-            className="object-cover"
-            placeholder="blur"
-            blurDataURL="/blur.jpeg"
-          />
+          <HeroDebugImage/>
 
           <div className="absolute top-30 left-10 hidden h-max w-max md:block">
             <div className="intro text-4xl font-bold leading-tight text-white backdrop-blur-sm font-montserrat lg:text-5xl">
