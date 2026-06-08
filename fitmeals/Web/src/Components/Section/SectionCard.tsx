@@ -51,7 +51,7 @@ const SectionCard = () => {
           <div className=" text-2xl mt-10 text-center font-medium md:text-4xl">
             {t("section.orderintro")}
           </div>
-          <Link href={`/services/${category}`}>
+          <Link href={`/services/${category}/1`}>
             <button className="h-10 px-6 w-max rounded-lg bg-green-600 hover:bg-green-700 cursor-pointer mt-7 text-white transition font-semibold">
               {t("section.orderbtn")} →
             </button>
@@ -75,7 +75,7 @@ const SectionCard = () => {
           <div className=" text-2xl mt-10 text-center font-medium md:text-4xl">
             {t("section.dineintro")}
           </div>
-          <Link href={`/services/reservation`}>
+          <Link href={`/services/reservation/1`}>
             <button className="h-10 px-6 w-max rounded-lg bg-green-600 hover:bg-green-700 cursor-pointer mt-7 text-white transition font-semibold">
               {t("section.dinebtn")} →
             </button>
@@ -104,7 +104,7 @@ const SectionCard = () => {
               fill
               sizes="(max-width:1280px),50vw,100vw"
               className="object-contain"
-              priority
+              loading="lazy"
               placeholder="blur"
               blurDataURL="/blur.jpeg"
             />
@@ -116,7 +116,7 @@ const SectionCard = () => {
               fill
               sizes="(max-width:1280px),50vw,100vw"
               className="object-contain"
-              priority
+              loading="lazy"
               placeholder="blur"
               blurDataURL="/blur.jpeg"
             />
