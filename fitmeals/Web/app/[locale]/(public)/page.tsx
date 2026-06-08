@@ -11,8 +11,6 @@ import FeedBack from "@/src/Components/General/FeedBackCard/FeedBack";
 import FaqCards from "@/src/Components/General/Faqs/FaqCards";
 import ContactCard from "@/src/Components/ChatBot/ContactCard";
 
-export const revalidate = 3600;
-
 export default async function HomePage({
   params,
 }: Readonly<{
