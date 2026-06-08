@@ -15,11 +15,12 @@ export default function HeroDebugImage() {
       placeholder="blur"
       blurDataURL="/blur.jpeg"
       onLoad={(e) => {
-        console.log("[HOME HERO LOADED]", {
-          time: performance.now(),
-          src: e.currentTarget.currentSrc,
-          width: e.currentTarget.naturalWidth,
-          height: e.currentTarget.naturalHeight,
+        const img = e.currentTarget;
+
+        console.log("[HOME HERO LOADED]", performance.now());
+
+        img.decode().then(() => {
+          console.log("[HOME HERO DECODED]", performance.now());
         });
       }}
     />
