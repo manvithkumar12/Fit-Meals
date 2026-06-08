@@ -12,6 +12,7 @@ import Link from "@/src/Components/LocalizedLink";
 const SectionCard = () => {
   const [category, setCategory] = React.useState("order");
   const t = useTranslations("homepage");
+  console.log("[SectionCard Render]", performance.now());
   return (
     <div>
       <div className=" w-70 h-20 flex justify-center align-middle items-center ml-auto mr-auto md:w-full">
