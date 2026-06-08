@@ -1,34 +1,15 @@
 import dynamic from "next/dynamic";
 import { getTranslations } from "next-intl/server";
 import Image from "next/image";
-
 import SectionCard from "@/src/Components/Section/SectionCard";
 import LanguagePopup from "@/src/Components/LanguagePopup/LanguagePopup";
 import { getFeedbacks } from "@/app/api/actions/feedbacks/getFeedbacks";
-
-const MembershipCards = dynamic(
-  () => import("@/src/Components/Membership/MembershipCards")
-);
-
-const UpdatesCard = dynamic(
-  () => import("@/src/Components/General/updatesCard/UpdatesCard")
-);
-
-const FeedBack = dynamic(
-  () => import("@/src/Components/General/FeedBackCard/FeedBack")
-);
-
-const FaqCards = dynamic(
-  () => import("@/src/Components/General/Faqs/FaqCards")
-);
-
-const ContactCard = dynamic(
-  () => import("@/src/Components/General/ContactCard/ContactCard")
-);
-
-const Features = dynamic(
-  () => import("@/src/Components/FeaturesPopup/Features")
-);
+import Features from "@/src/Components/FeaturesPopup/Features";
+import MembershipCards from "@/src/Components/Membership/MembershipCards";
+import UpdatesCard from "@/src/Components/General/updatesCard/UpdatesCard";
+import FeedBack from "@/src/Components/General/FeedBackCard/FeedBack";
+import FaqCards from "@/src/Components/General/Faqs/FaqCards";
+import ContactCard from "@/src/Components/ChatBot/ContactCard";
 
 export const revalidate = 3600;
 
