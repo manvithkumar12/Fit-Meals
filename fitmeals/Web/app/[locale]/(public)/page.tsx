@@ -10,8 +10,8 @@ import UpdatesCard from "@/src/Components/General/updatesCard/UpdatesCard";
 import FeedBack from "@/src/Components/General/FeedBackCard/FeedBack";
 import FaqCards from "@/src/Components/General/Faqs/FaqCards";
 import ContactCard from "@/src/Components/ChatBot/ContactCard";
-import DebugLogger from "./DebugLogger.tsx"
-import HeroDebugImage from "./HeroDebugImage.tsx"
+import DebugLogger from "./DebugLogger";
+import HeroDebugImage from "./HeroDebugImage";
 
 export default async function HomePage({
   params,
