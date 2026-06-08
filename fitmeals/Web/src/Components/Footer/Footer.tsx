@@ -372,13 +372,13 @@ export default function Footer() {
                         {t("bottom.rights")}
                     </div>
                     <div className="flex items-center gap-6">
-                        <Link href="/privacy" className="hover:text-emerald-600 transition-colors duration-200">
+                        <Link href="#" className="hover:text-emerald-600 transition-colors duration-200">
                             {t("bottom.privacy")}
                         </Link>
-                        <Link href="/terms" className="hover:text-emerald-600 transition-colors duration-200">
+                        <Link href="/#" className="hover:text-emerald-600 transition-colors duration-200">
                             {t("bottom.terms")}
                         </Link>
-                        <Link href="/cookies" className="hover:text-emerald-600 transition-colors duration-200">
+                        <Link href="/#" className="hover:text-emerald-600 transition-colors duration-200">
                             {t("bottom.cookies")}
                         </Link>
                     </div>
