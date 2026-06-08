@@ -11,7 +11,7 @@ import FeedBack from "@/src/Components/General/FeedBackCard/FeedBack";
 import FaqCards from "@/src/Components/General/Faqs/FaqCards";
 import ContactCard from "@/src/Components/ChatBot/ContactCard";
 import DebugLogger from "./DebugLogger.tsx"
-import HeroDebugImage from "./HeroDebugImage
+import HeroDebugImage from "./HeroDebugImage.tsx"
 
 export default async function HomePage({
   params,
