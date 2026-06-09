@@ -40,6 +40,7 @@ export default async function HomePage({
             sizes="100vw"
             className="object-cover"
             placeholder="blur"
+            loading="lazy"
             blurDataURL="/blur.jpeg"
           />
 
