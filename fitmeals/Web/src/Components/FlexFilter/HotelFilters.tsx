@@ -1,9 +1,16 @@
 "use client";
-import React, { useState } from "react";
-import { completeData } from "@/data/Filters";
+import React, { useState, useTransition } from "react";
+import { completeData, FilterItem } from "@/data/Filters";
 import { useTranslations } from "next-intl";
+import { usePathname, useRouter, useSearchParams } from "next/navigation";
+
 const HotelFilters = () => {
-  const [isOpen, setIsOpen] = React.useState(true);
+  const router = useRouter();
+  const pathname = usePathname();
+  const searchParams = useSearchParams();
+  const [, startTransition] = useTransition();
+
+  const [isOpen, setIsOpen] = useState(true);
   const [openSections, setOpenSections] = useState({
     types: true,
     category: true,
@@ -11,9 +18,68 @@ const HotelFilters = () => {
     ratings: true,
     dietary: true,
   });
-  const openFilter = () => (isOpen ? setIsOpen(false) : setIsOpen(true));
+
   const t = useTranslations("Services.filters");
   const data = completeData(t);
+
+  const getSelectedArray = (paramName: string): string[] => {
+    const val = searchParams.get(paramName);
+    return val ? val.split(",").filter(Boolean) : [];
+  };
+
+  const selectedTypes = getSelectedArray("types");
+  const selectedCategory = getSelectedArray("category");
+  const selectedPrice = getSelectedArray("price");
+  const selectedRatings = getSelectedArray("ratings");
+  const selectedDietary = getSelectedArray("dietary");
+
+  const totalActiveCount =
+    selectedTypes.length +
+    selectedCategory.length +
+    selectedPrice.length +
+    selectedRatings.length +
+    selectedDietary.length;
+
+  const toggleFilter = (paramName: string, itemKey: string) => {
+    const current = getSelectedArray(paramName);
+    let updated: string[];
+    if (current.includes(itemKey)) {
+      updated = current.filter((k) => k !== itemKey);
+    } else {
+      updated = [...current, itemKey];
+    }
+
+    const params = new URLSearchParams(searchParams.toString());
+    if (updated.length > 0) {
+      params.set(paramName, updated.join(","));
+    } else {
+      params.delete(paramName);
+    }
+
+    startTransition(() => {
+      const queryString = params.toString();
+      router.push(queryString ? `${pathname}?${queryString}` : pathname, {
+        scroll: false,
+      });
+    });
+  };
+
+  const clearAllFilters = () => {
+    const params = new URLSearchParams(searchParams.toString());
+    params.delete("types");
+    params.delete("category");
+    params.delete("price");
+    params.delete("ratings");
+    params.delete("dietary");
+
+    startTransition(() => {
+      const queryString = params.toString();
+      router.push(queryString ? `${pathname}?${queryString}` : pathname, {
+        scroll: false,
+      });
+    });
+  };
+
   const toggleSection = (section: keyof typeof openSections) => {
     setOpenSections((prev) => ({
       ...prev,
@@ -21,124 +87,149 @@ const HotelFilters = () => {
     }));
   };
 
+  const renderFilterSection = (
+    title: string,
+    sectionKey: keyof typeof openSections,
+    paramName: string,
+    items: FilterItem[],
+    selectedItems: string[],
+  ) => {
+    const sectionActiveCount = selectedItems.length;
+
+    return (
+      <div className="mt-2 pl-2 border-b border-gray-200 pb-2">
+        <div
+          className="flex w-full items-center justify-between cursor-pointer py-1 select-none"
+          onClick={() => toggleSection(sectionKey)}
+        >
+          <div className="flex items-center gap-2">
+            <h1 className="font-semibold text-gray-800 text-sm md:text-base">
+              {title}
+            </h1>
+            {sectionActiveCount > 0 && (
+              <span className="bg-green-600 text-white text-[11px] px-1.5 py-0.5 rounded-full font-bold">
+                {sectionActiveCount}
+              </span>
+            )}
+          </div>
+          <button
+            type="button"
+            className="mr-3 text-gray-500 hover:text-gray-800 transition-colors p-1"
+            aria-label={`Toggle ${title}`}
+          >
+            <i
+              className={`fa-solid fa-chevron-down text-xs transition-transform duration-200 ${
+                openSections[sectionKey] ? "rotate-180" : ""
+              }`}
+            ></i>
+          </button>
+        </div>
+
+        {openSections[sectionKey] && (
+          <div className="flex flex-col gap-2 mt-2 pr-2">
+            {items.map((filter) => {
+              const isChecked = selectedItems.includes(filter.key);
+              return (
+                <label
+                  key={filter.key}
+                  className={`flex items-center gap-2.5 px-2 py-1.5 rounded-md cursor-pointer text-sm transition-all duration-150 select-none ${
+                    isChecked
+                      ? "bg-green-50 text-green-900 font-medium"
+                      : "text-gray-700 hover:bg-gray-50"
+                  }`}
+                >
+                  <input
+                    type="checkbox"
+                    checked={isChecked}
+                    onChange={() => toggleFilter(paramName, filter.key)}
+                    className="w-4 h-4 rounded text-green-600 focus:ring-green-500 accent-green-600 cursor-pointer"
+                  />
+                  <span className="truncate">{filter.label}</span>
+                </label>
+              );
+            })}
+          </div>
+        )}
+      </div>
+    );
+  };
+
   return (
-    <div className="w-full h-max bg-white p-2 rounded-md border border-gray-200 shadow-xl hover:shadow-2xl">
-      <div className="font-semibold flex items-center justify-center text-lg">
-        <h2 className="font-bold mr-auto">{t("Filters")}</h2>
-        <div className="w-max lg:hidden ml-auto">
-          <i
-            className="fa-solid fa-caret-down ml-auto mr-5"
-            onClick={() => openFilter()}
-          ></i>
+    <div className="w-full h-max bg-white p-3 rounded-lg border border-gray-200 shadow-lg hover:shadow-xl transition-shadow">
+      <div className="font-semibold flex items-center justify-between pb-2 border-b border-gray-100">
+        <div className="flex items-center gap-2">
+          <i className="fa-solid fa-filter text-green-600 text-sm"></i>
+          <h2 className="font-bold text-gray-900 text-base md:text-lg">
+            {t("Filters")}
+          </h2>
+          {totalActiveCount > 0 && (
+            <span className="bg-green-100 text-green-700 text-xs font-semibold px-2 py-0.5 rounded-full">
+              {totalActiveCount}
+            </span>
+          )}
+        </div>
+
+        <div className="flex items-center gap-2">
+          {totalActiveCount > 0 && (
+            <button
+              onClick={clearAllFilters}
+              className="text-xs text-red-600 hover:text-red-700 font-semibold px-2 py-1 rounded hover:bg-red-50 transition-colors"
+            >
+              Clear all
+            </button>
+          )}
+          <div className="lg:hidden">
+            <button
+              onClick={() => setIsOpen((prev) => !prev)}
+              className="text-gray-500 hover:text-gray-800 p-1"
+            >
+              <i
+                className={`fa-solid fa-chevron-down text-sm transition-transform duration-200 ${
+                  isOpen ? "rotate-180" : ""
+                }`}
+              ></i>
+            </button>
+          </div>
         </div>
       </div>
+
       {isOpen && (
-        <div>
-          <div className="mt-2 pl-2  border-b border-gray-200">
-            <div className="flex w-full items-center justify-center">
-              <h1 className="font-semibold mt-2">{t("Types")}</h1>
-              <button className="ml-auto mr-5">
-                <i
-                  className="fa-solid fa-caret-down"
-                  onClick={() => toggleSection("types")}
-                ></i>
-              </button>
-            </div>
-            {openSections.types && (
-              <div className="flex lg:flex-col lg:gap-2 gap-4 border-b flex-wrap  border-gray-200 pb-2 mt-1">
-                {data.Types.map((filter, index) => (
-                  <div className="flex gap-1" key={filter}>
-                    <input type="checkbox" />
-                    <h3>{filter}</h3>
-                  </div>
-                ))}
-              </div>
-            )}
-          </div>
-          <div className="mt-2 pl-2 border-b border-gray-200">
-            <div className="flex w-full items-center justify-center">
-              <h1 className="font-semibold">{t("Category")}</h1>
-              <button className="ml-auto mr-5">
-                <i
-                  className="fa-solid fa-caret-down"
-                  onClick={() => toggleSection("category")}
-                ></i>
-              </button>
-            </div>
-            {openSections.category && (
-              <div className="flex gap-4 h-max lg:flex-col lg:gap-2 flex-wrap  pb-2 mt-1">
-                {data.Category.map((filter, index) => (
-                  <div className="flex gap-1" key={filter}>
-                    <input type="checkbox" />
-                    <h3>{filter}</h3>
-                  </div>
-                ))}
-              </div>
-            )}
-          </div>
-          <div className="mt-2 pl-2 border-b border-gray-200">
-            <div className="flex w-full items-center justify-center">
-              <h1 className="font-semibold">{t("Price_Range")}</h1>
-              <button className="ml-auto mr-5">
-                <i
-                  className="fa-solid fa-caret-down"
-                  onClick={() => toggleSection("price")}
-                ></i>
-              </button>
-            </div>
-            {openSections.price && (
-              <div className="flex gap-4 h-max lg:flex-col lg:gap-2 flex-wrap  pb-2 mt-1">
-                {data.Price_Range.map((filter, index) => (
-                  <div className="flex gap-1" key={filter}>
-                    <input type="checkbox" />
-                    <h3>{filter}</h3>
-                  </div>
-                ))}
-              </div>
-            )}
-          </div>
-          <div className="mt-2 pl-2 border-b border-gray-200">
-            <div className="flex w-full items-center justify-center">
-              <h1 className="font-semibold">{t("Ratings")}</h1>
-              <button className=" ml-auto mr-5">
-                <i
-                  className="fa-solid fa-caret-down"
-                  onClick={() => toggleSection("ratings")}
-                ></i>
-              </button>
-            </div>
-            {openSections.ratings && (
-              <div className="flex gap-4 h-max  lg:gap-2 flex-wrap  pb-2 mt-1">
-                {data.Ratings.map((filter, index) => (
-                  <div className="flex gap-1" key={filter}>
-                    <input type="checkbox" />
-                    <h3>{filter}</h3>
-                  </div>
-                ))}
-              </div>
-            )}
-          </div>
-          <div className="mt-2 pl-2">
-            <div className="flex w-full items-center justify-center">
-              <h1 className="font-semibold">{t("Dietary")}</h1>
-              <button className=" ml-auto mr-5">
-                <i
-                  className="fa-solid fa-caret-down"
-                  onClick={() => toggleSection("dietary")}
-                ></i>
-              </button>
-            </div>
-            {openSections.dietary && (
-              <div className="flex gap-3 h-max flex-wrap  pb-2 mt-1">
-                {data.Dietary.map((filter, index) => (
-                  <div className="flex gap-1" key={filter}>
-                    <input type="checkbox" />
-                    <h3>{filter}</h3>
-                  </div>
-                ))}
-              </div>
-            )}
-          </div>
+        <div className="pt-1">
+          {renderFilterSection(
+            t("Types"),
+            "types",
+            "types",
+            data.Types,
+            selectedTypes,
+          )}
+          {renderFilterSection(
+            t("Category"),
+            "category",
+            "category",
+            data.Category,
+            selectedCategory,
+          )}
+          {renderFilterSection(
+            t("Price_Range"),
+            "price",
+            "price",
+            data.Price_Range,
+            selectedPrice,
+          )}
+          {renderFilterSection(
+            t("Ratings"),
+            "ratings",
+            "ratings",
+            data.Ratings,
+            selectedRatings,
+          )}
+          {renderFilterSection(
+            t("Dietary"),
+            "dietary",
+            "dietary",
+            data.Dietary,
+            selectedDietary,
+          )}
         </div>
       )}
     </div>
@@ -146,3 +237,4 @@ const HotelFilters = () => {
 };
 
 export default HotelFilters;
+
