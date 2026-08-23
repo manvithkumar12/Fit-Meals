@@ -102,20 +102,18 @@ const FoodItems = ({ restaurantId, RestaurantID, cartItems }: Props) => {
         if (!match) return false;
       }
 
-      // 3. Price Filter
       if (selectedPrice.length > 0) {
         const price = Number(item.price);
         const match = selectedPrice.some((pKey) => {
-          if (pKey === "under100") return price < 100;
-          if (pKey === "100to200") return price >= 100 && price <= 200;
-          if (pKey === "200to400") return price >= 200 && price <= 400;
-          if (pKey === "above400") return price > 400;
+          if (pKey === "under10") return price < 10;
+          if (pKey === "10to20") return price >= 10 && price <= 20;
+          if (pKey === "20to30") return price >= 20 && price <= 30;
+          if (pKey === "above30") return price > 30;
           return true;
         });
         if (!match) return false;
       }
 
-      // 4. Ratings Filter
       if (selectedRatings.length > 0) {
         const rating = Number(item.averageRating || 0);
         const match = selectedRatings.some((rKey) => {
@@ -150,9 +148,7 @@ const FoodItems = ({ restaurantId, RestaurantID, cartItems }: Props) => {
           if (norm === "lowcarb") {
             return (
               (item.carboHydratePer100gm && item.carboHydratePer100gm <= 20) ||
-              benefits.some(
-                (b) => b.includes("LOW CARB") || b.includes("KETO"),
-              )
+              benefits.some((b) => b.includes("LOW CARB") || b.includes("KETO"))
             );
           }
           if (norm === "lowfat") {
@@ -239,5 +235,3 @@ const FoodItems = ({ restaurantId, RestaurantID, cartItems }: Props) => {
 };
 
 export default FoodItems;
-
-
