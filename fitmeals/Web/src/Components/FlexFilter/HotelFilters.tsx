@@ -1,14 +1,15 @@
 "use client";
-import React, { useState, useTransition } from "react";
+import React, { useState } from "react";
 import { completeData, FilterItem } from "@/data/Filters";
 import { useTranslations } from "next-intl";
-import { usePathname, useRouter, useSearchParams } from "next/navigation";
+import {
+  HotelFilterState,
+  useHotelFilters,
+} from "@/src/hooks/useHotelFilters";
 
 const HotelFilters = () => {
-  const router = useRouter();
-  const pathname = usePathname();
-  const searchParams = useSearchParams();
-  const [, startTransition] = useTransition();
+  const { filters, toggleFilter, clearAllFilters, totalActiveCount } =
+    useHotelFilters();
 
   const [isOpen, setIsOpen] = useState(true);
   const [openSections, setOpenSections] = useState({
@@ -22,64 +23,6 @@ const HotelFilters = () => {
   const t = useTranslations("Services.filters");
   const data = completeData(t);
 
-  const getSelectedArray = (paramName: string): string[] => {
-    const val = searchParams.get(paramName);
-    return val ? val.split(",").filter(Boolean) : [];
-  };
-
-  const selectedTypes = getSelectedArray("types");
-  const selectedCategory = getSelectedArray("category");
-  const selectedPrice = getSelectedArray("price");
-  const selectedRatings = getSelectedArray("ratings");
-  const selectedDietary = getSelectedArray("dietary");
-
-  const totalActiveCount =
-    selectedTypes.length +
-    selectedCategory.length +
-    selectedPrice.length +
-    selectedRatings.length +
-    selectedDietary.length;
-
-  const toggleFilter = (paramName: string, itemKey: string) => {
-    const current = getSelectedArray(paramName);
-    let updated: string[];
-    if (current.includes(itemKey)) {
-      updated = current.filter((k) => k !== itemKey);
-    } else {
-      updated = [...current, itemKey];
-    }
-
-    const params = new URLSearchParams(searchParams.toString());
-    if (updated.length > 0) {
-      params.set(paramName, updated.join(","));
-    } else {
-      params.delete(paramName);
-    }
-
-    startTransition(() => {
-      const queryString = params.toString();
-      router.push(queryString ? `${pathname}?${queryString}` : pathname, {
-        scroll: false,
-      });
-    });
-  };
-
-  const clearAllFilters = () => {
-    const params = new URLSearchParams(searchParams.toString());
-    params.delete("types");
-    params.delete("category");
-    params.delete("price");
-    params.delete("ratings");
-    params.delete("dietary");
-
-    startTransition(() => {
-      const queryString = params.toString();
-      router.push(queryString ? `${pathname}?${queryString}` : pathname, {
-        scroll: false,
-      });
-    });
-  };
-
   const toggleSection = (section: keyof typeof openSections) => {
     setOpenSections((prev) => ({
       ...prev,
@@ -90,7 +33,7 @@ const HotelFilters = () => {
   const renderFilterSection = (
     title: string,
     sectionKey: keyof typeof openSections,
-    paramName: string,
+    paramName: keyof HotelFilterState,
     items: FilterItem[],
     selectedItems: string[],
   ) => {
@@ -132,7 +75,7 @@ const HotelFilters = () => {
               return (
                 <label
                   key={filter.key}
-                  className={`flex items-center gap-2.5 px-2 py-1.5 rounded-md cursor-pointer text-sm transition-all duration-150 select-none ${
+                  className={`flex items-center gap-2.5 px-2 py-1.5 rounded-md cursor-pointer text-sm transition-colors duration-100 select-none ${
                     isChecked
                       ? "bg-green-50 text-green-900 font-medium"
                       : "text-gray-700 hover:bg-gray-50"
@@ -173,7 +116,7 @@ const HotelFilters = () => {
           {totalActiveCount > 0 && (
             <button
               onClick={clearAllFilters}
-              className="text-xs text-red-600 hover:text-red-700 font-semibold px-2 py-1 rounded hover:bg-red-50 transition-colors"
+              className="text-xs text-red-600 hover:text-red-700 font-semibold px-2 py-1 rounded hover:bg-red-50 transition-colors cursor-pointer"
             >
               Clear all
             </button>
@@ -200,35 +143,35 @@ const HotelFilters = () => {
             "types",
             "types",
             data.Types,
-            selectedTypes,
+            filters.types,
           )}
           {renderFilterSection(
             t("Category"),
             "category",
             "category",
             data.Category,
-            selectedCategory,
+            filters.category,
           )}
           {renderFilterSection(
             t("Price_Range"),
             "price",
             "price",
             data.Price_Range,
-            selectedPrice,
+            filters.price,
           )}
           {renderFilterSection(
             t("Ratings"),
             "ratings",
             "ratings",
             data.Ratings,
-            selectedRatings,
+            filters.ratings,
           )}
           {renderFilterSection(
             t("Dietary"),
             "dietary",
             "dietary",
             data.Dietary,
-            selectedDietary,
+            filters.dietary,
           )}
         </div>
       )}
@@ -237,4 +180,5 @@ const HotelFilters = () => {
 };
 
 export default HotelFilters;
+
 
