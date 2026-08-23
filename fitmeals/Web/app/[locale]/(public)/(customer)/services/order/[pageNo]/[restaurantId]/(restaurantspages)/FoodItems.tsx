@@ -1,13 +1,13 @@
 "use client";
 
 import { useMemo } from "react";
-import { usePathname, useRouter, useSearchParams } from "next/navigation";
 import { useRestaurantFoodItems } from "@/src/query/useRestaurantFoodItems";
 import FoodBox from "@/src/Components/ServiceComponent/order/FoodBox";
 import FoodBoxLoading from "@/src/Components/ServiceComponent/order/FoodBoxLoading";
 import ErrorComponent from "@/src/Components/errorComponent/ErrorComponent";
 import { useTranslations } from "next-intl";
 import { FoodItem } from "@/src/Apiservices/api/restaurant/getFoodItems";
+import { useHotelFilters } from "@/src/hooks/useHotelFilters";
 
 interface Props {
   restaurantId: number;
@@ -20,47 +20,22 @@ interface Props {
 }
 
 const FoodItems = ({ restaurantId, RestaurantID, cartItems }: Props) => {
-  const router = useRouter();
-  const pathname = usePathname();
-  const searchParams = useSearchParams();
+  const { filters, clearAllFilters, hasActiveFilters } = useHotelFilters();
   const { data, isLoading, isError } = useRestaurantFoodItems(restaurantId);
   const t = useTranslations("toast");
-
-  const selectedTypes = useMemo(
-    () => searchParams.get("types")?.split(",").filter(Boolean) || [],
-    [searchParams],
-  );
-  const selectedCategory = useMemo(
-    () => searchParams.get("category")?.split(",").filter(Boolean) || [],
-    [searchParams],
-  );
-  const selectedPrice = useMemo(
-    () =>
-      (searchParams.get("price") || searchParams.get("priceRange"))
-        ?.split(",")
-        .filter(Boolean) || [],
-    [searchParams],
-  );
-  const selectedRatings = useMemo(
-    () => searchParams.get("ratings")?.split(",").filter(Boolean) || [],
-    [searchParams],
-  );
-  const selectedDietary = useMemo(
-    () => searchParams.get("dietary")?.split(",").filter(Boolean) || [],
-    [searchParams],
-  );
-
-  const hasActiveFilters =
-    selectedTypes.length > 0 ||
-    selectedCategory.length > 0 ||
-    selectedPrice.length > 0 ||
-    selectedRatings.length > 0 ||
-    selectedDietary.length > 0;
 
   const filteredItems = useMemo(() => {
     if (!data?.message || !Array.isArray(data.message)) {
       return [];
     }
+
+    const {
+      types: selectedTypes,
+      category: selectedCategory,
+      price: selectedPrice,
+      ratings: selectedRatings,
+      dietary: selectedDietary,
+    } = filters;
 
     return data.message.filter((item: FoodItem) => {
       // 1. Types Filter
@@ -195,18 +170,7 @@ const FoodItems = ({ restaurantId, RestaurantID, cartItems }: Props) => {
 
       return true;
     });
-  }, [
-    data?.message,
-    selectedTypes,
-    selectedCategory,
-    selectedPrice,
-    selectedRatings,
-    selectedDietary,
-  ]);
-
-  const clearAllFilters = () => {
-    router.push(pathname, { scroll: false });
-  };
+  }, [data?.message, filters]);
 
   if (isLoading) {
     return (
@@ -275,4 +239,5 @@ const FoodItems = ({ restaurantId, RestaurantID, cartItems }: Props) => {
 };
 
 export default FoodItems;
+
 
