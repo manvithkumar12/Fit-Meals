@@ -1,37 +1,46 @@
 type Translator = (key: string) => string;
 
+export interface FilterItem {
+  key: string;
+  label: string;
+}
+
 export const completeData = (t: Translator) => {
-  const Types = [t("veg"), t("nonVeg"), t("vegan")];
-
-  const Category = [
-    t("starters"),
-    t("mainCourse"),
-    t("biryani"),
-    t("riceAndNoodles"),
-    t("desserts"),
-    t("beverages"),
+  const Types: FilterItem[] = [
+    { key: "veg", label: t("veg") },
+    { key: "nonVeg", label: t("nonVeg") },
+    { key: "vegan", label: t("vegan") },
   ];
 
-  const Price_Range = [
-    t("under100"),
-    t("100to200"),
-    t("200to400"),
-    t("above400"),
+  const Category: FilterItem[] = [
+    { key: "starters", label: t("starters") },
+    { key: "mainCourse", label: t("mainCourse") },
+    { key: "biryani", label: t("biryani") },
+    { key: "riceAndNoodles", label: t("riceAndNoodles") },
+    { key: "desserts", label: t("desserts") },
+    { key: "beverages", label: t("beverages") },
   ];
 
-  const Ratings = [
-    t("1Star"),
-    t("2Stars"),
-    t("3Stars"),
-    t("4Stars"),
-    t("5Stars"),
+  const Price_Range: FilterItem[] = [
+    { key: "under100", label: t("under100") },
+    { key: "100to200", label: t("100to200") },
+    { key: "200to400", label: t("200to400") },
+    { key: "above400", label: t("above400") },
   ];
 
-  const Dietary = [
-    t("lowCalorie"),
-    t("highProtein"),
-    t("lowCarb"),
-    t("lowFat"),
+  const Ratings: FilterItem[] = [
+    { key: "5Stars", label: t("5Stars") },
+    { key: "4Stars", label: t("4Stars") },
+    { key: "3Stars", label: t("3Stars") },
+    { key: "2Stars", label: t("2Stars") },
+    { key: "1Star", label: t("1Star") },
+  ];
+
+  const Dietary: FilterItem[] = [
+    { key: "lowCalorie", label: t("lowCalorie") },
+    { key: "highProtein", label: t("highProtein") },
+    { key: "lowCarb", label: t("lowCarb") },
+    { key: "lowFat", label: t("lowFat") },
   ];
 
   return {
@@ -42,3 +51,4 @@ export const completeData = (t: Translator) => {
     Dietary,
   };
 };
+
