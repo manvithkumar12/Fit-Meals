@@ -22,10 +22,10 @@ export const completeData = (t: Translator) => {
   ];
 
   const Price_Range: FilterItem[] = [
-    { key: "under100", label: t("under100") },
-    { key: "100to200", label: t("100to200") },
-    { key: "200to400", label: t("200to400") },
-    { key: "above400", label: t("above400") },
+    { key: "under10", label: t("under10") },
+    { key: "10to20", label: t("10to20") },
+    { key: "20to30", label: t("20to30") },
+    { key: "above30", label: t("above30") },
   ];
 
   const Ratings: FilterItem[] = [
